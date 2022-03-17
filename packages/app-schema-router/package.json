@@ -1,0 +1,17 @@
+{
+  "name": "@itoa/app-schema-router",
+  "description": "ItoaJS GraphQL App.",
+  "version": "6.0.7",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/app-schema-router"
+}

@@ -1,0 +1,11 @@
+.frame {
+  padding: 12px;
+}
+.box {
+  margin-bottom: 55px;
+  border: 1px solid #eee;
+  color: #333;
+  text-align: center;
+  padding: 13px;
+  cursor: pointer;
+}

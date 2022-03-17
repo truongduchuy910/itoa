@@ -1,0 +1,33 @@
+pre,
+code {
+  max-width: 100% !important;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--chakra-colors-brand-500);
+}
+
+::selection {
+  color: white;
+  background: var(--chakra-colors-brand-500);
+}
+
+:focus {
+  box-shadow: 0 0 0px 0px var(--chakra-colors-brand-50) !important;
+}
+body {
+  overflow: overlay;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-brand-500);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chakra-colors-brand-400);
+}
+img {
+  margin: 13px auto 13px auto;
+}

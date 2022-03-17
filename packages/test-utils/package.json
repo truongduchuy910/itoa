@@ -1,0 +1,23 @@
+{
+  "name": "@itoa/test-utils",
+  "description": "Common utilities used while testing @itoa/* packages.",
+  "version": "15.0.7",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "main": "dist/test-utils.cjs.js",
+  "module": "dist/test-utils.esm.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@itoa/adapter-mongoose": "*",
+    "@itoa/app-graphql": "*",
+    "@itoa/itoa": "*",
+    "@types/keystonejs__adapter-mongoose": "*",
+    "@types/keystonejs__keystone": "*",
+    "express": "^4.17.1",
+    "mongodb-memory-server-core": "^8.4.0",
+    "supertest-light": "^1.0.3"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/test-utils"
+}

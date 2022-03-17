@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Aachen Bold";
+  src: url("/fonts/Aachen Bold.eot");
+  src: url("/fonts/Aachen Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Aachen Bold.woff2") format("woff2"),
+    url("/fonts/Aachen Bold.woff") format("woff"),
+    url("/fonts/Aachen Bold.ttf") format("truetype"),
+    url("/fonts/Aachen Bold.svg#aachenbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UTM Alexander";
+  src: url("/fonts/UTM Alexander.eot");
+  src: url("/fonts/UTM Alexander.eot") format("embedded-opentype"),
+    url("/fonts/UTM Alexander.woff2") format("woff2"),
+    url("/fonts/UTM Alexander.woff") format("woff"),
+    url("/fonts/UTM Alexander.ttf") format("truetype"),
+    url("/fonts/UTM Alexander.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+pre,
+code {
+  max-width: 100% !important;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--chakra-colors-brand-500);
+}
+
+::selection {
+  color: white;
+  background: var(--chakra-colors-brand-500);
+}
+
+:focus {
+  box-shadow: 0 0 0px 0px var(--chakra-colors-brand-50) !important;
+}
+body {
+  overflow: overlay;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-brand-500);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chakra-colors-brand-400);
+}

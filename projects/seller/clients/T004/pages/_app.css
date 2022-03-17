@@ -1,0 +1,146 @@
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "PN";
+  src: url(/assets/fonts/PN-Regular2.ttf?v=1228) format("truetype");
+}
+@font-face {
+  font-family: "PN";
+  src: url(/assets/fonts/PN_SemiBold_gdi.ttf?v=1228) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PN";
+  src: url(/assets/fonts/PN_SemiBold_gdi.ttf?v=1228) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SVN-Veneer";
+  src: url(/assets/fonts/SVN-Veneer.eot?v=1228) format("embedded-opentype"),
+    url("/assets/fonts/SVN-Veneer.woff?v=796") format("woff"),
+    url(/assets/fonts/SVN-Veneer.ttf?v=1228) format("truetype");
+  /* url("/assets/fonts/SVN-Veneer.svg?v=796#SVN-Veneer") */
+  /* format("svg"); */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+body::-webkit-scrollbar {
+  background-color: var(--light);
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 0px solid var(--light);
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+/* ----- */
+
+body {
+  font-family: PN, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  width: 100%;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+  margin-bottom: 0px;
+}
+.dark > p {
+  color: white;
+  transition: all 0.3s ease-out 0s;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: var(--chakra-fonts-body);
+}
+:root {
+  /* TEXT */
+
+  --color-text-primary: #86590d;
+  --color-text-secondary: #484848;
+  --color-text-backdrop: #fff;
+
+  --color-text-link: #0366d6;
+  --color-text-success: #22863a;
+  --color-text-danger: #b22222;
+  --color-text-warning: #b08800;
+
+  /* BACKGROUND */
+
+  --color-bg-primary: #37b3ff;
+  --color-bg-secondary: #111545;
+  --color-bg-backdrop: rgba(17, 21, 69, 0.5);
+
+  --color-bg-info: #f1f8ff;
+  --color-bg-info-inverse: #0366d6;
+  --color-bg-danger: #ffeef0;
+  --color-bg-danger-inverse: #b22222;
+  --color-bg-success: #dcffe4;
+  --color-bg-success-inverse: #28a745;
+  --color-bg-warning: #fff5b1;
+  --color-bg-warning-inverse: #ffd33d;
+
+  /* BORDER */
+
+  --color-border-primary: #e1e4e8;
+  --color-border-secondary: #eaecef;
+  --color-border-info: #0366d6;
+  --color-border-danger: #b22222;
+  --color-border-success: #34d058;
+  --color-border-warning: #f9c513;
+
+  /* SHADOW */
+
+  --color-shadow-small: 0 1px 0 rgba(27, 31, 35, 0.04);
+  --color-shadow-medium: 0 3px 6px rgba(149, 157, 165, 0.15);
+  --color-shadow-large: 0 8px 24px rgba(149, 157, 165, 0.2);
+  --color-shadow-extra-large: 0 12px 48px rgba(149, 157, 165, 0.3);
+  --color-shadow-highlight: inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+  --color-shadow-inset: inset 0 1px 0 rgba(225, 228, 232, 0.2);
+
+  /* COLOR */
+
+  --color-ansi-black: #111545;
+  --color-ansi-black-bright: #2f363d;
+  --color-ansi-white: #e1e4e8;
+  --color-ansi-white-bright: #e1e4e8;
+  --color-ansi-gray: #959da5;
+  --color-ansi-red: #f97583;
+  --color-ansi-red-bright: #fdaeb7;
+  --color-ansi-green: #85e89d;
+  --color-ansi-green-bright: #bef5cb;
+  --color-ansi-yellow: #ffea7f;
+  --color-ansi-yellow-bright: #fff5b1;
+  --color-ansi-blue: #79b8ff;
+  --color-ansi-blue-bright: #c8e1ff;
+  --color-ansi-magenta: #b392f0;
+  --color-ansi-magenta-bright: #d1bcf9;
+  --color-ansi-cyan: #76e3ea;
+  --color-ansi-cyan-bright: #b3f0ff;
+  /* FONT */
+  --font-primary: "PN";
+  --font-secondary: "SVN-Veneer";
+}

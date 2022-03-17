@@ -1,0 +1,29 @@
+sudo apt install git-all    
+git --version    
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -    
+sudo apt-get install -y nodejs    
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -    
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list    
+sudo apt-get update    
+sudo apt-get install -y mongodb-org    
+ps --no-headers -o comm 1    
+sudo service mongod start    
+sudo apt-get install ruby-full    
+sudo apt update    
+sudo apt upgrade    
+sudo apt install curl    
+sudo apt update    
+sudo apt upgrade    
+sudo apt install zsh    
+chsh -s $(which zsh)    
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"    
+sudo apt-get install neovim    
+set -u    
+sudo update-alternatives --install /usr/bin/ex ex "${CUSTOM_NVIM_PATH}" 110    
+sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110    
+sudo update-alternatives --install /usr/bin/view view "${CUSTOM_NVIM_PATH}" 110    
+sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110    
+sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}" 110    
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \    
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'    
+sed -i "1i \"neovim\"" ~/.config/nvim/init.vim    

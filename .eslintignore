@@ -1,0 +1,8 @@
+node_modules
+coverage
+dist
+reports
+tests/test-projects/**/cypress
+website/.cache/**/*
+website/public/**/*
+packages/create-itoa-5-app/templates

@@ -1,0 +1,7 @@
+contact_links:
+  - name: Question about Itoa
+    url: http://community.itoa.vn/
+    about: If you have a question related to Itoa. Reach out to the community at http://community.itoa.vn/
+  - name: Feature Request
+    url: https://github.com/itoa-vn/itoadiscussions/
+    about: Discuss or request a feature in Itoa 5.

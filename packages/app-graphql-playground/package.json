@@ -1,0 +1,29 @@
+{
+  "name": "@itoa/app-graphql-playground",
+  "description": "ItoaJS GraphQL Playground App.",
+  "version": "6.0.7",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@apollographql/graphql-playground-html": "^1.6.29",
+    "@apollographql/graphql-playground-react": "^1.7.42",
+    "@itoa/session": "^10.0.7",
+    "@itoa/utils": "^8.0.7",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.2",
+    "falsey": "^1.0.0",
+    "graphql-tag": "^2.12.6",
+    "object-hash": "^2.2.0",
+    "terminal-link": "^2.1.1"
+  },
+  "peerDependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/app-graphql-playground"
+}

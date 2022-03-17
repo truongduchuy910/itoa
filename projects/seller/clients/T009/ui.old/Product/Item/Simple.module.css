@@ -1,0 +1,7 @@
+.mainImg:hover {
+  transform: scale(1.1) translateY(-20px);
+  border-radius: 8px;
+}
+.mainImg {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,12 @@
+{
+    "scripts": {
+      "basic": "yarn --cwd basic",
+      "gateway": "yarn --cwd gateway",
+      "products": "yarn --cwd products",
+      "accounts": "yarn --cwd accounts",
+      "seller": "yarn --cwd seller"
+    },
+    "repository": "https://github.com/itoajs/itoa-5.git",
+    "homepage": "https://github.com/itoajs/itoa-5",
+    "license": "MIT"
+  }

@@ -1,0 +1,207 @@
+{
+  "Danh mục": {
+    "en": "Categories",
+    "zh": "编目",
+    "ja": "ポートフォリオ",
+    "ko": "범주",
+    "fr": "",
+    "ru": ""
+  },
+  "Sản phẩm": {
+    "en": "Products",
+    "zh": "产品",
+    "ja": "製品",
+    "ko": "제품",
+    "fr": "",
+    "ru": ""
+  },
+  "Liên hệ": {
+    "en": "Contact",
+    "zh": "联系",
+    "ja": "コンタクト",
+    "ko": "연락하다",
+    "fr": "",
+    "ru": ""
+  },
+  "Trang chủ": {
+    "en": "Home",
+    "zh": "主页",
+    "ja": "ホームページ",
+    "ko": "홈페이지",
+    "fr": "",
+    "ru": ""
+  },
+  "Bài viết": {
+    "en": "Posts",
+    "zh": "故事",
+    "ja": "記事",
+    "ko": "게시물",
+    "fr": "",
+    "ru": ""
+  },
+  "Xem ngay": {
+    "en": "Read more",
+    "zh": "立即看",
+    "ja": "今見る",
+    "ko": "지금보기",
+    "fr": "",
+    "ru": ""
+  },
+  "Gọi ngay": {
+    "en": "Call now",
+    "zh": "热线",
+    "ja": "今すぐお電話ください",
+    "ko": "Gọi ngay",
+    "fr": "",
+    "ru": ""
+  },
+  "Đối tác": {
+    "en": "Partner",
+    "zh": "伙伴",
+    "ja": "相棒",
+    "ko": "파트너",
+    "fr": "",
+    "ru": ""
+  },
+  "Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi": {
+    "en": "Customer Satisfaction is our Goal!",
+    "zh": "",
+    "ja": "顧客満足は私達の目的です!",
+    "ko": "고객 만족은 우리의 가장 큰 성공입니다",
+    "fr": "",
+    "ru": ""
+  },
+  "Mô tả": {
+    "en": "Description",
+    "zh": "描述",
+    "ja": "説明",
+    "ko": "설명",
+    "fr": "",
+    "ru": ""
+  },
+  "Chi tiết": {
+    "en": "Detail",
+    "zh": "细节",
+    "ja": "詳細",
+    "ko": "세부",
+    "fr": "",
+    "ru": ""
+  },
+  "Hướng dẫn": {
+    "en": "Guide",
+    "zh": "指导",
+    "ja": "指导",
+    "ko": "지시하다",
+    "fr": "",
+    "ru": ""
+  },
+  "Câu hỏi": {
+    "en": "Question",
+    "zh": "问题",
+    "ja": "質問",
+    "ko": "물어보기",
+    "fr": "",
+    "ru": ""
+  },
+  "Tìm kiếm": {
+    "en": "Search",
+    "zh": "搜索",
+    "ja": "検索",
+    "ko": "찾다",
+    "fr": "",
+    "ru": ""
+  },
+  "Xem video": {
+    "en": "Watch"
+  },
+  "Tình trạng": {
+    "en": "Status",
+    "zh": "地位",
+    "ja": "状態",
+    "ko": "상태",
+    "fr": "",
+    "ru": ""
+  },
+  "Thương hiệu": {
+    "en": "Trademark",
+    "zh": "商标",
+    "ja": "商標",
+    "ko": "등록 상표",
+    "fr": "",
+    "ru": ""
+  },
+  "Mua nhanh": {
+    "en": "Quick purchase",
+    "zh": "快速购买",
+    "ja": "クイック購入",
+    "ko": "빠른 구매",
+    "fr": "",
+    "ru": ""
+  },
+
+  "Thêm vào giỏ hàng": {
+    "en": "Add to cart",
+    "zh": "添加到购物车",
+    "ja": "カートに追加",
+    "ko": "장바구니에 추가",
+    "fr": "",
+    "ru": ""
+  },
+  "Thêm": {
+    "en": "Add",
+    "zh": "加上",
+    "ja": "たす",
+    "ko": "추가하려면",
+    "fr": "",
+    "ru": ""
+  },
+  "Bạn tìm kiếm nội dung": {
+    "en": "You search for content",
+    "zh": "您搜索内容",
+    "ja": "コンテンツを検索します",
+    "ko": "당신은 콘텐츠를 검색",
+    "fr": "",
+    "ru": ""
+  },
+  "Thông tin về sản phẩm và nhiều kiến thức bổ ích khác": {
+    "en": "Product information and many other useful knowledge",
+    "zh": "产品信息和许多其他有用的知识",
+    "ja": "製品情報および他の多くの有用な知識",
+    "ko": "제품 정보 및 기타 유용한 지식",
+    "fr": "",
+    "ru": ""
+  },
+  "Hết hàng": {},
+  "Giá": {
+    "en": "Price",
+    "zh": "价钱",
+    "ja": "価格",
+    "ko": "가격",
+    "fr": "Prix",
+    "ru": "Цена"
+  },
+  "Ngôn ngữ": {
+    "en": "Language",
+    "zh": "语",
+    "ja": "言語",
+    "ko": "언어",
+    "fr": "Langue",
+    "ru": "Язык"
+  },
+  "Ưa chuộng": {
+    "en": "Popularity",
+    "zh": "人气",
+    "ja": "人気",
+    "ko": "인기",
+    "fr": "",
+    "ru": ""
+  },
+  "Xem thêm": {
+    "en": "Read more",
+    "zh": "立即看",
+    "ja": "今見る",
+    "ko": "인기",
+    "fr": "",
+    "ru": ""
+  }
+}

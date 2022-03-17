@@ -1,0 +1,30 @@
+{
+  "name": "@itoa/fields-remote-relationship",
+  "description": "ItoaJS remoteRelationship Field Type",
+  "version": "1.0.0",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "main": "dist/fields-remote-relationship.cjs.js",
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/fields-remote-relationship",
+  "homepage": "https://github.com/itoa-vn/itoa",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "@itoa/access-control": "^8.0.7",
+    "@itoa/adapter-mongoose": "^12.0.8",
+    "@itoa/app-admin-ui": "11.0.8",
+    "@itoa/fields": "^24.2.8",
+    "@itoa/server-side-graphql-client": "^3.0.7",
+    "@itoa/utils": "^8.0.7",
+    "apollo-errors": "^1.9.0",
+    "lodash.groupby": "^4.6.0",
+    "mongoose": "^5.12.13",
+    "p-settle": "^4.1.1"
+  },
+  "devDependencies": {
+    "@itoa/test-utils": "*"
+  },
+  "module": "dist/fields-remote-relationship.esm.js"
+}

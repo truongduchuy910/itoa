@@ -1,0 +1,24 @@
+.more {
+  padding: 14px;
+  background-color: rgba(3, 3, 3, 0.05);
+  min-height: 80px;
+  height: 80%;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* font-weight: bold; */
+  transition: all 0.3s ease;
+}
+.more:hover {
+  background-color: rgba(3, 3, 3, 0.1);
+}
+.center {
+  text-align: center;
+}
+.icon {
+  font-size: 1rem;
+  display: block;
+}

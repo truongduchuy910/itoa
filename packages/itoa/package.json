@@ -1,0 +1,66 @@
+{
+  "name": "@itoa/itoa",
+  "description": "The main @itoa class & CLI. This is where the magic happens.",
+  "version": "2.0.8",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "bin": {
+    "itoa": "bin/cli.js"
+  },
+  "dependencies": {
+    "@apollo/subgraph": "^0.3.1",
+    "@itoa/access-control": "^8.0.7",
+    "@itoa/app-version": "^3.0.8",
+    "@itoa/session": "^10.0.7",
+    "@itoa/utils": "^8.0.7",
+    "apollo-errors": "^1.9.0",
+    "apollo-server": "^3.6.4",
+    "apollo-server-express": "^2.23.0",
+    "arg": "^5.0.0",
+    "chalk": "^4.1.2",
+    "ci-info": "^3.2.0",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "endent": "^2.1.0",
+    "ensure-error": "^3.0.1",
+    "express": "^4.17.1",
+    "express-pino-logger": "^6.0.0",
+    "falsey": "^1.0.0",
+    "fs-extra": "^10.0.0",
+    "globby": "^11.0.3",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.7.0",
+    "graphql-type-json": "^0.3.2",
+    "graphql-upload": "^11.0.0",
+    "lodash.flattendeep": "^4.4.0",
+    "micro-memoize": "^4.0.9",
+    "ora": "^5.4.1",
+    "p-waterfall": "^2.1.1",
+    "pino": "^7.3.0",
+    "pluralize": "^8.0.0",
+    "serialize-error": "^8.1.0",
+    "stack-utils": "^2.0.5",
+    "terminal-link": "^2.1.1"
+  },
+  "devDependencies": {
+    "@itoa/fields": "^24.2.8",
+    "@itoa/test-utils": "*",
+    "p-is-promise": "^3.0.0",
+    "tmp": "^0.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itoa-vn/itoa/tree/main/packages/itoa"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

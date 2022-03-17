@@ -1,0 +1,37 @@
+{
+  "name": "@itoa/fields-location-google",
+  "description": "ItoaJS LocationGoogle field type.",
+  "version": "4.0.8",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/fields-location-google",
+  "homepage": "https://github.com/itoa-vn/itoa",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@arch-ui/fields": "^3.0.8",
+    "@arch-ui/select": "^0.1.12",
+    "@babel/runtime": "^7.14.6",
+    "@emotion/core": "^10.1.1",
+    "@itoa/adapter-mongoose": "^12.0.8",
+    "@itoa/fields": "^24.2.8",
+    "cuid": "^2.1.8",
+    "google-maps-react": "^2.0.6",
+    "mongoose": "^5.12.13",
+    "node-fetch": "^3.1.0",
+    "react": "^17.0.2",
+    "react-toast-notifications": "^2.4.4"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.js",
+      "views/*.js"
+    ]
+  },
+  "main": "dist/fields-location-google.cjs.js",
+  "module": "dist/fields-location-google.esm.js"
+}

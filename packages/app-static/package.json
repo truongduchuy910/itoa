@@ -1,0 +1,21 @@
+{
+  "name": "@itoa/app-static",
+  "description": "ItoaJS Static File App.",
+  "version": "6.0.7",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "express-history-api-fallback": "^2.2.1",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/app-static"
+}

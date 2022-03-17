@@ -1,0 +1,154 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: brown;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --color: black;
+  --bg-color: white;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+input {
+  border: none;
+  background-color: transparent;
+  padding-left: 13px;
+  color: var(--color);
+  border-bottom: 2px solid var(--bg-color);
+  font-size: 18px;
+  margin-bottom: 13px;
+  margin-right: 13px;
+  width: 100%;
+}
+input::-webkit-input-placeholder {
+  color: var(--color) !important;
+}
+input::-moz-placeholder {
+  color: var(--color) !important;
+}
+input:-ms-input-placeholder {
+  color: var(--color) !important;
+}
+input::-ms-input-placeholder {
+  color: var(--color) !important;
+}
+input::placeholder {
+  color: var(--color) !important;
+}
+a,
+i,
+label {
+  color: var(--color) !important;
+  font-size: 1rem;
+  display: block;
+}
+i > svg {
+  color: var(--bg-color);
+}
+a:not([href]):not([class]):hover {
+  text-decoration: underline;
+}
+h2 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 0.85rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary);
+  margin-top: 13px;
+  text-align: center;
+}
+h5,
+h6 {
+  color: var(--primary);
+  margin-top: 13px;
+}
+p {
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 51px;
+}
+
+button {
+  color: var(--color);
+  border: 1px solid var(--color);
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 21px;
+  padding: 3px 13px 3px 13px;
+  transition: background-color 0.5s ease-out;
+}
+button:hover {
+  background-color: var(--color);
+  color: var(--color);
+}
+th {
+  padding-right: 21px;
+
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-item {
+  margin-bottom: 0px !important;
+}
+
+.navbar-toggler:hover {
+  color: var(--color);
+  background-color: var(--color);
+}
+p {
+  color: var(--color);
+}
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none !important;
+  }
+  .hide-md {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+  .hide-sm {
+    display: inline-block;
+  }
+} */

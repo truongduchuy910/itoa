@@ -1,0 +1,120 @@
+{
+  "Danh mục": {
+    "en": "Categories",
+    "zh": "编目",
+    "ja": "ポートフォリオ",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Sản phẩm": {
+    "en": "Products",
+    "zh": "产品",
+    "ja": "製品",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Liên hệ": {
+    "en": "Contact",
+    "zh": "联系",
+    "ja": "コンタクト",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Trang chủ": {
+    "en": "Home",
+    "zh": "主页",
+    "ja": "ホームページ",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Bài viết": {
+    "en": "Posts",
+    "zh": "故事",
+    "ja": "記事",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Xem ngay": {
+    "en": "Read more",
+    "zh": "立即看",
+    "ja": "今見る",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Xem thêm": {
+    "en": "Read more",
+    "zh": "立即看",
+    "ja": "今見る",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Gọi ngay": {
+    "en": "Call now",
+    "zh": "热线",
+    "ja": "今すぐお電話ください",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Đối tác": {
+    "en": "Partner",
+    "zh": "伙伴",
+    "ja": "相棒",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi": {
+    "en": "Customer Satisfaction is our Goal!",
+    "zh": "",
+    "ja": "顧客満足は私達の目的です!",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Mô tả": {
+    "en": "Description",
+    "zh": "描述",
+    "ja": "説明",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Chi tiết": {
+    "en": "Detail",
+    "zh": "细节",
+    "ja": "詳細",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Hướng dẫn": {
+    "en": "Guide",
+    "zh": "指导",
+    "ja": "指导",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Câu hỏi": {
+    "en": "Question",
+    "zh": "问题",
+    "ja": "質問",
+    "ko": "",
+    "fr": "",
+    "ru": ""
+  },
+  "Tìm kiếm": {
+    "en": "Search"
+  },
+  "Xem video": {
+    "en": "Watch"
+  }
+}

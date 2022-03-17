@@ -1,0 +1,23 @@
+{
+  "name": "@itoa/session",
+  "description": "Tools to assist with setting up session management in your Itoa system.",
+  "version": "10.0.7",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "main": "dist/session.cjs.js",
+  "module": "dist/session.esm.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "@types/cookie": "^0.4.1",
+    "@types/express-session": "^1.17.4",
+    "cookie": "^0.4.1",
+    "cookie-signature": "^1.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "graphql-request": "^3.7.0"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/session"
+}

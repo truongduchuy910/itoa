@@ -1,0 +1,23 @@
+{
+  "name": "@itoa/auth-passport",
+  "description": "Provides Social Authentication Strategies based on PassportJS.",
+  "version": "7.0.8",
+  "author": "The ItoaJS Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@itoa/fields": "^24.2.8",
+    "@itoa/session": "^10.0.7",
+    "express": "^4.17.1",
+    "nanoassert": "^2.0.0",
+    "passport": "^0.5.0",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-twitter": "^1.0.4",
+    "passport-wordpress": "^0.0.4"
+  },
+  "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/auth-passport"
+}

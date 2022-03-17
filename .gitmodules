@@ -1,0 +1,6 @@
+[submodule "projects/seller"]
+	path = projects/seller
+	url = git@github.com:itoa-vn/seller.git
+[submodule "projects/accounts"]
+	path = projects/accounts
+	url = git@github.com:itoa-vn/accounts.git

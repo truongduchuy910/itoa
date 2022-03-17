@@ -1,0 +1,14 @@
+.bg {
+  background-color: #efefef;
+}
+.box {
+  color: #999;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 0.8rem;
+}
+.back {
+  padding-left: 13px;
+  padding-right: 21px;
+  cursor: pointer;
+}
