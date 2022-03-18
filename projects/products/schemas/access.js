@@ -1,13 +1,13 @@
-const { ram } = require("@itoa/cache");
+// const { ram } = require("@itoa/cache");
+var ram = {};
 var whitelist = [
-  "itoa.vn",
-  "ecom.itoa.vn",
-  "seller.itoa.vn",
-  "gateway.itoa.vn",
-  "seller-w.itoa.vn",
+  'itoa.vn',
+  'ecom.itoa.vn',
+  'seller.itoa.vn',
+  'gateway.itoa.vn',
+  'seller-w.itoa.vn',
 ];
-if (process.env.NODE_ENV === "development")
-  whitelist.push("localhost:3000", "localhost:3001");
+if (process.env.NODE_ENV === 'development') whitelist.push('localhost:3000', 'localhost:3001');
 /**
  *
  * @param {Object} context
@@ -16,13 +16,13 @@ if (process.env.NODE_ENV === "development")
 
 function domain(context = {}, authentication = {}) {
   const { item: user } = authentication;
-  if (!context.req) throw new Error("Missing request");
+  if (!context.req) throw new Error('Missing request');
   const { sessionID, headers } = context.req;
-  if (!sessionID) throw new Error("Missing session");
-  if (!headers) throw new Error("Missing headers");
+  if (!sessionID) throw new Error('Missing session');
+  if (!headers) throw new Error('Missing headers');
   var { referer, as } = headers;
-  var host = as && as !== "null" ? as : referer;
-  var domain = host.split("/")[2] || host;
+  var host = as && as !== 'null' ? as : referer;
+  var domain = host.split('/')[2] || host;
   if (user && user.isSeller && user.domain && whitelist.includes(domain)) {
     return user.domain;
   }
@@ -35,10 +35,10 @@ function domain(context = {}, authentication = {}) {
  * @return UserWhereUniqueInput
  */
 function user(domain) {
-  if (!domain) throw new Error("Missing domain.");
+  if (!domain) throw new Error('Missing domain.');
   const { allUsers = [] } = ram;
 
-  const _user = allUsers.find((_user) => {
+  const _user = allUsers.find(_user => {
     const { id, domain: _domain } = _user;
     return _domain && _domain.includes(domain);
   });
@@ -98,26 +98,26 @@ function sellerRead({ authentication = {}, context }) {
 
 function sellerCreate({ authentication = {}, context }) {
   if (isAdmin(authentication)) return true;
-  if (!isSeller(authentication)) throw new Error("Only seller can create.");
+  if (!isSeller(authentication)) throw new Error('Only seller can create.');
   domain(context, authentication);
   return true;
 }
 
 function sellerUpdate({ authentication = {}, context }) {
   if (isAdmin(authentication)) return true;
-  if (!isSeller(authentication)) throw new Error("Only seller can update.");
+  if (!isSeller(authentication)) throw new Error('Only seller can update.');
   domain(context, authentication);
   return isCreatedBy(authentication);
 }
 
 function sellerDelete({ authentication = {}, context }) {
   if (isAdmin(authentication)) return true;
-  if (!isSeller(authentication)) throw new Error("Only seller can delete.");
+  if (!isSeller(authentication)) throw new Error('Only seller can delete.');
   domain(context, authentication);
   return isCreatedBy(authentication);
 }
 const roleSeller = {
-  name: "roleSeller",
+  name: 'roleSeller',
   read: sellerRead,
   create: sellerCreate,
   update: sellerUpdate,
@@ -132,7 +132,7 @@ function memberRead({ authentication = {}, context }) {
 }
 
 function memberCreate({ authentication = {}, context }) {
-  if (!isAuth(authentication)) throw new Error("You need to login first.");
+  if (!isAuth(authentication)) throw new Error('You need to login first.');
   domain(context, authentication);
   return true;
 }
@@ -150,7 +150,7 @@ function memberDelete({ authentication = {}, context }) {
 }
 
 const roleMember = {
-  name: "roleMember",
+  name: 'roleMember',
   read: memberRead,
   create: memberCreate,
   update: memberUpdate,
@@ -186,7 +186,7 @@ function anyDelete({ authentication = {}, context }) {
   return { of: user(domain(context, authentication)) };
 }
 const roleAny = {
-  name: "roleAny",
+  name: 'roleAny',
   read: anyRead,
   create: anyCreate,
   update: anyUpdate,
@@ -196,7 +196,7 @@ const roleAny = {
  * PAGE
  */
 const modelPage = {
-  name: "modelPage",
+  name: 'modelPage',
   read: sellerRead,
   create: sellerCreate,
   update: sellerUpdate,
@@ -213,9 +213,7 @@ function userRead({ authentication = {}, context }) {
     const _domain = domain(context, authentication);
     if (isAdmin(authentication)) return true;
     const { item = {} } = authentication;
-    session.userRead = item.isSeller
-      ? { id: authentication.item.id }
-      : { domain: _domain };
+    session.userRead = item.isSeller ? { id: authentication.item.id } : { domain: _domain };
   }
   return session.userRead;
 }
@@ -223,7 +221,7 @@ function userCreate({ authentication, context }) {
   return true;
 }
 function userUpdate({ authentication, context }) {
-  if (!isAuth(authentication)) throw new Error("You need to login first.");
+  if (!isAuth(authentication)) throw new Error('You need to login first.');
   if (isAdmin(authentication)) return true;
   return { id: authentication.item.id };
 }
@@ -231,7 +229,7 @@ function userDelete({ authentication, context }) {
   return false;
 }
 const modelUser = {
-  name: "modelUser",
+  name: 'modelUser',
   read: userRead,
   create: userCreate,
   update: userUpdate,

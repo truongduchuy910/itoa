@@ -1,1 +1,0 @@
-Nút xóa khỏi giỏ hàng

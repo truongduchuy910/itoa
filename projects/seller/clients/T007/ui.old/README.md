@@ -1,3 +1,0 @@
-# ui
-
-## CONTRIBUTOR GUIDE

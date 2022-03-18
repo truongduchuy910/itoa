@@ -1,8 +1,0 @@
-- Banner
-- Carousel
-- Contact
-- FAQ
-- Service
-- Team
-- Testimonial
-- User

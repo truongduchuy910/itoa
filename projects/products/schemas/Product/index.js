@@ -1,6 +1,6 @@
 let { Text, Slug, Currency, Relationship } = require('@itoa/fields');
 const { atTracking } = require('@itoa/list-plugins');
-const RemoteRelationship = require('@itoa/fields-remote-relationship');
+// const RemoteRelationship = require('@itoa/fields-remote-relationship');
 module.exports = {
   active: true,
   fields: {
@@ -24,12 +24,12 @@ module.exports = {
         isReadOnly: true,
       },
     },
-    hashtag: {
-      type: RemoteRelationship,
-      ref: 'User',
-      throught: 'ProductRemote',
-      url: 'http://localhost:3000/admin/api',
-    },
+    // hashtag: {
+    //   type: RemoteRelationship,
+    //   ref: 'User',
+    //   throught: 'ProductRemote',
+    //   url: 'http://localhost:3000/admin/api',
+    // },
   },
   labelField: 'name',
   cacheHint: {

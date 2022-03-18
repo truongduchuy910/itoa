@@ -1,3 +1,0 @@
-##
-
-trungtamamnhacdanang.com NEW VERSION

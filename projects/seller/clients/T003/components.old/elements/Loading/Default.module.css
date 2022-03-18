@@ -1,8 +1,0 @@
-.box {
-  width: 100%;
-  background-color: rgba(3, 3, 3, 0.1);
-  transform: all 0.3s ease;
-  display: block;
-  padding: 0px !important;
-  min-height: 50px;
-}

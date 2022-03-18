@@ -1,9 +1,0 @@
-rm -fr clients/T001/.next
-rm -fr clients/T002/.next
-rm -fr clients/T003/.next
-rm -fr clients/T004/.next
-rm -fr clients/T005/.next
-rm -fr clients/T006/.next
-rm -fr clients/T007/.next
-rm -fr clients/T008/.next
-rm -fr clients/T009/.next
