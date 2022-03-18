@@ -1,7 +1,7 @@
 const { LocalFileAdapter } = require('@itoa/file-adapters');
 const path = require('path');
 const fs = require('fs');
-var Jimp = require('jimp');
+// var Jimp = require('jimp');
 const { Images, File } = require('@itoa/fields');
 const public_path = './public';
 const sizes = [
@@ -27,54 +27,54 @@ const fileAdapter = new LocalFileAdapter({
 });
 var count = { remove: 0, resize: 0, exist: 0, valid: 0, missing: 0 };
 
-async function resize(filename) {
-  if (!filename) return;
-  //
-  const _filename = path.join(public_path, '/upload/img', filename);
-  if (!fs.existsSync(_filename)) {
-    count.missing++; // normal missing
-    return; // - MISSING NORMAL FILE!
-  }
-  //
-  count.exist++; // normal exist
-  // MOVE
-  for (var i in sizes) {
-    const size = sizes[i];
-    const des = size.name.length
-      ? path.join(public_path, '/upload/img', size.name, filename)
-      : path.join(public_path, '/upload/img', filename);
-    try {
-      if (_filename !== des) fs.copyFileSync(_filename, des, fs.constants.COPYFILE_EXCL);
-    } catch (err) {
-      console.log(err, des);
-      //
-    }
-    // RESIZE, VALID
-    try {
-      const _dest = await Jimp.read(des);
-      const width = _dest.getWidth();
-      const height = _dest.getHeight();
-      if (width > height) {
-        if (width > size.size) {
-          _dest.resize(size.size, Jimp.AUTO).write(des);
-          count.resize++;
-        } else {
-          count.valid++;
-        }
-      } else {
-        if (height > size.size) {
-          _dest.resize(Jimp.AUTO, size.size).write(des);
-          count.resize++;
-        } else {
-          count.valid++;
-        }
-      }
-    } catch (err) {
-      //
-      console.log(err, des);
-    }
-  }
-}
+// async function resize(filename) {
+//   if (!filename) return;
+//   //
+//   const _filename = path.join(public_path, '/upload/img', filename);
+//   if (!fs.existsSync(_filename)) {
+//     count.missing++; // normal missing
+//     return; // - MISSING NORMAL FILE!
+//   }
+//   //
+//   count.exist++; // normal exist
+//   // MOVE
+//   for (var i in sizes) {
+//     const size = sizes[i];
+//     const des = size.name.length
+//       ? path.join(public_path, '/upload/img', size.name, filename)
+//       : path.join(public_path, '/upload/img', filename);
+//     try {
+//       if (_filename !== des) fs.copyFileSync(_filename, des, fs.constants.COPYFILE_EXCL);
+//     } catch (err) {
+//       console.log(err, des);
+//       //
+//     }
+//     // RESIZE, VALID
+//     try {
+//       const _dest = await Jimp.read(des);
+//       const width = _dest.getWidth();
+//       const height = _dest.getHeight();
+//       if (width > height) {
+//         if (width > size.size) {
+//           _dest.resize(size.size, Jimp.AUTO).write(des);
+//           count.resize++;
+//         } else {
+//           count.valid++;
+//         }
+//       } else {
+//         if (height > size.size) {
+//           _dest.resize(Jimp.AUTO, size.size).write(des);
+//           count.resize++;
+//         } else {
+//           count.valid++;
+//         }
+//       }
+//     } catch (err) {
+//       //
+//       console.log(err, des);
+//     }
+//   }
+// }
 async function removes(filename) {
   if (!filename) return;
   sizes.map(size => {
@@ -90,27 +90,27 @@ async function removes(filename) {
  * @param {LocalFileAdapter} adapter
  * @returns
  */
-function imageHooks(file) {
-  return {
-    resolveInput: async ({ resolvedData = {}, existingItem = {}, operation }) => {
-      const _new = resolvedData[file];
-      const _old = existingItem[file];
-      if (operation === 'create') {
-        if (_new) resize(_new.filename);
-      }
-      if (operation === 'update') {
-        if (_new) resize(_new.filename);
-        if (_new && _old) removes(_old.filename);
-      }
-      return _new;
-    },
-    afterDelete: async ({ resolvedData = {}, existingItem = {} }) => {
-      const _old = existingItem[file];
-      if (_old) removes(_old.filename);
-      return resolvedData;
-    },
-  };
-}
+// function imageHooks(file) {
+//   return {
+//     resolveInput: async ({ resolvedData = {}, existingItem = {}, operation }) => {
+//       const _new = resolvedData[file];
+//       const _old = existingItem[file];
+//       if (operation === 'create') {
+//         if (_new) resize(_new.filename);
+//       }
+//       if (operation === 'update') {
+//         if (_new) resize(_new.filename);
+//         if (_new && _old) removes(_old.filename);
+//       }
+//       return _new;
+//     },
+//     afterDelete: async ({ resolvedData = {}, existingItem = {} }) => {
+//       const _old = existingItem[file];
+//       if (_old) removes(_old.filename);
+//       return resolvedData;
+//     },
+//   };
+// }
 /**
  * FILE HOOK
  * @param {*} file
@@ -140,7 +140,7 @@ function image(field = 'image', label, isRequired = false) {
     [field]: {
       type: File,
       adapter: imageAdapter,
-      hooks: imageHooks(field),
+      // hooks: imageHooks(field),
       label,
       isRequired,
       adminConfig: { className: 'col-sm-12 col-md-6' },
@@ -155,7 +155,7 @@ function file(field = 'file', label, isRequired = false) {
     [field]: {
       type: File,
       adapter: fileAdapter,
-      hooks: fileHooks('file'),
+      // hooks: fileHooks('file'),
       label,
       isRequired,
     },

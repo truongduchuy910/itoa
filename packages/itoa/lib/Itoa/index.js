@@ -466,11 +466,21 @@ module.exports = class Itoa {
   }
 
   createApolloServer({ apolloConfig = {}, schemaName, dev }) {
+    const context = ({ req }) => ({
+      ...this.createContext({
+        schemaName,
+        authentication: { item: req.user, listKey: req.authedListKey },
+        skipAccessControl: false,
+      }),
+      ...this._sessionManager.getContext(req),
+      req,
+    });
     // gateway mode
     if (this.gateway) {
       const server = new ApolloServer({
         gateway: this.gateway,
         schemaName: 'internal',
+        context,
         uploads: false, // User cannot override this as it would clash with the upload middleware
         subscriptions: false,
       });
@@ -483,15 +493,7 @@ module.exports = class Itoa {
       const server = new ApolloServer({
         typeDefs,
         resolvers,
-        context: ({ req }) => ({
-          ...this.createContext({
-            schemaName,
-            authentication: { item: req.user, listKey: req.authedListKey },
-            skipAccessControl: false,
-          }),
-          ...this._sessionManager.getContext(req),
-          req,
-        }),
+        context,
         ...(process.env.ENGINE_API_KEY || process.env.APOLLO_KEY
           ? {
               tracing: true,

@@ -4,3 +4,6 @@
 [submodule "projects/accounts"]
 	path = projects/accounts
 	url = git@github.com:itoa-vn/accounts.git
+[submodule "projects/api"]
+	path = projects/api
+	url = git@github.com:itoa-vn/api.git

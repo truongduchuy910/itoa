@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@itoa/fields-mongoid": "^10.0.8",
-    "@itoa/itoa": "^2.0.8",
+    "@itoa/itoa": "^2.0.9",
     "@itoa/utils": "^8.0.7",
     "cuid": "^2.1.8",
     "mongoose": "^5.12.13",

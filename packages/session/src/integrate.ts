@@ -30,7 +30,7 @@ export class SessionIntergrate {
         sameSite: false,
       },
       name: this.COOKIE_NAME,
-      ...options
+      ...options,
     };
 
     if (!this.options.secret) {
@@ -43,7 +43,9 @@ export class SessionIntergrate {
         Trong trường hợp chưa được thêm. Biến cookieSecret được sinh ngẫu nhiên trong mỗi lần chạy.
         Nghĩa là các session sẽ khác nhau sau khi khởi động lại.`);
 
-        this.options.secret = [...Array(30)].map(() => ((Math.random() * 36) | 0).toString(36)).join('');
+        this.options.secret = [...Array(30)]
+          .map(() => ((Math.random() * 36) | 0).toString(36))
+          .join('');
       }
     }
 

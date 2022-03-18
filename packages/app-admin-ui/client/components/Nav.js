@@ -345,6 +345,9 @@ const UserInfo = ({ authListPath }) => {
   const { data: { user } = {}, loading } = useQuery(AUTHED_USER_QUERY, {
     onCompleted: ({ user }) => {
       if (!user) window.location.href = '/admin/signin';
+      else {
+        console.log('welcome', user);
+      }
     },
     client: authClient,
   });
@@ -439,12 +442,15 @@ const PrimaryNavContent = ({ mouseIsOverNav }) => {
     listKeys,
     pages,
     authStrategy: { listKey: authListKey } = {},
+    authService,
   } = useAdminMeta();
 
   return (
     <Inner>
       {/* <UserInfo authListPath={`users`} /> */}
-      {authListKey && <UserInfo authListPath={getListByKey(authListKey).fullPath} />}
+      {(authListKey || authService) && (
+        <UserInfo authListPath={getListByKey(authListKey)?.fullPath || 'users'} />
+      )}
       <ActionItems mouseIsOverNav={mouseIsOverNav} />
       <PrimaryNavItems
         adminPath={adminPath}

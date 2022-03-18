@@ -86,7 +86,6 @@ export class SessionManager {
       req.headers.cookie = Object.entries(cookies)
         .map(([name, value]) => `${name}=${value}`)
         .join('; ');
-
       // Always call next
       next();
     };

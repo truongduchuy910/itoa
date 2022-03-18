@@ -600,7 +600,6 @@ module.exports = class List {
           break;
       }
     }
-
     return results;
   }
 

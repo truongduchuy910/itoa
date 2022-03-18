@@ -26,7 +26,7 @@
     "@itoa/fields-color": "^2.0.7",
     "@itoa/fields-mongoid": "^10.0.7",
     "@itoa/file-adapters": "^8.0.7",
-    "@itoa/itoa": "^2.0.8",
+    "@itoa/itoa": "^2.0.9",
     "@itoa/list-plugins": "^10.0.7"
   },
   "devDependencies": {

@@ -1,8 +1,7 @@
 {
     "scripts": {
-      "basic": "yarn --cwd basic",
+      "api": "yarn --cwd api",
       "gateway": "yarn --cwd gateway",
-      "products": "yarn --cwd products",
       "accounts": "yarn --cwd accounts",
       "seller": "yarn --cwd seller"
     },

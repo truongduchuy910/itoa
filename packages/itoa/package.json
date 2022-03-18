@@ -1,7 +1,7 @@
 {
   "name": "@itoa/itoa",
   "description": "The main @itoa class & CLI. This is where the magic happens.",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
