@@ -47,6 +47,7 @@ export default class List {
     this.itemQuery = gql`
       query getItem($id: ID!) {
         ${itemQueryName}(where: { id: $id }) {
+          id
           _label_
           ${this.fields.map(field => field.getQueryFragment()).join('\n')}
         }

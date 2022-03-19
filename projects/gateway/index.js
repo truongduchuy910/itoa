@@ -21,11 +21,28 @@ class AuthenticatedDataSource extends RemoteGraphQLDataSource {
     }
   }
 }
+class CookieDataSource extends RemoteGraphQLDataSource {
+  didReceiveResponse({ response, request, context }) {
+    if (context.req) {
+      // console.log(context.req.body.query);
+    }
+    const { errors = [] } = response;
+    if (errors.length) {
+      errors.map(error => console.log(JSON.stringify(error)));
+    }
+    return response;
+  }
+  willSendRequest({ request, context }) {
+    if (context.req) {
+      request.http.headers = context.req.headers;
+    }
+  }
+}
 
 const gateway = new ApolloGateway({
   supergraphSdl,
   buildService({ name, url }) {
-    return new AuthenticatedDataSource({ url });
+    return new CookieDataSource({ url });
   },
 });
 

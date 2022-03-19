@@ -529,7 +529,6 @@ module.exports = class List {
       gqlName,
       info,
     });
-
     graphqlLogger.debug({ id, operation, type: opToType[operation], gqlName }, 'End query');
     return result;
   }
@@ -1171,6 +1170,7 @@ module.exports = class List {
       return {};
     }
     const fieldResolvers = {
+      // GATEWAY RESOLVE
       // https://www.apollographql.com/docs/federation/api/apollo-subgraph/#__resolvereference
       // https://www.apollographql.com/docs/federation/entities#reference-resolvers
       __resolveReference: (reference, context, info) => {
