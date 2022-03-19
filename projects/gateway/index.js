@@ -8,9 +8,9 @@ const { reads } = require('./lib/files');
 
 const supergraphSdl = new IntrospectAndCompose({
   subgraphs: [
-    { name: 'basic', url: 'http://localhost:3000/admin/api' },
-    { name: 'seller', url: 'http://localhost:3001/admin/api' },
-    { name: 'api', url: 'http://localhost:3002/admin/api' },
+    { name: 'account', url: 'http://localhost:3000/admin/api' },
+    // { name: 'seller', url: 'http://localhost:3001/admin/api' },
+    // { name: 'api', url: 'http://localhost:3002/admin/api' },
   ],
 });
 
@@ -21,28 +21,11 @@ class AuthenticatedDataSource extends RemoteGraphQLDataSource {
     }
   }
 }
-class CookieDataSource extends RemoteGraphQLDataSource {
-  didReceiveResponse({ response, request, context }) {
-    if (context.req) {
-      // console.log(context.req.body.query);
-    }
-    const { errors = [] } = response;
-    if (errors.length) {
-      errors.map(error => console.log(JSON.stringify(error)));
-    }
-    return response;
-  }
-  willSendRequest({ request, context }) {
-    if (context.req) {
-      request.http.headers = context.req.headers;
-    }
-  }
-}
 
 const gateway = new ApolloGateway({
   supergraphSdl,
   buildService({ name, url }) {
-    return new CookieDataSource({ url });
+    return new AuthenticatedDataSource({ url });
   },
 });
 
