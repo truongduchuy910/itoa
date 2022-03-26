@@ -1,5 +1,6 @@
 {
     "scripts": {
+      "example": "yarn --cwd example",
       "api": "yarn --cwd api",
       "gateway": "yarn --cwd gateway",
       "accounts": "yarn --cwd accounts",

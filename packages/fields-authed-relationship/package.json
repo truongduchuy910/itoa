@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@itoa/fields": "^24.2.8"
+    "@itoa/fields": "^24.2.9"
   },
   "devDependencies": {
     "@itoa/auth-password": "*",

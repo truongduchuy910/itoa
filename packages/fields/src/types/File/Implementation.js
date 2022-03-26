@@ -8,13 +8,16 @@ import mongoose from 'mongoose';
 mongoose.set('objectIdGetter', false);
 
 export class File extends Implementation {
-  constructor(path, { adapter }) {
+  constructor(path, { adapter, adminConfig }) {
     super(...arguments);
     this.graphQLOutputType = 'File';
     this.fileAdapter = adapter;
-
+    this.host = adminConfig.host;
     if (!this.fileAdapter) {
       throw new Error(`No file adapter provided for File field.`);
+    }
+    if (!this.host) {
+      throw new Error(`No file host name provided for File field.`);
     }
   }
   get _supportsUnique() {
@@ -38,6 +41,7 @@ export class File extends Implementation {
         path: String
         filename: String
         originalFilename: String
+        host: String
         mimetype: String
         encoding: String
         publicUrl: String
@@ -101,8 +105,7 @@ export class File extends Implementation {
           ? new mongoose.Types.ObjectId()
           : cuid(),
     });
-
-    return { id, filename, originalFilename, mimetype, encoding, _meta };
+    return { id, filename, originalFilename, mimetype, host: this.host, encoding, _meta };
   }
 
   gqlUpdateInputFields() {
@@ -117,6 +120,7 @@ export class File extends Implementation {
       path: string;
       filename: string;
       originalFilename: string;
+      host: string;
       mimetype: string;
       encoding: string;
       _meta: Record<string, any>
@@ -146,6 +150,7 @@ export class MongoFileInterface extends CommonFileInterface(MongooseFieldAdapter
         originalFilename: String,
         mimetype: String,
         encoding: String,
+        host: String,
         _meta: Object,
       },
     };

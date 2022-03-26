@@ -13,7 +13,7 @@
     "@arch-ui/popout": "^0.0.26",
     "@babel/runtime": "^7.14.6",
     "@emotion/core": "^10.1.1",
-    "@itoa/fields": "^24.2.8",
+    "@itoa/fields": "^24.2.9",
     "react-color": "^2.19.3"
   },
   "peerDependencies": {

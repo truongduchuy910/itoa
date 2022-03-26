@@ -15,7 +15,7 @@
     "@arch-ui/typography": "^0.0.21",
     "@babel/runtime": "^7.14.6",
     "@emotion/core": "^10.1.1",
-    "@itoa/fields": "^24.2.8",
+    "@itoa/fields": "^24.2.9",
     "@primer/octicons-react": "^11.3.0",
     "codemirror": "^5.64.0",
     "prop-types": "^15.7.2",

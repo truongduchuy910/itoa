@@ -46,7 +46,7 @@
     "terminal-link": "^2.1.1"
   },
   "devDependencies": {
-    "@itoa/fields": "^24.2.8",
+    "@itoa/fields": "^24.2.9",
     "@itoa/test-utils": "*",
     "p-is-promise": "^3.0.0",
     "tmp": "^0.2.1"

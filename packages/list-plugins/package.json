@@ -8,7 +8,7 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/fields": "^24.2.8",
+    "@itoa/fields": "^24.2.9",
     "@itoa/fields-authed-relationship": "^2.0.7"
   },
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/list-plugins"

@@ -1,0 +1,8 @@
+{
+    "scripts": {
+      "file": "yarn --cwd file"
+    },
+    "repository": "https://github.com/itoajs/itoa-5.git",
+    "homepage": "https://github.com/itoajs/itoa-5",
+    "license": "MIT"
+  }
