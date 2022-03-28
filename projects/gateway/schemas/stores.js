@@ -143,7 +143,7 @@ function image(field = 'image', label, isRequired = false) {
       // hooks: imageHooks(field),
       label,
       isRequired,
-      adminConfig: { className: 'col-sm-12 col-md-6' },
+      adminConfig: { className: 'col-sm-12 col-md-6', host: 'localhost:3004' },
       cacheHint: {
         maxAge: 80,
       },
@@ -156,6 +156,8 @@ function file(field = 'file', label, isRequired = false) {
       type: File,
       adapter: fileAdapter,
       // hooks: fileHooks('file'),
+      adminConfig: { className: 'col-sm-12 col-md-6', host: 'localhost:3004' },
+
       label,
       isRequired,
     },

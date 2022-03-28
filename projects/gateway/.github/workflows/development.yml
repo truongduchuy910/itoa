@@ -1,0 +1,15 @@
+name: Gamma CI
+on:
+  push:
+    branches: [gamma]
+
+jobs:
+  start:
+    runs-on: gamma
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm ci
+      - run: rm -fr dist
+      - run: tar -xvzf dist.tar.gz
+      - run: node ./.github/pm2.js gateway start 3011

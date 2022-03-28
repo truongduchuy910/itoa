@@ -8,9 +8,9 @@ const { reads } = require('./lib/files');
 
 const supergraphSdl = new IntrospectAndCompose({
   subgraphs: [
-    // { name: 'account', url: 'http://gamma.itoa.vn:3000/admin/api' },
-    // { name: 'seller', url: 'http://gamma.itoa.vn:3001/admin/api' },
-    { name: 'api', url: 'http://gamma.itoa.vn:3002/admin/api' },
+    { name: 'account', url: 'http://gamma.itoa.vn:3000/admin/api' },
+    { name: 'seller', url: 'http://localhost:3001/admin/api' },
+    // { name: 'api', url: 'http://gamma.itoa.vn:3002/admin/api' },
   ],
 });
 

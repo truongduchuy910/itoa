@@ -27,7 +27,8 @@
     "@itoa/fields-mongoid": "^10.0.8",
     "@itoa/file-adapters": "^8.0.8",
     "@itoa/itoa": "^2.0.9",
-    "@itoa/list-plugins": "^10.0.8"
+    "@itoa/list-plugins": "^10.0.8",
+    "axios":"^0.26.1"
   },
   "devDependencies": {
     "jest": "^27.3.1",

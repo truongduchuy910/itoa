@@ -124,7 +124,6 @@ module.exports = class List {
       access,
       defaultAccess: this.defaultAccess.list,
     });
-
     this.queryLimits = {
       maxResults: Infinity,
       ...queryLimits,
