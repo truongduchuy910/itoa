@@ -1,16 +1,21 @@
-const { ApolloGateway, IntrospectAndCompose, RemoteGraphQLDataSource } = require('@apollo/gateway');
-const MongoStore = require('connect-mongo');
-const { Itoa } = require('@itoa/itoa');
-const { AdminUIApp } = require('@itoa/app-admin-ui');
-const { GraphQLApp } = require('@itoa/app-graphql');
-const { PasswordAuthStrategy } = require('@itoa/auth-password');
-const { reads } = require('./lib/files');
+require("./environment");
+const {
+  ApolloGateway,
+  IntrospectAndCompose,
+  RemoteGraphQLDataSource,
+} = require("@apollo/gateway");
+const MongoStore = require("connect-mongo");
+const { Itoa } = require("@itoa/itoa");
+const { AdminUIApp } = require("@itoa/app-admin-ui");
+const { GraphQLApp } = require("@itoa/app-graphql");
+const { PasswordAuthStrategy } = require("@itoa/auth-password");
+const { reads } = require("./lib/files");
 
 const supergraphSdl = new IntrospectAndCompose({
   subgraphs: [
-    { name: 'account', url: 'http://gamma.itoa.vn:3000/admin/api' },
-    { name: 'seller', url: 'http://localhost:3001/admin/api' },
-    // { name: 'api', url: 'http://gamma.itoa.vn:3002/admin/api' },
+    { name: "account", url: "http://gamma.itoa.vn:3000/admin/api" },
+    { name: "seller", url: "http://gamma.itoa.vn:3001/admin/api" },
+    { name: "api", url: "http://gamma.itoa.vn:3002/admin/api" },
   ],
 });
 
@@ -32,14 +37,14 @@ const gateway = new ApolloGateway({
 var itoa = new Itoa({
   gateway,
   session: {
-    secret: 'truongduc910',
+    secret: process.env.COOKIE,
     store: new MongoStore({
-      mongoUrl: 'mongodb://localhost:27017/session',
+      mongoUrl: process.env.DB_SESSION,
     }),
   },
-  appName: 'gateway',
+  appName: "gateway",
 });
-const schemas = reads('', './schemas').map(config => {
+const schemas = reads("", "./schemas").map((config) => {
   const schema = require(config.path);
   return { config, schema };
 });
@@ -60,17 +65,17 @@ schemas.map(({ config, schema }) => {
 var apps = [
   new GraphQLApp(),
   new AdminUIApp({
-    name: 'Itoa.vn',
+    name: "Itoa.vn",
     enableDefaultRoute: false,
     authService: {
       gqlNames: {
-        authenticateMutationName: 'authenticateUserWithPassword',
-        authenticatedQueryName: 'authenticatedUser',
-        unauthenticateMutationName: 'unauthenticateUser',
+        authenticateMutationName: "authenticateUserWithPassword",
+        authenticatedQueryName: "authenticatedUser",
+        unauthenticateMutationName: "unauthenticateUser",
       },
-      identityField: 'username',
-      secretField: 'password',
-      uri: '/admin/api',
+      identityField: "username",
+      secretField: "password",
+      uri: "/admin/api",
     },
   }),
 ];

@@ -369,7 +369,7 @@ const UserInfo = ({ authListPath }) => {
         ) : (
           <Truncate
             as={Link}
-            to={`${authUri.split('/').slice(0, 3).join('/') + '/' + authListPath}/${user.id}`}
+            to={`${authUri.split('/').slice(0, 2).join('/') + '/' + authListPath}/${user.id}`}
             css={{ fontWeight: 'bold', color: colors.N90 }}
           >
             {user._label_}
