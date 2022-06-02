@@ -1,7 +1,7 @@
 {
   "name": "@itoa/app-admin-ui",
   "description": "ItoaJS Admin UI App.",
-  "version": "11.0.9",
+  "version": "11.1.0",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
