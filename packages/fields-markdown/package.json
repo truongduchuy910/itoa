@@ -14,13 +14,14 @@
     "@arch-ui/tooltip": "^0.1.17",
     "@arch-ui/typography": "^0.0.21",
     "@babel/runtime": "^7.14.6",
+    "@codemirror/lang-markdown": "^6.0.1",
     "@emotion/core": "^10.1.1",
     "@itoa/fields": "^24.2.9",
     "@primer/octicons-react": "^11.3.0",
+    "@uiw/react-codemirror": "^4.11.4",
     "codemirror": "^5.64.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-codemirror2": "^7.2.1"
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "@itoa/server-side-graphql-client": "*"

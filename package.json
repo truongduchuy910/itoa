@@ -168,11 +168,9 @@
       "packages/test-utils",
       "packages/utils",
       "packages/fields-authed-relationship",
-      "packages/fields-remote-relationship",
       "packages/fields-oembed",
       "packages/fields-markdown",
       "packages/fields-mongoid",
-      "packages/fields-location-google",
       "packages/fields-color",
       "packages/fields"
     ],

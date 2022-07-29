@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { withPseudoState } from 'react-pseudo-state';
+// import { withPseudoState } from 'react-pseudo-state';
 import { useList } from '../../providers/List';
 
 import CreateItemModal from '../../components/CreateItemModal';
@@ -70,7 +70,8 @@ const BoxComponent = ({ focusOrigin, isActive, isHover, isFocus, meta, ...props 
   );
 };
 
-export const Box = withPseudoState(BoxComponent);
+// export const Box = withPseudoState(BoxComponent);
+export const Box = BoxComponent;
 
 export const Name = ({ isHover, ...props }) => (
   <span

@@ -3,7 +3,7 @@
 
 import React, { useState, useMemo, forwardRef } from 'react'; // eslint-disable-line @typescript-eslint/no-unused-vars
 import { Link, useRouteMatch } from 'react-router-dom';
-import PropToggle from 'react-prop-toggle';
+// import PropToggle from 'react-prop-toggle';
 import { uid } from 'react-uid';
 import { jsx } from '@emotion/core';
 
@@ -494,7 +494,7 @@ const Nav = ({ children }) => {
 
   return (
     <PageWrapper>
-      <PropToggle
+      {/* <PropToggle
         isActive={isDragging}
         styles={{
           cursor: 'col-resize',
@@ -503,7 +503,7 @@ const Nav = ({ children }) => {
           '-webkit-user-select': 'none',
           'user-select': 'none',
         }}
-      />
+      /> */}
       <PrimaryNav
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

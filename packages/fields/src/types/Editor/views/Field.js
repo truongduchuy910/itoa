@@ -4,7 +4,15 @@ import { jsx } from '@emotion/core';
 import { styles } from './styles';
 import { gridSize, colors, borderRadius } from '@arch-ui/theme';
 import { FieldContainer, FieldLabel, FieldDescription } from '@arch-ui/fields';
-import { Controlled as CodeMirror } from 'react-codemirror2';
+// import 'codemirror';
+// import 'codemirror/mode/markdown/markdown';
+// import 'codemirror/mode/gfm/gfm';
+// import { Controlled as CodeMirror } from 'react-codemirror2';
+
+import CodeMirror from '@uiw/react-codemirror';
+import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
+import { languages } from '@codemirror/language-data';
+
 import { getTools } from './get-tools';
 import { ListProvider } from '@itoa/app-admin-ui/components';
 import Toolbar from './Toolbar';
@@ -81,6 +89,7 @@ export default function MarkdownField({
           <Value>{value}</Value>
         ) : (
           <CodeMirror
+            extensions={[markdown({ base: markdownLanguage, codeLanguages: languages })]}
             value={value}
             onBeforeChange={(editor, data, value) => {
               onChange(value);
