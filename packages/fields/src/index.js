@@ -17,6 +17,6 @@ export { default as Uuid } from './types/Uuid';
 export { default as Virtual } from './types/Virtual';
 
 export { default as Currency } from './types/Currency';
-export { default as Editor } from './types/Editor';
+// export { default as Editor } from './types/Editor';
 export { default as Images } from './types/Images';
 export { default as Translate } from './types/Translate';

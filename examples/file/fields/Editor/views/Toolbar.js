@@ -7,10 +7,10 @@ import { EyeIcon, PencilIcon, UploadIcon, SmileyIcon, FileMediaIcon } from '@pri
 import { gridSize, colors } from '@arch-ui/theme';
 import { A11yText } from '@arch-ui/typography';
 import Tooltip from '@arch-ui/tooltip';
-import 'codemirror';
-import 'codemirror/mode/markdown/markdown';
-import 'codemirror/mode/gfm/gfm';
-import Gallery from '../../../../components/Gallery';
+// import 'codemirror';
+// import 'codemirror/mode/markdown/markdown';
+// import 'codemirror/mode/gfm/gfm';
+// import Gallery from '../../../../components/Gallery';
 import EmojiPicker, { SKIN_TONE_NEUTRAL } from 'emoji-picker-react';
 const ToolbarButton = forwardRef((props, ref) => {
   return (
@@ -206,7 +206,7 @@ export default function Toolbar({
 
       <CreateItemModal prefillData={prefillData} onCreate={createImage} />
 
-      {isOpenGallery && (
+      {/* {isOpenGallery && (
         <Gallery
           clickImage={clickImage}
           searchField={searchField}
@@ -216,7 +216,7 @@ export default function Toolbar({
             setIsOpenGallery(false);
           }}
         />
-      )}
+      )} */}
       {isOpenEmoji && (
         <div style={{ position: 'absolute', zIndex: 14 }}>
           <EmojiPicker

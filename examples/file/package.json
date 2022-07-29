@@ -1,0 +1,6 @@
+{
+  "name": "file-project",
+  "scripts": {
+    "dev": "itoa dev"
+  }
+}

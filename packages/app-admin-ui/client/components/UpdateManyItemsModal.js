@@ -124,6 +124,7 @@ const UpdateManyModal = ({ list, items, isOpen, onUpdate, onClose }) => {
             isDisabled={hasErrors || selectedFields.length === 0}
             isLoading={loading}
             onClick={handleUpdate}
+            className={`btn btn-${hasWarnings && !hasErrors ? 'warning' : 'primary'} mr-2`}
           >
             {hasWarnings && !hasErrors ? 'Bỏ qua cảnh báo và cập nhật' : 'Cập nhật'}
           </LoadingButton>
@@ -134,7 +135,7 @@ const UpdateManyModal = ({ list, items, isOpen, onUpdate, onClose }) => {
       }
     >
       <FieldContainer>
-        <FieldLabel field={{ label: 'Fields', config: { isRequired: false } }} />
+        <FieldLabel field={{ label: 'Mục cập nhật', config: { isRequired: false } }} />
         <FieldInput>
           <Select
             autoFocus
