@@ -46,13 +46,13 @@ By default access control on at tracking fields is read only:
 
 ## Disabling created or updated
 
-You can import *either* `createdAt` or `updatedAt` to apply a single tracking field:
+You can import _either_ `createdAt` or `updatedAt` to apply a single tracking field:
 
 ```javascript
 const { createdAt, updatedAt } = require('@itoa/list-plugins');
 ```
 
-*Note*: The API is the same.
+_Note_: The API is the same.
 
 # byTracking
 
@@ -98,13 +98,13 @@ By default access control on at tracking fields is read only:
 
 ## Disabling created or updated
 
-You can import *either* `createdBy` or `updatedBy` to apply a single tracking field:
+You can import _either_ `createdBy` or `updatedBy` to apply a single tracking field:
 
 ```javascript
 const { createdBy, updatedBy } = require('@itoa/list-plugins');
 ```
 
-*Note*: The API is the same.
+_Note_: The API is the same.
 
 # singleton
 
@@ -155,10 +155,10 @@ You can customise its behaviour by providing an alternate logging function.
 
 The plugin provides the following hooks:
 
-* `afterChange`
-* `afterDelete`
-* `afterAuth`
-* `afterUnauth`
+- `afterChange`
+- `afterDelete`
+- `afterAuth`
+- `afterUnauth`
 
 The logging function for each hook recieves specific arguments related to the mutation.
 

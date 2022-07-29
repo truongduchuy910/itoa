@@ -35,10 +35,10 @@ You can customise its behaviour by providing an alternate logging function.
 
 The plugin provides the following hooks:
 
-* `afterChange`
-* `afterDelete`
-* `afterAuth`
-* `afterUnauth`
+- `afterChange`
+- `afterDelete`
+- `afterAuth`
+- `afterUnauth`
 
 The logging function for each hook recieves specific arguments related to the mutation.
 

@@ -26,8 +26,8 @@ We would like to have full support for all Itoa field types, and are working on 
 
 ### Partially supported field types
 
-* `Password`: The `password_is_set` query does not perform a test to check is the stored value is a valid hash, as Prisma does not currently support regex filtering.
-* `Uuid`: We do not yet support using `Uuid` as a `primaryKey` field, but it can be used as a non-primary key field.
+- `Password`: The `password_is_set` query does not perform a test to check is the stored value is a valid hash, as Prisma does not currently support regex filtering.
+- `Uuid`: We do not yet support using `Uuid` as a `primaryKey` field, but it can be used as a non-primary key field.
 
 ## Itoa - Prisma field type mapping
 

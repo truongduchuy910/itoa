@@ -13,12 +13,12 @@ order: 3
 
 A good GraphQL API is a combination of the following criteria:
 
-* **Quick prototyping** no matter the client (mobile, desktop, other APIs, etc)
-* Be **obvious**, **consistent**, and **predictable**
-* Is mostly **CRUD-based** with escape hatches for **Custom Operations**
-* Match developer's **domain knowledge**
-* Be **forward compatible** with future unknown use-cases
-* Fully **leverage the *Graph*** of GraphQL through Relationships
+- **Quick prototyping** no matter the client (mobile, desktop, other APIs, etc)
+- Be **obvious**, **consistent**, and **predictable**
+- Is mostly **CRUD-based** with escape hatches for **Custom Operations**
+- Match developer's **domain knowledge**
+- Be **forward compatible** with future unknown use-cases
+- Fully **leverage the _Graph_** of GraphQL through Relationships
 
 ## Itoa's schema design
 
@@ -26,7 +26,7 @@ Itoa's auto-generated GraphQL Schema meets these goals by following a pattern wi
 
 ### Domain objects
 
-Modelled with CRUD (*Create, Read, Update, Delete*) operations, this covers the majority of functionality for most applications.
+Modelled with CRUD (_Create, Read, Update, Delete_) operations, this covers the majority of functionality for most applications.
 
 For example; the `User` type would have `createUser` / `getUser` / `updateUser` / `deleteUser` mutations.
 
@@ -42,13 +42,13 @@ For example; an `authenticateUser` / `submitTPSReport` mutation, or a `recentlyA
 
 <sub align="center">
 
-*[Tweet](https://twitter.com/JessTelford/status/1179175687560630272) by [Jess Telford](https://twitter.com/JessTelford)*
+_[Tweet](https://twitter.com/JessTelford/status/1179175687560630272) by [Jess Telford](https://twitter.com/JessTelford)_
 
 </sub>
 
 ## Domain objects and CRUD
 
-Every *thing* in your application / website / database which can be queried or modified in some way is a Domain Object. Each Domain Object has its own set of CRUD operations.
+Every _thing_ in your application / website / database which can be queried or modified in some way is a Domain Object. Each Domain Object has its own set of CRUD operations.
 
 By modeling a schema in this way, it enables fast iteration with a consistent and predictable set of mutations and queries for every Domain Object.
 
@@ -61,7 +61,7 @@ To define a set of Domain Objects, it helps to think about it in terms of what a
 | **Comments**  | `createComment` | `getComment` | `updateComment` | `deleteComment` |
 | **Images**    | `createImage`   | `getImage`   | `updateImage`   | `deleteImage`   |
 
-> **Tip:** Because an `Image` may be uploaded and interacted with independently of a `Post`, or used across multiple posts, we're creating an **Images** list. Even if they're only used in a single `Post`, they still meet the definition as a *thing* which might be queried or modified in some way (for example, querying for a thumbnail version of the image, or updating alt text).
+> **Tip:** Because an `Image` may be uploaded and interacted with independently of a `Post`, or used across multiple posts, we're creating an **Images** list. Even if they're only used in a single `Post`, they still meet the definition as a _thing_ which might be queried or modified in some way (for example, querying for a thumbnail version of the image, or updating alt text).
 
 In general, Domain Objects map to Lists in Itoa:
 
@@ -82,9 +82,9 @@ itoa.createList('Image', {
 
 ### Related domain objects
 
-To fully leverage the *Graph* of GraphQL, relationships between Domain Objects must be defined in a way that allows for both **querying** and **mutating** related data.
+To fully leverage the _Graph_ of GraphQL, relationships between Domain Objects must be defined in a way that allows for both **querying** and **mutating** related data.
 
-GraphQL gives us *querying* thanks to their type system:
+GraphQL gives us _querying_ thanks to their type system:
 
 ```graphql
 type User {
@@ -114,7 +114,7 @@ query {
 }
 ```
 
-Defining *mutations* requires a bit more setup and consideration to performing *nested mutations*.
+Defining _mutations_ requires a bit more setup and consideration to performing _nested mutations_.
 
 > **Hint:** Itoa implements this pattern with the `Relationship` type
 
@@ -141,7 +141,7 @@ mutation {
 
 <!-- prettier-ignore-end -->
 
-Note the `data.author.update` object, this is the *Nested Mutation*. Beyond `update` there are also other operations you may wish to perform:
+Note the `data.author.update` object, this is the _Nested Mutation_. Beyond `update` there are also other operations you may wish to perform:
 
 | Operation    |                                                                                                                           |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -151,7 +151,7 @@ Note the `data.author.update` object, this is the *Nested Mutation*. Beyond `upd
 | `update`     | Update an already connected item's data                                                                                   |
 | `delete`     | Delete an already connected item and disconnect it from the parent so future queries for related data return `null`       |
 
-> **Note:** Since `get` is a query concern, and we're only dealing with nested *Mutations*, it is not included here.
+> **Note:** Since `get` is a query concern, and we're only dealing with nested _Mutations_, it is not included here.
 
 This might be represented in the GraphQL Schema like so:
 
@@ -210,7 +210,7 @@ Custom operations are an emergent property of the schema design. They are not so
 
 As products are built, it will become obvious which operations are missing and what their inputs/outputs should be.
 
-For example, while building out the TPS application, it became evident that at some point a TPS Report had to be printed and handed directly to a boss. There is no CRUD operation which can trigger printing a report. There are, however, the *Printing* and *Courier* services. A custom mutation can be made which uses both those services to complete the operation: `submitTPSReport`.
+For example, while building out the TPS application, it became evident that at some point a TPS Report had to be printed and handed directly to a boss. There is no CRUD operation which can trigger printing a report. There are, however, the _Printing_ and _Courier_ services. A custom mutation can be made which uses both those services to complete the operation: `submitTPSReport`.
 
 ```javascript
 const typeDefs = `

@@ -40,7 +40,8 @@ module.exports = class S3Adapter {
           ...uploadParams,
         },
         (error, data) => {
-          if (error) {console.log(error);
+          if (error) {
+            console.log(error);
             reject(error);
           } else {
             resolve({ ...fileData, _meta: data });

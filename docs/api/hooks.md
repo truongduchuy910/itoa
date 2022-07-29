@@ -10,8 +10,8 @@ Hooks give solution developers a way to add custom logic to the framework of lis
 
 This document describes:
 
-* How and where to configure hooks of different types
-* The specific arguments and usage information of different hook sets
+- How and where to configure hooks of different types
+- The specific arguments and usage information of different hook sets
 
 For a more general overview of the concepts, patterns and function of the Itoa hook system, see the
 [hooks guide](/docs/guides/hooks.md).
@@ -23,10 +23,10 @@ Note: For performance reasons relationship fields are not fully resolved by hook
 Hooks can be categorised into four [types](/docs/guides/hooks.md#hook-type)
 depending on where in the list schema they're attached:
 
-* [List hooks](#list-hooks)
-* [Field hooks](#field-hooks)
-* [Field type hooks](#field-type-hooks)
-* [Authentication hooks](#authentication-hooks)
+- [List hooks](#list-hooks)
+- [Field hooks](#field-hooks)
+- [Field type hooks](#field-type-hooks)
+- [Authentication hooks](#authentication-hooks)
 
 With the exception of the authentication hooks, the [hook sets](/docs/guides/hooks.md#hook-set) that span these types have very similar signatures.
 Any differences are called out in the documentation below.
@@ -89,7 +89,7 @@ itoa.createList('User', {
 
 ### Field type hooks
 
-Field type hooks are associated with a particular *field type* and are applied to all fields of that type.
+Field type hooks are associated with a particular _field type_ and are applied to all fields of that type.
 Custom field types can implement hooks by implementing the following hook methods on the `Field` base class.
 See the [Custom Field Types guide](/docs/guides/custom-field-types.md) for more info.
 
@@ -141,8 +141,8 @@ itoa.createAuthStrategy({
 
 **Used to modify the `resolvedData`.**
 
-* Invoked after access control and field defaults are applied
-* Available for `create` and `update` operations
+- Invoked after access control and field defaults are applied
+- Available for `create` and `update` operations
 
 The return of `resolveInput` can be a `Promise` or an `Object`.
 It should resolve to the same structure as the `resolvedData`.
@@ -163,7 +163,6 @@ The result is passed to [the next function in the execution order](/docs/guides/
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const resolveInput = ({
   operation,
@@ -183,8 +182,8 @@ const resolveInput = ({
 
 **Used to verify the `resolvedData` is valid.**
 
-* Invoked after all `resolveInput` hooks have resolved
-* Available for `create` and `update` operations
+- Invoked after all `resolveInput` hooks have resolved
+- Available for `create` and `update` operations
 
 If errors are found in `resolvedData` the function should either throw or call the supplied `addFieldValidationError` argument.
 Return values are ignored.
@@ -206,7 +205,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const validateInput = ({
   operation,
@@ -228,8 +226,8 @@ const validateInput = ({
 
 **Used to cause side effects before the primary operation is executed.**
 
-* Invoked after all `validateInput` hooks have resolved
-* Available for `create` and `update` operations
+- Invoked after all `validateInput` hooks have resolved
+- Available for `create` and `update` operations
 
 `beforeChange` hooks can't manipulate the data passed to the primary operation but perform operations before data is saved.
 Return values are ignored.
@@ -249,7 +247,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const beforeChange = ({
   operation,
@@ -269,8 +266,8 @@ const beforeChange = ({
 
 **Used to cause side effects after the primary operation is executed.**
 
-* Invoked after the primary operation has completed
-* Available for `create` and `update` operations
+- Invoked after the primary operation has completed
+- Available for `create` and `update` operations
 
 `afterChange` hooks perform actions after data is saved.
 It receives both the "pre-update" item that was stored (`existingItem`) and the resultant, "post-update" item data (`updatedItem`).
@@ -294,7 +291,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const afterChange = ({
   operation,
@@ -314,8 +310,8 @@ const afterChange = ({
 
 **Used to verify a delete operation is valid**, ie. will maintain data consitency.
 
-* Invoked after access control has been tested
-* Available for `delete` operations
+- Invoked after access control has been tested
+- Available for `delete` operations
 
 Should throw or register errors with `addFieldValidationError(<String>)` if the delete operation is invalid.
 
@@ -334,7 +330,6 @@ Should throw or register errors with `addFieldValidationError(<String>)` if the 
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const validateDelete = ({
   operation,
@@ -354,8 +349,8 @@ const validateDelete = ({
 
 **Used to cause side effects before the delete operation is executed.**
 
-* Invoked after all `validateDelete` hooks have resolved
-* Available for `delete` operations
+- Invoked after all `validateDelete` hooks have resolved
+- Available for `delete` operations
 
 Perform actions before the delete operation is executed.
 Return values are ignored.
@@ -373,7 +368,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const beforeDelete = ({
   operation,
@@ -391,8 +385,8 @@ const beforeDelete = ({
 
 **Used to cause side effects after the delete operation is executed.**
 
-* Invoked after the delete operation has been executed
-* Available for `delete` operations
+- Invoked after the delete operation has been executed
+- Available for `delete` operations
 
 Perform actions after the delete operation has been executed.
 This is the last chance to operate on the previously stored item, supplied as `existingItem`.
@@ -412,7 +406,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const afterDelete = ({
   operation,
@@ -430,8 +423,8 @@ const afterDelete = ({
 
 **Used to modify the `originalInput`, producing `resolvedData`.**
 
-* Invoked after access control is applied
-* Available for `authenticate` operations
+- Invoked after access control is applied
+- Available for `authenticate` operations
 
 The return of `resolveAuthInput` can be a `Promise` or an `Object`.
 It should resolve to the same structure as `originalInput`.
@@ -449,7 +442,6 @@ The result is passed to [the next function in the execution order](/docs/guides/
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const resolveAuthInput = ({
   operation,
@@ -468,8 +460,8 @@ const resolveAuthInput = ({
 
 **Used to verify the `resolvedData` is valid.**
 
-* Invoked after the `resolveAuthInput` hook has resolved
-* Available for `authenticate` operations
+- Invoked after the `resolveAuthInput` hook has resolved
+- Available for `authenticate` operations
 
 If errors are found in `resolvedData` the function should either throw or call the supplied `addValidationError` argument.
 Return values are ignored.
@@ -488,7 +480,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const validateAuthInput = ({
   operation,
@@ -507,8 +498,8 @@ const validateAuthInput = ({
 
 **Used to cause side effects before the authenticate operation is executed.**
 
-* Invoked after the `validateAuthInput` hook has resolved
-* Available for `authenticate` operations
+- Invoked after the `validateAuthInput` hook has resolved
+- Available for `authenticate` operations
 
 `beforeAuth` hooks can perform operations before the auth strategy `validate()` function is invoked.
 Return values are ignored.
@@ -526,7 +517,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const beforeAuth = ({
   operation,
@@ -544,8 +534,8 @@ const beforeAuth = ({
 
 **Used to cause side effects after the authenticate operation is executed.**
 
-* Invoked after the authenticate operation has completed
-* Available for `authenticate` operations
+- Invoked after the authenticate operation has completed
+- Available for `authenticate` operations
 
 Can cause side effects after the credentials have been validated or rejected.
 If authentication was successful, the function is passed the item being authenticated.
@@ -569,7 +559,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const afterAuth = ({
   operation,
@@ -591,8 +580,8 @@ const afterAuth = ({
 
 **Used to cause side effects before the unauthenticate operation is executed.**
 
-* Invoked after access control is applied
-* Available for `unauthenticate` operations
+- Invoked after access control is applied
+- Available for `unauthenticate` operations
 
 `beforeUnauth` hooks can perform operations before the `context.endAuthedSession()` function is invoked.
 Return values are ignored.
@@ -608,7 +597,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const beforeUnauth = ({
   operation,
@@ -624,8 +612,8 @@ const beforeUnauth = ({
 
 **Used to cause side effects after the unauthenticate operation is executed.**
 
-* Invoked after the unauthenticate operation has completed
-* Available for `unauthenticate` operations
+- Invoked after the unauthenticate operation has completed
+- Available for `unauthenticate` operations
 
 Can cause side effects after the user session has been ended.
 If a user session was terminated, the `listKey` and `itemId` of the user are passed to the function.
@@ -646,7 +634,6 @@ Return values are ignored.
 #### Usage
 
 <!-- prettier-ignore -->
-
 ```js
 const afterAuth = ({
   operation,

@@ -6,7 +6,7 @@ title: CalendarDay
 
 # CalendarDay
 
-Stores an abstract "day" value; like a date but *independant of any time zone*.
+Stores an abstract "day" value; like a date but _independant of any time zone_.
 Useful for Birthdays and other all-day events always celebrated in the local time zone.
 
 ## Usage

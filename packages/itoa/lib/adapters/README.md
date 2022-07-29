@@ -9,7 +9,7 @@ This document describes the role of data store adapters in Itoa 5 and how they r
 
 A `Itoa` system consists of multiple `Lists`, each of which contains multiple `Fields`.
 This data structure needs to be backed by a persistent data store of some kind.
-The *Itoa Adapter Framework* facilitates this by providing an abstraction layer which can be implemented
+The _Itoa Adapter Framework_ facilitates this by providing an abstraction layer which can be implemented
 by adapters for different data stores (e.g. Mongoose, Postgres, etc).
 
 ## Usage
@@ -29,9 +29,9 @@ All the `Lists` in your system will be backed by this adapter.
 
 The adapter framework data model mirrors the ItoaJS data model.
 
-* Each `Itoa` object has one or more `ItoaAdapter` instances, accessible by the `.adapters` property
-* Each `List` object has one `ListAdapter`, accessible by the `.adapter` property
-* Each `Field` object has one `FieldAdapter`, accessible by the `.adapter` property
+- Each `Itoa` object has one or more `ItoaAdapter` instances, accessible by the `.adapters` property
+- Each `List` object has one `ListAdapter`, accessible by the `.adapter` property
+- Each `Field` object has one `FieldAdapter`, accessible by the `.adapter` property
 
 The adapters do not contain references back to the ItoaJS objects.
 All required information is passed in to the adapter as parameters to the constructor/methods.

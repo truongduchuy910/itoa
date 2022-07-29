@@ -8,10 +8,10 @@ subSection: advanced
 
 A note on terminology:
 
-* **Authentication** refers to a user identifying themselves.
-  Within this document, we abbreviate *Authentication* to *Auth*.
-* **Access control** refers to the specific actions an authenticated or anonymous
-  user can take. Often referred to as *authorization* elsewhere.
+- **Authentication** refers to a user identifying themselves.
+  Within this document, we abbreviate _Authentication_ to _Auth_.
+- **Access control** refers to the specific actions an authenticated or anonymous
+  user can take. Often referred to as _authorization_ elsewhere.
   The specifics of how this is done is outside the scope of this document.
   See [access control](/docs/guides/access-control.md) for more.
 
@@ -19,9 +19,9 @@ A note on terminology:
 
 Username / Password authentication can be enabled on the Admin UI.
 
-> **Important:** Admin Authentication will only restrict access to the Admin *UI*. It *will not* restrict API access. To also restrict access to the API, you must set up [Access controls](/docs/guides/access-control.md).
+> **Important:** Admin Authentication will only restrict access to the Admin _UI_. It _will not_ restrict API access. To also restrict access to the API, you must set up [Access controls](/docs/guides/access-control.md).
 
-To setup authentication, you must instantiate an *Auth Strategy*, and create a
+To setup authentication, you must instantiate an _Auth Strategy_, and create a
 list used for authentication in `index.js`. Here, we will setup a
 `PasswordAuthStrategy` instance:
 
@@ -107,7 +107,7 @@ Each list associated with an auth strategy creates corresponding queries and mut
 | `authenticateUserWithPassword` | Mutation | Authenticates a user.                          |
 | `unauthenticateUser`           | Mutation | Unauthenticates the authenticated user.        |
 
-*NOTE:* these operations may be named differently if the `List.itemQueryName` config option is set.
+_NOTE:_ these operations may be named differently if the `List.itemQueryName` config option is set.
 
 #### GraphQL
 
@@ -162,13 +162,13 @@ mutation {
 
 ### Controlling access to the Admin UI
 
-By default, any *authenticated* user will be able to access the Admin UI. To restrict access, use the `isAccessAllowed` config option.
+By default, any _authenticated_ user will be able to access the Admin UI. To restrict access, use the `isAccessAllowed` config option.
 
 See the [Admin UI app](https://www.itoa.vn/itoa/app-admin-ui/) docs for more details.
 
 ## API access control
 
-Adding Authentication as shown above will only enable login to the Admin UI. It *will not* restrict API access.
+Adding Authentication as shown above will only enable login to the Admin UI. It _will not_ restrict API access.
 
 > **Note:** To restrict API access, you must set up [Access controls](/docs/guides/access-control.md)
 

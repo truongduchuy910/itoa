@@ -126,5 +126,5 @@ But how can we assign a task to specific user? Let's proceed with [Defining Rela
 
 See also:
 
-* [Schema - Lists & Fields](/docs/guides/schema.md)
-* [API - createList](/docs/api/create-list.md)
+- [Schema - Lists & Fields](/docs/guides/schema.md)
+- [API - createList](/docs/api/create-list.md)

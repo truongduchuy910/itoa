@@ -21,17 +21,17 @@
 
 ![CI](https://github.com/itoa-vn/itoaworkflows/CI/badge.svg)
 [![slack](https://img.shields.io/badge/chat-on%20slack-blue.svg)](https://community.itoa.vn/)
-[![Supported by Thinkmill](https://thinkmill.github.io/badge/heart.svg)](http://thinkmill.com.au/?utm_source=github\&utm_medium=badge\&utm_campaign=react-select)
+[![Supported by Thinkmill](https://thinkmill.github.io/badge/heart.svg)](http://thinkmill.com.au/?utm_source=github&utm_medium=badge&utm_campaign=react-select)
 
 ## Contents
 
-* [What's new](#whats-new)
-* [Getting Started](#getting-started)
-* [Documentation](#documentation)
-* [Version Control](#version-control)
-* [Contributing](#contributing)
-* [Code of Conduct](#code-of-conduct)
-* [License](#license)
+- [What's new](#whats-new)
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Version Control](#version-control)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [License](#license)
 
 ## What's new?
 
@@ -261,8 +261,8 @@ It is possible to run all cypress tests at once from the monorepo root with the 
 yarn cypress:run
 ```
 
-*NOTE: The output from this command will mix together the output from each project being tested in parallel.*
-*This is only recommended as sanity check before pushing code.*
+_NOTE: The output from this command will mix together the output from each project being tested in parallel._
+_This is only recommended as sanity check before pushing code._
 
 ## Code of Conduct
 

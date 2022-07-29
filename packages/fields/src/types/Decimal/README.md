@@ -52,7 +52,7 @@ Since `Decimal` values can't be represented in JavaScript (or JSON) they are tra
 
 ### Filters
 
-Despite being specified as strings, all comparisons are performed on *numerical equivalence*.
+Despite being specified as strings, all comparisons are performed on _numerical equivalence_.
 In essence, this means leading and trailing zeros are ignored.
 Eg. `04.53000 === 4.53`.
 

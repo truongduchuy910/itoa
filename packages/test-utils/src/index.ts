@@ -107,7 +107,7 @@ let mongoServer: MongoMemoryServer | undefined | null;
 let mongoServerReferences = 0;
 
 async function getMongoMemoryServerConfig() {
-  mongoServer = mongoServer || await MongoMemoryServer.create();
+  mongoServer = mongoServer || (await MongoMemoryServer.create());
   mongoServerReferences++;
   // Passing `true` here generates a new, random DB name for us
   const mongoUri = await mongoServer.getUri();

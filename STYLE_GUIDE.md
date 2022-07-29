@@ -16,27 +16,27 @@ If Prettier doesn't have an opinion on something, and it's not covered here, go 
 
 The aim of these conventions is to ensure:
 
-* Consistency across project docs
-* Readability when published as HTML (see especially the [URL Formulation Rules](#url-formulation-rules))
-* Readability as plain text
-* Readability when being updated (ie. in diffs)
+- Consistency across project docs
+- Readability when published as HTML (see especially the [URL Formulation Rules](#url-formulation-rules))
+- Readability as plain text
+- Readability when being updated (ie. in diffs)
 
 ## General
 
-* All docs should include an intro that describes their purpose and context within the project
-* Write clearly and keep it factual
-* If you must assume knowledge on the part of the reader, link to related docs on the topic
-* Emoji can be used, sparingly please ✨
-* Ampersands should be avoided outside of headings
+- All docs should include an intro that describes their purpose and context within the project
+- Write clearly and keep it factual
+- If you must assume knowledge on the part of the reader, link to related docs on the topic
+- Emoji can be used, sparingly please ✨
+- Ampersands should be avoided outside of headings
 
 Also, it should go without saying:
 
-* Ensure correct spelling; spell-check documents before committing.
-  (We *favour* UK/Australian spelling.)
-* Ensure correct capitalisation, inc. product names and acronyms (eg: JavaScript, URL, Node.js, MongoDB).
-  Note, *abbreviations* like "etc.", "ie." and "eg." are not acronyms;
+- Ensure correct spelling; spell-check documents before committing.
+  (We _favour_ UK/Australian spelling.)
+- Ensure correct capitalisation, inc. product names and acronyms (eg: JavaScript, URL, Node.js, MongoDB).
+  Note, _abbreviations_ like "etc.", "ie." and "eg." are not acronyms;
   they should only be capitalised if at the start of a sentence.
-* Ensure correct English grammar (or Miss Willings will come for you 👩🏼‍🏫).
+- Ensure correct English grammar (or Miss Willings will come for you 👩🏼‍🏫).
   This includes periods after abbreviations such as "etc.".
 
 If in doubt, Google it.
@@ -49,22 +49,22 @@ You can use `yarn format:file MyNewDoc.md` to "pretty" a specific document.
 
 If you're using Sublime Text, the following plugins may be of use:
 
-* [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended) --
+- [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended) --
   Better syntax highlighting of Markdown documents
-* [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview) --
+- [MarkdownPreview](https://packagecontrol.io/packages/MarkdownPreview) --
   Allows Markdown documents to be previewed by running them through the GitHub renderer
 
-*JM: Any tips for other editors? VS Code anyone?*
+_JM: Any tips for other editors? VS Code anyone?_
 
 ## Headings
 
-* We prefer the ["atx" style of headings](http://www.cirosantilli.com/markdown-style-guide/#option-header-atx).
+- We prefer the ["atx" style of headings](http://www.cirosantilli.com/markdown-style-guide/#option-header-atx).
   Ie. `#`, `##`, `###`, etc.
-* Each document should contain a single level 1 heading
-* Headings at all levels use [Title Case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage)
-* Try to keep all headings unique so they can be [linked to](#headings) reliably
-* Emphasis (eg. **bold**) should not be used in place of headings
-* Try to limit `code` use within headings
+- Each document should contain a single level 1 heading
+- Headings at all levels use [Title Case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage)
+- Try to keep all headings unique so they can be [linked to](#headings) reliably
+- Emphasis (eg. **bold**) should not be used in place of headings
+- Try to limit `code` use within headings
 
 ## Text Blocks
 
@@ -79,24 +79,24 @@ As a rule of thumb, over 120 characters is too long.
 
 ## Lists
 
-We'd *like* to use different bullets styles for items at different levels but Prettier forces hyphens by default.
+We'd _like_ to use different bullets styles for items at different levels but Prettier forces hyphens by default.
 Let's just go with that.
 
-* Lists levels are indented with 2 spaces
-  * Like this
-    * And this
-* Items should end in punctuation only if they contains multiple sentences.
+- Lists levels are indented with 2 spaces
+  - Like this
+    - And this
+- Items should end in punctuation only if they contains multiple sentences.
   In other cases they should not.
 
 Ordered lists have their own set of concerns.
-It's worth noting that GitHub Markdown only cares which numbers you use for the *first item*;
+It's worth noting that GitHub Markdown only cares which numbers you use for the _first item_;
 it takes that as the initial value and counts up from there.
 As such, there are two methods that work:
 
 1. Usually it's preferable to number all items with `1`.
    This keeps diffs clean since inserting or removing an item doesn't re-number all subsequent items.
-2. However, if the doc refers to the items *by number* it makes sense to number them ordinarily within the Markdown.
-   The Prettier will *correct the order of items* numbered in this way which is nice (but does cause more noise in the diffs).
+2. However, if the doc refers to the items _by number_ it makes sense to number them ordinarily within the Markdown.
+   The Prettier will _correct the order of items_ numbered in this way which is nice (but does cause more noise in the diffs).
 
 ## Links
 
@@ -108,24 +108,24 @@ replacing spaces with hyphens and prefixing with a hash, eg: the [Text Blocks se
 
 It's important to remember that the Markdown files within this project are used in several places:
 
-* As raw Markdown in a local dev environment (eg. in editor, search/grep'ing, etc.)
-* Published on the [Itoa website](https://itoa.vn/)
-* Published on the [GitHub repo](https://github.com/itoa-vn/itoa)
-* Published on NPM (only effects package `README.md` docs)
+- As raw Markdown in a local dev environment (eg. in editor, search/grep'ing, etc.)
+- Published on the [Itoa website](https://itoa.vn/)
+- Published on the [GitHub repo](https://github.com/itoa-vn/itoa)
+- Published on NPM (only effects package `README.md` docs)
 
 For links to work across these mediums, certain rules for URLs formulation must be followed:
 
-* Links *within a file* (ie. to headings) must not include the file name or path
-  * Eg. `See the secion on [Foo Config](#foo-config).`
-* Links to *other files in the monorepo* must use..
-  * An absolute file path from the monorepo root
-    * Eg. `/docs/api/hooks.md` (**not** `https://www.itoa.vn/guides/hooks` or `https://github.com/itoa-vn/itoablob/main/docs/guides/hooks.md`, etc.)
-  * The full filename, include the extension
-    * Eg. `/docs/guides/access-control.md` (**not** `/docs/guides/access-control`)
-* Links to `README.md` files must be explicit; they cannot rely on the GitHub behaviour that uses `README.md` at a sort of "index" for a directory
-  * Eg. `/packages/auth-password/README.md#identity` (**not** `/packages/auth-password#identity`)
-* Links to directories end in a slash (eg. `/packages/email/`)
-  * This as is convention for URLs (so as not to be confused with a files)
+- Links _within a file_ (ie. to headings) must not include the file name or path
+  - Eg. `See the secion on [Foo Config](#foo-config).`
+- Links to _other files in the monorepo_ must use..
+  - An absolute file path from the monorepo root
+    - Eg. `/docs/api/hooks.md` (**not** `https://www.itoa.vn/guides/hooks` or `https://github.com/itoa-vn/itoablob/main/docs/guides/hooks.md`, etc.)
+  - The full filename, include the extension
+    - Eg. `/docs/guides/access-control.md` (**not** `/docs/guides/access-control`)
+- Links to `README.md` files must be explicit; they cannot rely on the GitHub behaviour that uses `README.md` at a sort of "index" for a directory
+  - Eg. `/packages/auth-password/README.md#identity` (**not** `/packages/auth-password#identity`)
+- Links to directories end in a slash (eg. `/packages/email/`)
+  - This as is convention for URLs (so as not to be confused with a files)
 
 ## Code and Code Blocks
 
@@ -147,8 +147,8 @@ A complete list of languages recognised by GitHub can be found in the
 Emphasis should be used inline, to highlight specific points,
 or to indicate notes and comments that aren't part of the document flow.
 
-* **Bold sections** are delineated with 2 asterisk (`**text**`)
-* *Italics* can be added with a pair of underscores (`_text_`)
+- **Bold sections** are delineated with 2 asterisk (`**text**`)
+- _Italics_ can be added with a pair of underscores (`_text_`)
 
 This differs slightly from Ciro's guide (which suggests `**` and `*`).
 We believe our version is clearer to read in plain text.

@@ -24,11 +24,11 @@ itoa.createList('ListKey', {...});
 | `cacheHint`     | `Object`   | `{}`                          | Configures a default caching hint for list.                  |
 | `fields`        | `Object`   |                               | Defines the fields in a list.                                |
 | `hooks`         | `Object`   | `{}`                          | Functions to be called during list operations.               |
-| `itemQueryName` | `String`   |                               | Changes the *item* name in GraphQL queries and mutations.    |
+| `itemQueryName` | `String`   |                               | Changes the _item_ name in GraphQL queries and mutations.    |
 | `label`         | `String`   | `listName`                    | Overrides label for the list in the AdminUI.                 |
 | `labelField`    | `String`   | `name`                        | Specify a field to use as a label for individual list items. |
 | `labelResolver` | `Function` | Resolves `labelField` or `id` | Function to resolve labels for individual list items.        |
-| `listQueryName` | `String`   |                               | Changes the *list* name in GraphQL queries and mutations.    |
+| `listQueryName` | `String`   |                               | Changes the _list_ name in GraphQL queries and mutations.    |
 | `path`          | `String`   |                               | Changes the path in the Admin UI.                            |
 | `plugins`       | `Array`    | `[]`                          | An array of `plugins` that can modify the list config.       |
 | `plural`        | `String`   |                               | Specify a plural for `Itoa` to use for the list.             |
@@ -60,10 +60,10 @@ Specifying an adapter config on a list item will extend the default config for t
 
 Options for the AdminUI including:
 
-* `defaultPageSize`
-* `defaultColumns`
-* `defaultSort`
-* `maximumPageSize`
+- `defaultPageSize`
+- `defaultColumns`
+- `defaultSort`
+- `maximumPageSize`
 
 ```javascript
 itoa.createList('User', {
@@ -109,15 +109,15 @@ See: [Fields](/packages/fields/README.md) for more information on configuring fi
 Specify functions to be executed during list operations.
 Supported hooks include:
 
-* Create and update operations
-  * `resolveInput`
-  * `validateInput`
-  * `beforeChange`
-  * `afterChange`
-* Delete operations
-  * `validateDelete`
-  * `beforeDelete`
-  * `afterDelete`
+- Create and update operations
+  - `resolveInput`
+  - `validateInput`
+  - `beforeChange`
+  - `afterChange`
+- Delete operations
+  - `validateDelete`
+  - `beforeDelete`
+  - `afterDelete`
 
 See [List Hooks in the API docs](/docs/api/hooks.md#list-hooks) and the [Hooks Guide](/docs/guides/hooks.md) for details.
 
@@ -264,7 +264,7 @@ Configuration for limiting the kinds of queries that can be made against the lis
 
 See also [global query limits on the Itoa object](/packages/itoa/README.md#querylimits).
 
-* `maxResults`: maximum number of results that can be returned in a query (or subquery)
+- `maxResults`: maximum number of results that can be returned in a query (or subquery)
 
 ```javascript
 itoa.createList('Post', {

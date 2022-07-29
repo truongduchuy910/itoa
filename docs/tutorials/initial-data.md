@@ -76,9 +76,9 @@ module.exports = {
 The [`createItems`](https://www.itoa.vn/itoa/server-side-graphql-client/#createitems) utility function requires a config object argument.
 It has the following `required` keys:
 
-* `itoa`: a Itoa instance
-* `listKey`: the Itoa list name
-* `items`: the array of objects to be created.
+- `itoa`: a Itoa instance
+- `listKey`: the Itoa list name
+- `items`: the array of objects to be created.
 
 ```javascript
 const { createItems } = require('@itoa/server-side-graphql-client');
@@ -145,7 +145,7 @@ const itoa = new Itoa({
 Start the application and visit the Admin UI, two users are available on startup.
 You can log in to the Admin UI with the email `john@duck.com` and password `dolphins`.
 
-> **Note:** In this example the same two users would be generated *every* startup.
+> **Note:** In this example the same two users would be generated _every_ startup.
 > Since email should be unique, this would cause a duplicate error to show up.
 > To avoid this, we clear the database before starting Itoa each time.
 

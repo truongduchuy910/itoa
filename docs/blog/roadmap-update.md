@@ -26,7 +26,7 @@ So we're fixing this. We've been looking at other projects with great starting e
 
 Improving this means revisiting how Itoa is configured. Our API has grown somewhat organically, and we believe that by cleaning it up we can make Itoa more intuitive, and more powerful.
 
-We've designed clear stepping stones in terms of different modes of configuration, which in our experience, maps to the maturity of a Itoa project. Early on, you want as much done *for* you as possible; then over time you want to gradually take control of the parts of the system that are important (and unique) to your project.
+We've designed clear stepping stones in terms of different modes of configuration, which in our experience, maps to the maturity of a Itoa project. Early on, you want as much done _for_ you as possible; then over time you want to gradually take control of the parts of the system that are important (and unique) to your project.
 
 For the Admin UI, it looks like this:
 

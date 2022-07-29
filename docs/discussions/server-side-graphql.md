@@ -11,19 +11,19 @@ These can be grouped into two main categories:
 
 As part of a resolver, e.g.
 
-* Hooks
-* Access control
-* Virtual field resolver
-* Custom field type resolvers
-* Custom query/mutation resolvers
+- Hooks
+- Access control
+- Virtual field resolver
+- Custom field type resolvers
+- Custom query/mutation resolvers
 
 As part of some other process, e.g.
 
-* Migrations
-* Data seeding
-* Responding to a non-GraphQL HTTP request
-* Testing
-* Anything else a developer could possibly imagine
+- Migrations
+- Data seeding
+- Responding to a non-GraphQL HTTP request
+- Testing
+- Anything else a developer could possibly imagine
 
 Itoa provides an API which give you complete control over how you execute server-side GraphQL operations in each of these situations.
 
@@ -31,10 +31,10 @@ Itoa provides an API which give you complete control over how you execute server
 
 There are four main things that go into executing a server-side GraphQL operation:
 
-* A GraphQL schema
-* The query string
-* Variable values
-* A `context` object
+- A GraphQL schema
+- The query string
+- Variable values
+- A `context` object
 
 When executing queries over HTTP we only have control over the queries and variables.
 On the server side we can also control the schema and the `context`.
@@ -48,11 +48,11 @@ The [`context` object](https://www.apollographql.com/docs/apollo-server/data/res
 While Itoa generates the basic CRUD resolvers for you, there are lots of ways you can write custom code which is executed during the resolver phase of a query.
 These include:
 
-* Hooks
-* Access control
-* Virtual field resolver
-* Custom field type resolvers
-* Custom query/mutation resolvers
+- Hooks
+- Access control
+- Virtual field resolver
+- Custom field type resolvers
+- Custom query/mutation resolvers
 
 The [signature of a resolver function](https://www.apollographql.com/docs/apollo-server/data/resolvers/#resolver-arguments) is `(parent, args, context, info)`.
 The `context` argument is an object which is provided to all resolvers and can contain and state or functions which should be shared across all resolvers.
@@ -79,9 +79,9 @@ For example, you might wish to execute your operation with all access-control tu
 
 This can be achieved using the function `context.createContext({ schemaName, authentication, skipAccessControl })`, which will create a new `context` object based on the supplied arguments.
 
-* `schemaName`: This can be used to select the named schema if you have multiple schemas within your Itoa system.
-* `authentication`: This is an object of the shape `{ item: { id }, listKey: '...' }` which is passed through to access control functions. This can be used to emulate executing the operations as a different user.
-* `skipAccessControl`: This can be used to bypass all access control.
+- `schemaName`: This can be used to select the named schema if you have multiple schemas within your Itoa system.
+- `authentication`: This is an object of the shape `{ item: { id }, listKey: '...' }` which is passed through to access control functions. This can be used to emulate executing the operations as a different user.
+- `skipAccessControl`: This can be used to bypass all access control.
 
 By default each of these values will take the value of the original `context` object.
 You can use this functions like this:
@@ -103,11 +103,11 @@ If you want to disable access control you can use the `context.sudo()` method, w
 There are situations where you might want to execute a GraphQL operations outside of the context of a resolver function.
 These include:
 
-* Migrations
-* Data seeding
-* Responding to a non-GraphQL HTTP request
-* Testing
-* Anything else a developer could possibly imagine
+- Migrations
+- Data seeding
+- Responding to a non-GraphQL HTTP request
+- Testing
+- Anything else a developer could possibly imagine
 
 In these cases there is no `context` object for you to borrow, but there is an API to create one for use.
 

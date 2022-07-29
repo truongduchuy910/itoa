@@ -40,7 +40,7 @@ const user = await createItem({
 There are three key differences between `itoa.executeGraphQL` and `createItem` (and other functions from this package):
 
 1. If there is an error, `createItem` will be thrown as an exception, rather than providing the error as a return value.
-2. `createItem` runs with *access control disabled*. This is suitable for use cases such as seeding data or other server side scripts where the query is triggered by the system, rather than a specific user. This can be controlled with the `context` option.
+2. `createItem` runs with _access control disabled_. This is suitable for use cases such as seeding data or other server side scripts where the query is triggered by the system, rather than a specific user. This can be controlled with the `context` option.
 3. All queries are internally paginated and all mutations are internally chunked. This can be controlled with the `pageSize` option.
 
 ### Use cases
@@ -85,14 +85,14 @@ itoa.createList('Page', {
 
 To perform CRUD operations, use the following functions:
 
-* [`createItem`](#createitem)
-* [`createItems`](#createitems)
-* [`getItem`](#getitem)
-* [`getItems`](#getitems)
-* [`updateItem`](#updateitem)
-* [`updateItems`](#updateitems)
-* [`deleteItem`](#deleteitem)
-* [`deleteItems`](#deleteitems)
+- [`createItem`](#createitem)
+- [`createItems`](#createitems)
+- [`getItem`](#getitem)
+- [`getItems`](#getitems)
+- [`updateItem`](#updateitem)
+- [`updateItems`](#updateitems)
+- [`deleteItem`](#deleteitem)
+- [`deleteItems`](#deleteitems)
 
 For custom queries use [`runCustomQuery`](#runcustomquery).
 

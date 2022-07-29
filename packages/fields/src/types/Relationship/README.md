@@ -53,10 +53,10 @@ The available nested mutations:
 
 | Nested Mutation | to-single relationship                                                                                                        | to-many relationship                                                                                                                                      |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `create`        | Create a new item, and set it as the relation. <br/>*Note: the previously set item (if any) is **not** deleted.*              | Create 1 or more new items, and append them to the list of related items.                                                                                 |
-| `connect`       | Filter for an item, and set it as the relation. <br/>*Note: the previously set item (if any) is **not** deleted.*             | Filter for one or more items, and append them to the list of related items.                                                                               |
-| `disconnect`    | Unset the relation (if any) if it matches the given filter. <br/>*Note: the previously set item (if any) is **not** deleted.* | Filter for one or more items, and unset them from the list of related items (if any). <br/>*Note: the previously set items (if any) are **not** deleted.* |
-| `disconnectAll` | Unset the relation (if any). <br/>*Note: the previously set item (if any) is **not** deleted.*                                | Unset the list of related items (if any). <br/>*Note: the previously set items (if any) are **not** deleted.*                                             |
+| `create`        | Create a new item, and set it as the relation. <br/>_Note: the previously set item (if any) is **not** deleted._              | Create 1 or more new items, and append them to the list of related items.                                                                                 |
+| `connect`       | Filter for an item, and set it as the relation. <br/>_Note: the previously set item (if any) is **not** deleted._             | Filter for one or more items, and append them to the list of related items.                                                                               |
+| `disconnect`    | Unset the relation (if any) if it matches the given filter. <br/>_Note: the previously set item (if any) is **not** deleted._ | Filter for one or more items, and unset them from the list of related items (if any). <br/>_Note: the previously set items (if any) are **not** deleted._ |
+| `disconnectAll` | Unset the relation (if any). <br/>_Note: the previously set item (if any) is **not** deleted._                                | Unset the list of related items (if any). <br/>_Note: the previously set items (if any) are **not** deleted._                                             |
 
 ## Order of execution
 
@@ -75,7 +75,6 @@ Use the `create` nested mutation to create and append an item to a to-many
 relationship:
 
 <!-- prettier-ignore -->
-
 ```graphql
 # Replace all posts of a given User
 mutation replaceAllPosts {
@@ -101,7 +100,6 @@ Use the `connect` nested mutation to append an existing item to a to-many
 relationship:
 
 <!-- prettier-ignore -->
-
 ```graphql
 # Replace the company of a given User
 mutation replaceAllPosts {
@@ -128,7 +126,6 @@ the value of a to-single relationship (it's not necessary to use `disconnectAll`
 as is the case for [to-many relationships](#overriding-a-to-many-relationship)):
 
 <!-- prettier-ignore -->
-
 ```graphql
 # Replace the company of a given User
 mutation replaceAllPosts {
@@ -155,7 +152,6 @@ To completely replace the related items in a to-many list, you can perform a
 mutation (thanks to the [order of execution](#order-of-execution)):
 
 <!-- prettier-ignore -->
-
 ```graphql
 # Replace all posts related to a given User
 mutation replaceAllPosts {

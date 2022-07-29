@@ -7,7 +7,7 @@ order: 1
 
 # GraphQL API Introduction
 
-*Before you begin:* This guide assumes you have a running instance of Itoa with the GraphQL App configured, and a list with some data to query. (Get started in 5min by running `npx create-itoa-5-app` and select the `Starter` project)
+_Before you begin:_ This guide assumes you have a running instance of Itoa with the GraphQL App configured, and a list with some data to query. (Get started in 5min by running `npx create-itoa-5-app` and select the `Starter` project)
 
 Examples in this guide will refer to a `Users` list, however the queries, mutations and methods listed here would be the same for any Itoa list.
 
@@ -25,10 +25,10 @@ itoa.createList('User', {
 
 Itoa would generate the following queries:
 
-* `allUsers`
-* `_allUsersMeta`
-* `User`
-* `_UsersMeta`
+- `allUsers`
+- `_allUsersMeta`
+- `User`
+- `_UsersMeta`
 
 ### `allUsers`
 
@@ -74,12 +74,12 @@ Retrieves meta information about the `User` list itself (i.e. not about items in
 
 For each list Itoa generates six top level mutations:
 
-* `createUser`
-* `createUsers`
-* `updateUser`
-* `updateUsers`
-* `deleteUser`
-* `deleteUsers`
+- `createUser`
+- `createUsers`
+- `updateUser`
+- `updateUsers`
+- `deleteUser`
+- `deleteUsers`
 
 ### `createUser`
 
@@ -108,7 +108,7 @@ mutation {
 
 ### `updateUser`
 
-Update a `User` by ID. Accepts an `id` parameter that should match the id of a `User` item. The object should contain keys matching the field definition of the list. `updateUser` performs a *partial update*, meaning only keys that you wish to update need to be provided.
+Update a `User` by ID. Accepts an `id` parameter that should match the id of a `User` item. The object should contain keys matching the field definition of the list. `updateUser` performs a _partial update_, meaning only keys that you wish to update need to be provided.
 
 ```graphql
 mutation {
@@ -224,11 +224,11 @@ In addition to executing queries via the API, you can execute queries and mutati
 
 When executing queries and mutations there are a number of ways you can filter, limit and sort items. These include:
 
-* `where`
-* `search`
-* `skip`
-* `first`
-* `sortBy`
+- `where`
+- `search`
+- `skip`
+- `first`
+- `sortBy`
 
 ### `where`
 
@@ -248,56 +248,56 @@ query {
 
 #### Relationship `where` filters
 
-* `{relatedList}_every`: whereInput
-* `{relatedList}_some`: whereInput
-* `{relatedList}_none`: whereInput
-* `{relatedList}_is_null`: Boolean
+- `{relatedList}_every`: whereInput
+- `{relatedList}_some`: whereInput
+- `{relatedList}_none`: whereInput
+- `{relatedList}_is_null`: Boolean
 
 #### String `where` filters
 
-* `{Field}:` String
-* `{Field}_not`: String
-* `{Field}_contains`: String
-* `{Field}_not_contains`: String
-* `{Field}_starts_with`: String
-* `{Field}_not_starts_with`: String
-* `{Field}_ends_with`: String
-* `{Field}_not_ends_with`: String
-* `{Field}_i`: String
-* `{Field}_not_i`: String
-* `{Field}_contains_i`: String
-* `{Field}_not_contains_i`: String
-* `{Field}_starts_with_i`: String
-* `{Field}_not_starts_with_i`: String
-* `{Field}_ends_with_i`: String
-* `{Field}_not_ends_with_i`: String
-* `{Field}_in`: \[String]
-* `{Field}_not_in`: \[String]
+- `{Field}:` String
+- `{Field}_not`: String
+- `{Field}_contains`: String
+- `{Field}_not_contains`: String
+- `{Field}_starts_with`: String
+- `{Field}_not_starts_with`: String
+- `{Field}_ends_with`: String
+- `{Field}_not_ends_with`: String
+- `{Field}_i`: String
+- `{Field}_not_i`: String
+- `{Field}_contains_i`: String
+- `{Field}_not_contains_i`: String
+- `{Field}_starts_with_i`: String
+- `{Field}_not_starts_with_i`: String
+- `{Field}_ends_with_i`: String
+- `{Field}_not_ends_with_i`: String
+- `{Field}_in`: \[String]
+- `{Field}_not_in`: \[String]
 
 #### ID `where` filters
 
-* `{Field}`: ID
-* `{Field}_not`: ID
-* `{Field}_in`: \[ID!]
-* `{Field}_not_in`: \[ID!]
+- `{Field}`: ID
+- `{Field}_not`: ID
+- `{Field}_in`: \[ID!]
+- `{Field}_not_in`: \[ID!]
 
 #### Integer `where` filters
 
-* `{Field}`: Int
-* `{Field}_not`: Int
-* `{Field}_lt`: Int
-* `{Field}_lte`: Int
-* `{Field}_gt`: Int
-* `{Field}_gte`: Int
-* `{Field}_in`: \[Int]
-* `{Field}_not_in`: \[Int]
+- `{Field}`: Int
+- `{Field}_not`: Int
+- `{Field}_lt`: Int
+- `{Field}_lte`: Int
+- `{Field}_gt`: Int
+- `{Field}_gte`: Int
+- `{Field}_in`: \[Int]
+- `{Field}_not_in`: \[Int]
 
 #### Operators
 
 You can combine multiple where clauses with `AND` or `OR` operators.
 
-* `AND`: \[whereInput]
-* `OR`: \[whereInput]
+- `AND`: \[whereInput]
+- `OR`: \[whereInput]
 
 ```graphql
 query {

@@ -22,9 +22,9 @@ Core field types are those included in the `@itoa/fields` package and fall under
 
 There's no definitive guide as to when a field should be a core field type, but generally speaking, the core fields consist of "primitive" values like:
 
-* `Text`,
-* `Number`,
-* `DateTime` etc,
+- `Text`,
+- `Number`,
+- `DateTime` etc,
 
 These usually map fairly well to primitive data types common to many programming languages and databases. However Itoa is a CMS and essential types for CMS applications extend beyond data types.
 
@@ -63,10 +63,10 @@ After reviewing existing fields and applying the above decision making process r
 
 We've realised the following field types are non-core field types:
 
-* `CloudinaryImage`
-* `OEmbed`
-* `UnSplash`
-* `Location`
+- `CloudinaryImage`
+- `OEmbed`
+- `UnSplash`
+- `Location`
 
 These will be moved out of the core fields package.
 

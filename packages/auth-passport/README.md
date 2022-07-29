@@ -28,15 +28,15 @@ This package enables three authentication flows;
 When creating a new account in Itoa, the service (Google, Twitter, etc)
 provides some basic user information such as name and, if enabled, email. Often
 this information alone is enough to create a new Itoa account, so it is
-the default authentication flow known as *Single Step Account Creation*.
+the default authentication flow known as _Single Step Account Creation_.
 
 For example, when logging in with Google, the user will;
 
-* Click "Login with Google"
-* Be redirected to google.com's authentication page if not already logged in
-* Be asked to grant permission for your Itoa app
-* Be redirected to your application's *callback* URL
-* This package will create a new account & authenticate the user, then trigger
+- Click "Login with Google"
+- Be redirected to google.com's authentication page if not already logged in
+- Be asked to grant permission for your Itoa app
+- Be redirected to your application's _callback_ URL
+- This package will create a new account & authenticate the user, then trigger
   `onAuthenticated({ token, item, isNewItem })` with `isNewItem = true` (see [the API
   docs below](#api))
 
@@ -47,20 +47,20 @@ account in Itoa. For example, your application may require the user's age,
 or want to confirm the email address provided by the service.
 
 The [default Single Step Flow](#single-step-account-creation-and-authentication) can
-be extended to *pause* account creation while we gather the extra information
-from the user. Pausing even works across page refreshes. This is known as *Multi
-Step Account Creation*.
+be extended to _pause_ account creation while we gather the extra information
+from the user. Pausing even works across page refreshes. This is known as _Multi
+Step Account Creation_.
 
-For example, when logging in with Google, the user will *(differences from [the
-Single Step Flow](#single-step-account-creation-and-authentication) are bolded)*:
+For example, when logging in with Google, the user will _(differences from [the
+Single Step Flow](#single-step-account-creation-and-authentication) are bolded)_:
 
-* Click "Login with Google"
-* Be redirected to google.com's authentication page if not already logged in
-* Be asked to grant permission for your Itoa app
-* Be redirected to your application's *callback* URL
-* **Be redirected to a form to gather more information**
-* **Submit the form which will resume account creation & authentication**
-* This package will create a new account & authenticate the user, then trigger
+- Click "Login with Google"
+- Be redirected to google.com's authentication page if not already logged in
+- Be asked to grant permission for your Itoa app
+- Be redirected to your application's _callback_ URL
+- **Be redirected to a form to gather more information**
+- **Submit the form which will resume account creation & authentication**
+- This package will create a new account & authenticate the user, then trigger
   `onAuthenticated({ token, item, isNewItem })` with `isNewItem = true` (see [the API
   docs below](#api))
 
@@ -70,10 +70,10 @@ When a user has previously created an account via a given service, this package
 will use information stored in the `idField` (see [the API docs below](#api)) to
 match the account and authenticate them:
 
-* Click "Login with Google"
-* Be redirected to google.com's authentication page if not already logged in
-* Be redirected to your application's *callback* URL
-* This package will authenticate the existing user, then trigger
+- Click "Login with Google"
+- Be redirected to google.com's authentication page if not already logged in
+- Be redirected to your application's _callback_ URL
+- This package will authenticate the existing user, then trigger
   `onAuthenticated({ token, item, isNewItem })` with `isNewItem = false` (see
   [the API docs below](#api))
 

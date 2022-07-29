@@ -19,23 +19,23 @@ There are several categorisations that can be applied to hooks and are useful fo
 
 ### Stage
 
-Itoa defines several *stages* within the [hook execution order](#intra-hook-execution-order).
+Itoa defines several _stages_ within the [hook execution order](#intra-hook-execution-order).
 These stages are intended to be used for different purposes; they help organise your hook functionality.
 
-* Input resolution - modify the values supplied
-* Data validation - check the values are valid
-* Before operation - perform side effects *before* the primary operation
-* After operation - perform side effects *after* the primary operation
+- Input resolution - modify the values supplied
+- Data validation - check the values are valid
+- Before operation - perform side effects _before_ the primary operation
+- After operation - perform side effects _after_ the primary operation
 
 ### Operation
 
 Hooks are available for these core operations:
 
-* `create`
-* `update`
-* `delete`
-* `authenticate`
-* `unauthenticate`
+- `create`
+- `update`
+- `delete`
+- `authenticate`
+- `unauthenticate`
 
 These operations are used for both "single" and "many" modes.
 E.g. the `deleteUser` (singular) and `deleteUsers` (plural) mutations are both considered to be `delete` operations.
@@ -47,20 +47,20 @@ See the [Hook API docs](/docs/api/hooks.md) for specifics.
 
 ### Hook type
 
-A hook *type* is defined by where it is attached.
-Itoa recognises three *types* of hook:
+A hook _type_ is defined by where it is attached.
+Itoa recognises three _types_ of hook:
 
-* [Field Type hooks](/docs/api/hooks.md#field-type-hooks) -
-  Field Type hooks are associated with a particular *field type* and are applied to all fields of that type across all lists.
-* [Field hooks](/docs/api/hooks.md#field-hooks) -
+- [Field Type hooks](/docs/api/hooks.md#field-type-hooks) -
+  Field Type hooks are associated with a particular _field type_ and are applied to all fields of that type across all lists.
+- [Field hooks](/docs/api/hooks.md#field-hooks) -
   Field hooks can be defined by the app developer by specifying the `hooks` attribute of a field configuration when calling `createList()`.
-* [List hooks](/docs/api/hooks.md#list-hooks) -
+- [List hooks](/docs/api/hooks.md#list-hooks) -
   List hooks can be defined by the app developer by specifying the `hooks` attribute of a list configuration when calling `createList()`.
 
 ### Hook set
 
-For most *stage* and *operation* combinations, different functions (hooks) can be supplied for each *hook type*.
-This group of distinct but related hooks are referred to as a *hook set*.
+For most _stage_ and _operation_ combinations, different functions (hooks) can be supplied for each _hook type_.
+This group of distinct but related hooks are referred to as a _hook set_.
 
 E.g. a `beforeDelete` function could be supplied for a list, several specific fields on the list and a field type used by the list.
 All hooks in a hook set share the same functional signature but are invoked at different times.
@@ -68,8 +68,8 @@ See the [Hooks API docs](/docs/api/hooks.md) and [Intra-Hook Execution Order sec
 
 ### Putting it together
 
-In total there are 13 *hook sets* available.
-This table shows the *hook set* relevant to each combination of *stage* and *operation*:
+In total there are 13 _hook sets_ available.
+This table shows the _hook set_ relevant to each combination of _stage_ and _operation_:
 
 | Stage            | `create`        | `update`        | `delete`         | `authenticate`      | `unauthenticate` |
 | ---------------- | --------------- | --------------- | ---------------- | ------------------- | ---------------- |
@@ -78,7 +78,7 @@ This table shows the *hook set* relevant to each combination of *stage* and *ope
 | Before operation | `beforeChange`  | `beforeChange`  | `beforeDelete`   | `beforeAuth`        | `beforeUnauth`   |
 | After operation  | `afterChange`   | `afterChange`   | `afterDelete`    | `afterAuth`         | `afterUnauth`    |
 
-The `create`, `update` and `delete` *hook sets* can be attached as *list*, *field* or *field type* hooks.
+The `create`, `update` and `delete` _hook sets_ can be attached as _list_, _field_ or _field type_ hooks.
 The `authenticate` and `unauthenticate` hook sets are unique in that they can only be defined when creating an authentication strategy.
 
 Due to their similarity, the `create` and `update` operations share a single set of hooks.
@@ -139,14 +139,14 @@ Within each hook set, the different [hook types](#hook-type) are invoked in a sp
 The hook system is powerful but its breadth and flexibility introduce some complexity.
 A few of the main stumbling blocks are:
 
-* The `create` and `update` operations share a single set of hooks.
+- The `create` and `update` operations share a single set of hooks.
   To implement different logic for these operations make it conditional on either the `operation` or `existingItem` arguments;
   for create operations `existingItem` will be `undefined`.
-* As per the table above, the `delete` operations have no hook set for the *input resolution* stage.
+- As per the table above, the `delete` operations have no hook set for the _input resolution_ stage.
   This operation doesn't accept any input (other than the target IDs).
-* Itoa does not currently implement `read` hooks.
-* Field type hooks and field hooks are run in parallel.
-* The `authenticate` and `unauthenticate` hook sets are unique in that they can only be defined when creating an authentication strategy.
+- Itoa does not currently implement `read` hooks.
+- Field type hooks and field hooks are run in parallel.
+- The `authenticate` and `unauthenticate` hook sets are unique in that they can only be defined when creating an authentication strategy.
 
 These nuances aren't bugs per se -- they generally exist for good reason --
 but they can make understanding the hook system difficult.

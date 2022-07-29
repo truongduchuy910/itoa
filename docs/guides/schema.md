@@ -5,11 +5,11 @@ title: Data modelling
 
 # Data modelling
 
-A schema definition (*often abbreviated to "schema"*) is defined by:
+A schema definition (_often abbreviated to "schema"_) is defined by:
 
-* a set of **Lists**
-* containing one or more **Fields**
-* which each have a **Type**
+- a set of **Lists**
+- containing one or more **Fields**
+- which each have a **Type**
 
 <!-- TODO: Link to glossary -->
 
@@ -103,10 +103,10 @@ is thrown if a `task` value is not provided when creating/updating items.
 
 <!-- TODO: Screenshot -->
 
-*For more List options, see the [`createList()` API docs](/docs/api/create-list.md).*
+_For more List options, see the [`createList()` API docs](/docs/api/create-list.md)._
 
-*[There are many different field types available](/packages/fields/README.md),
-each specifying their own options.*
+_[There are many different field types available](/packages/fields/README.md),
+each specifying their own options._
 
 ### Related lists
 
@@ -119,7 +119,7 @@ data modeling requirements.
 
 #### Why relationships?
 
-*Already know Relationships? [Skip to **Defining Relationships** below](#defining-relationships).*
+_Already know Relationships? [Skip to **Defining Relationships** below](#defining-relationships)._
 
 To understand the power of Relationships, let's imagine a world without them:
 
@@ -245,8 +245,8 @@ We can avoid the duplicate data by moving it out into its own `User` list:
 | 1    | Tici   | tici@example.com |
 
 The `createdBy` field is no longer a name, but instead refers to the `id` of an
-item in the `User` list (commonly referred to as *[data
-normalization](https://en.wikipedia.org/wiki/Database_normalization)*).
+item in the `User` list (commonly referred to as _[data
+normalization](https://en.wikipedia.org/wiki/Database_normalization)_).
 
 This gives us only one place to update `email`.
 
@@ -342,14 +342,14 @@ query {
 
 A note on definitions:
 
-* **To-single / To-many** refer to *the number of related items* (1, or more than 1).
-* **One-way / Two-way** refer to *the direction of the query*.
-* **Back References** refer to a special type of two-way relationships where *one
-  field can update a related list's field as it changes*.
+- **To-single / To-many** refer to _the number of related items_ (1, or more than 1).
+- **One-way / Two-way** refer to _the direction of the query_.
+- **Back References** refer to a special type of two-way relationships where _one
+  field can update a related list's field as it changes_.
 
 #### To-single Relationships
 
-When you have a single related item you want to refer to, a *to-single*
+When you have a single related item you want to refer to, a _to-single_
 relationship allows storing that item, and querying it via the GraphQL API.
 
 ```javascript
@@ -410,7 +410,7 @@ The data stored in the database for the `createdBy` field will be a single ID:
 #### To-many Relationships
 
 When you have multiple items you want to refer to from a single field, a
-*to-many* relationship will store an array, also exposing that array via the
+_to-many_ relationship will store an array, also exposing that array via the
 GraphQL API.
 
 ```javascript
@@ -475,11 +475,11 @@ IDs:
 #### Two-way Relationships
 
 In the [to-single](#to-single-relationships) and
-[to-many](#to-many-relationships) examples above, we were only querying *in one
-direction*; always from the list with the Relationship field.
+[to-many](#to-many-relationships) examples above, we were only querying _in one
+direction_; always from the list with the Relationship field.
 
-Often, you will want to query *in both directions* (aka *two-way*). For example:
-you may want to list all Todo tasks for a User *and* want to list the User who
+Often, you will want to query _in both directions_ (aka _two-way_). For example:
+you may want to list all Todo tasks for a User _and_ want to list the User who
 owns a Todo.
 
 A two-way relationship requires having a `Relationship` field on both lists:
@@ -503,8 +503,8 @@ itoa.createList('User', {
 
 Here we have two relationships:
 
-* A *to-single* `createdBy` field on the `Todo` list, and
-* A *to-many* `todoList` field on the `User` list.
+- A _to-single_ `createdBy` field on the `Todo` list, and
+- A _to-many_ `todoList` field on the `User` list.
 
 Now it's possible to query in both directions:
 
@@ -557,7 +557,7 @@ The database would look like:
 | 1    | Tici   | tici@example.com | \[1, 2]    |
 | 2    | Jess   | jess@example.com | \[3, 4, 5] |
 
-Note the two relationship fields in this example *know nothing about each other*.
+Note the two relationship fields in this example _know nothing about each other_.
 They are not specially linked. This means if you update data in one place, you
 must update it in both. To automate this and link two relationship fields, read
 on about `Relationship Back References` below.
@@ -565,8 +565,8 @@ on about `Relationship Back References` below.
 #### Relationship Back References
 
 There is a special type of [two-way relationship](#two-way-relationships) where
-*one field can update a related list's field as it changes*. The mechanism
-enabling this is called *Back References*.
+_one field can update a related list's field as it changes_. The mechanism
+enabling this is called _Back References_.
 
 ```javascript
 itoa.createList('Todo', {
@@ -599,7 +599,7 @@ mutation {
 }
 ```
 
-*See [the Relationship API docs for more on `connect`](/packages/fields/src/types/Relationship/README.md).*
+_See [the Relationship API docs for more on `connect`](/packages/fields/src/types/Relationship/README.md)._
 
 If this was the first `Todo` item created, the database would now look like:
 
@@ -616,7 +616,7 @@ If this was the first `Todo` item created, the database would now look like:
 | 1    | Tici   | tici@example.com | \[]        |
 
 Notice the `Todo` item's `createdBy` field is set, but the `User` item's
-`todoList` does *not* contain the ID of the newly created `Todo`!
+`todoList` does _not_ contain the ID of the newly created `Todo`!
 
 If we were to query the data now, we would get:
 
@@ -648,9 +648,9 @@ query {
 # }
 ```
 
-*Back References* solve this problem.
+_Back References_ solve this problem.
 
-To setup a back reference, we need to specify both the list *and the field* in
+To setup a back reference, we need to specify both the list _and the field_ in
 the `ref` option:
 
 ```javascript
@@ -750,9 +750,9 @@ itoa.createList('User', {
 });
 ```
 
-In this case, we'll create the first task along with creating the user. *For
+In this case, we'll create the first task along with creating the user. _For
 more info on the `create` syntax, see
-[the Relationship API docs](/packages/fields/src/types/Relationship/README.md).*
+[the Relationship API docs](/packages/fields/src/types/Relationship/README.md)._
 
 ```graphql
 mutation {

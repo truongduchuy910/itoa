@@ -48,7 +48,7 @@ const itoa = new Itoa({
 
 ### `cookie`
 
-***Default:*** see Usage.
+**_Default:_** see Usage.
 
 A description of the cookie properties is included in the [express-session documentation](https://github.com/expressjs/session#cookie).
 
@@ -77,7 +77,7 @@ The secret used to sign session ID cookies. In production mode (`process.env.NOD
 
 ### `defaultAccess`
 
-***Default:***
+**_Default:_**
 
 ```js
 {
@@ -91,7 +91,7 @@ Default list and field access. See the [Access Control](https://www.itoa.vn/api/
 
 ### `onConnect`
 
-***Default:*** `undefined`
+**_Default:_** `undefined`
 
 Callback function that executes once `itoa.connect()` is complete. Takes no arguments.
 
@@ -109,7 +109,7 @@ const itoa = new Itoa({
 });
 ```
 
-* `maxTotalResults`: limit of the total results of all relationship subqueries
+- `maxTotalResults`: limit of the total results of all relationship subqueries
 
 Note that `maxTotalResults` applies to the total results of all relationship queries separately, even if some are nested inside others.
 
@@ -130,7 +130,7 @@ const itoa = new Itoa({
 
 ### `schemaNames`
 
-***Default:*** `['public']`
+**_Default:_** `['public']`
 
 ## Methods
 
@@ -173,8 +173,8 @@ itoa.connect();
 
 Creates a new authentication middleware instance. See:
 
-* [Authentication guide](https://www.itoa.vn/guides/authentication)
-* [Authentication API docs](https://www.itoa.vn/api/authentication)
+- [Authentication guide](https://www.itoa.vn/guides/authentication)
+- [Authentication API docs](https://www.itoa.vn/api/authentication)
 
 ```javascript allowCopy=false showLanguage=false
 const authStrategy = itoa.createAuthStrategy({...});
@@ -184,8 +184,8 @@ const authStrategy = itoa.createAuthStrategy({...});
 
 Registers a new list with Itoa and returns a `Itoa` list object. See:
 
-* [Adding lists tutorial](/docs/tutorials/add-lists.md)
-* [Data modelling guide](/docs/guides/schema.md)
+- [Adding lists tutorial](/docs/tutorials/add-lists.md)
+- [Data modelling guide](/docs/guides/schema.md)
 
 ```javascript allowCopy=false showLanguage=false
 itoa.createList('Posts', {...});
@@ -234,7 +234,7 @@ See the [Custom schema guide](/docs/guides/custom-schema.md) for more informatio
 | queries   | `array` | A list of objects of the form `{ schema, resolver, access }`.                                  |
 | mutations | `array` | A list of objects of the form `{ schema, resolver, access }`.                                  |
 
-* The `schema` for both queries and mutations should be a string defining the GraphQL schema element for the query/mutation, e.g.
+- The `schema` for both queries and mutations should be a string defining the GraphQL schema element for the query/mutation, e.g.
 
 ```javascript
 {
@@ -242,7 +242,7 @@ See the [Custom schema guide](/docs/guides/custom-schema.md) for more informatio
 }
 ```
 
-* The `resolver` for both queries and mutations should be a resolver function with following signature:
+- The `resolver` for both queries and mutations should be a resolver function with following signature:
 
 ```javascript
 {
@@ -256,8 +256,8 @@ For more information about the first four arguments, please see the [Apollo docs
 | -------- | -------------------------------------------------- |
 | `access` | Access control information about the current user. |
 
-* The `access` argument for `types`, `queries`, and `mutations` are all either boolean values which are used at schema generation time to include or exclude the item from the schema, or a function which must return boolean.
-* See the [Access control API](https://www.itoa.vn/api/access-control#custom-schema-access-control) docs for more details.
+- The `access` argument for `types`, `queries`, and `mutations` are all either boolean values which are used at schema generation time to include or exclude the item from the schema, or a function which must return boolean.
+- See the [Access control API](https://www.itoa.vn/api/access-control#custom-schema-access-control) docs for more details.
 
 ### `prepare(config)`
 

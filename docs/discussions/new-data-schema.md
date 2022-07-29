@@ -8,11 +8,11 @@ title: A new data schema
 > **Note:** This document refers to a set of package releases which are all part of one Itoa release.
 > These package releases are collectively known as the `Arcade` release of Itoa. The packages included are:
 >
-> * `@itoa/adapter-knex`: `9.0.0`
-> * `@itoa/adapter-mongoose`: `8.0.0`
-> * `@itoa/fields`: `9.0.0`
-> * `@itoa/itoa`: `8.0.0`
-> * `@itoa/mongo-join-builder`: `7.0.0`
+> - `@itoa/adapter-knex`: `9.0.0`
+> - `@itoa/adapter-mongoose`: `8.0.0`
+> - `@itoa/fields`: `9.0.0`
+> - `@itoa/itoa`: `8.0.0`
+> - `@itoa/mongo-join-builder`: `7.0.0`
 
 We are excited to announce a **new and improved data schema** for Itoa.
 The new data schema simplifies the way your data is stored and will unlock the development of new functionality within Itoa.
@@ -23,7 +23,7 @@ The new data schema simplifies the way your data is stored and will unlock the d
 
 Itoa provides an extremely powerful graphQL API which includes filtering, sorting, and nested queries / mutations.
 The full CRUD API is generated from simple `List` definitions provided by you, the developer.
-All of this functionality is powered by our *database adapters*, which convert your graphQL queries into SQL/NoSQL queries and then convert the results back to graphQL.
+All of this functionality is powered by our _database adapters_, which convert your graphQL queries into SQL/NoSQL queries and then convert the results back to graphQL.
 
 Itoa needs to know about, and manage, the schema of the underlying database so it can correctly construct its queries.
 We designed our database schemas when we first developed the database adapters, and they have served us very well.

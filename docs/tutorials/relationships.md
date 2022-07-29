@@ -108,6 +108,6 @@ UI you can pick multiple tasks for a user.
 
 See also:
 
-* [Relationships](/docs/discussions/relationships.md)
-* [Schema - Lists & Fields](/docs/guides/schema.md)
-* [Field Types - Relationship](/packages/fields/src/types/Relationship/README.md)
+- [Relationships](/docs/discussions/relationships.md)
+- [Schema - Lists & Fields](/docs/guides/schema.md)
+- [Field Types - Relationship](/packages/fields/src/types/Relationship/README.md)

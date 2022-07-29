@@ -12,9 +12,9 @@ Itoa can be easily built as a Docker container image, suitable for deploying on 
 
 Recommended guides:
 
-* [Get Started with Docker](https://docs.docker.com/get-started/)
-* [Intro Guide to Dockerfile Best Practices](https://blog.docker.com/2019/07/intro-guide-to-dockerfile-best-practices/)
-* [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
+- [Get Started with Docker](https://docs.docker.com/get-started/)
+- [Intro Guide to Dockerfile Best Practices](https://blog.docker.com/2019/07/intro-guide-to-dockerfile-best-practices/)
+- [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 
 You'll need to add a [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file) file to the root of your Itoa project (or wherever the image is built from) to avoid including unwanted files in the image. Here's an example of what it might look like:
 

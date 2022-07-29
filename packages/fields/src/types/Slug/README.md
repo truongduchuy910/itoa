@@ -92,33 +92,33 @@ generation was based on, the slug should stay as `abc123`.
 
 There is one situation where the `Slug` field cannot guarantee stability; when:
 
-* The `regenerateOnUpdate` flag is `true`, and
-* Performing an `update` mutation, and
-* A `slug` value is passed in which is not unique in the list
+- The `regenerateOnUpdate` flag is `true`, and
+- Performing an `update` mutation, and
+- A `slug` value is passed in which is not unique in the list
 
 For example:
 
 1. Perform a `create` mutation: `createPost(data: { slug: "hello-world" }) { slug }`.
 
-   * Result: `{ slug: "hello-world" }`
+   - Result: `{ slug: "hello-world" }`
 
 2. Perform a second `create` mutation with the same slug: `createPost(data: { slug: "hello-world" }) { id slug }`.
 
-   * Result (approximately): `{ id: "1", slug: "hello-world-weer84fs" }`
+   - Result (approximately): `{ id: "1", slug: "hello-world-weer84fs" }`
 
 3. Perform an update to the second item, with the same slug as the first (again): `updatePost(id: "1", data: { slug: "hello-world" }) { id slug }`.
-   * Result (approximately): `{ id: "1", slug: "hello-world-uyi3lh32" }`
-   * The slug has changed, even though we passed the same slug in. This happens
+   - Result (approximately): `{ id: "1", slug: "hello-world-uyi3lh32" }`
+   - The slug has changed, even though we passed the same slug in. This happens
      because there is no way to know what the previously passed-in slug was, only
-     the most recently *uniquified* slug (ie; `"hello-world-weer84fs"`).
+     the most recently _uniquified_ slug (ie; `"hello-world-weer84fs"`).
 
 #### Workarounds
 
 1. Don't pass in values for the `Slug` field. Instead, create a `generate`
-   function which does the work for you in a *deterministic* way. In this
+   function which does the work for you in a _deterministic_ way. In this
    scenario, we are able to compare what would have previously been generated as
    the slug to the newly generated slug and re-use the old one if they match.
-2. Specify a *deterministic* `makeUnique` function (the default is to add a
+2. Specify a _deterministic_ `makeUnique` function (the default is to add a
    random suffix). This will ensure that when the duplicate slug is detected, it
    will re-generate the same "uniqueified" slug each time. This can be done by
    adding an incrementing number on each call.

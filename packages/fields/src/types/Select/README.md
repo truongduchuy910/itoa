@@ -34,9 +34,9 @@ itoa.createList('Orders', {
 
 The `options` config can be supplied as either:
 
-* A comma-separates list of values, eg: `'Pending, Processed, Errored'`
-* An array of strings, eg: `['ready', 'sent', 'deleted']`
-* An array of objects, each specifying an `value` and `label`, eg:
+- A comma-separates list of values, eg: `'Pending, Processed, Errored'`
+- An array of strings, eg: `['ready', 'sent', 'deleted']`
+- An array of objects, each specifying an `value` and `label`, eg:
 
 ```js
 const options = [
@@ -57,9 +57,9 @@ itoa.createList('Rsvp', {
 
 The Select field can store its value as any of the three following types:
 
-* `enum` (stored as a string in MongoDB)
-* `string`
-* `integer`
+- `enum` (stored as a string in MongoDB)
+- `string`
+- `integer`
 
 The dataType will also affect the type definition for the GraphQL Schema.
 

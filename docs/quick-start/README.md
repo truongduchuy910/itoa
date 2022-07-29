@@ -15,8 +15,8 @@ Let's build a simple Todo app with a fresh install of Itoa!
 
 Before we start, make sure that you have a basic development environment set up, with the following tools installed on your system.
 
-* [Node.js](https://nodejs.org/) >= 10.x: Node.js is a server platform which runs JavaScript.
-* [yarn](https://yarnpkg.com/) or [npm](https://docs.npmjs.com/cli/npm): yarn and npm are different package managers which can be used to install Itoa.
+- [Node.js](https://nodejs.org/) >= 10.x: Node.js is a server platform which runs JavaScript.
+- [yarn](https://yarnpkg.com/) or [npm](https://docs.npmjs.com/cli/npm): yarn and npm are different package managers which can be used to install Itoa.
 
 ```shell allowCopy=false showLanguage=false
 $ node --version
@@ -32,8 +32,8 @@ $ yarn --version
 You will also need to have a database for Itoa to store your application data in.
 You can use either `MongoDB` or `PostgreSQL`.
 
-* [MongoDB](https://www.mongodb.com/) >= 4.x: MongoDB is a powerful NoSQL document storage database.
-* [PostgreSQL](https://www.postgresql.org) >= 9.x: PostgreSQL is an open source relational database that uses the SQL language.
+- [MongoDB](https://www.mongodb.com/) >= 4.x: MongoDB is a powerful NoSQL document storage database.
+- [PostgreSQL](https://www.postgresql.org) >= 9.x: PostgreSQL is an open source relational database that uses the SQL language.
 
 Follow the [database setup](/docs/quick-start/adapters.md) instructions to install and configure your database, and to find out what your `connection string` is.
 
@@ -94,20 +94,20 @@ You are now running your very own Itoa application! Here's what you get out of t
 
 Your simple todo application is up and running:
 
-* <http://localhost:3000>
+- <http://localhost:3000>
 
 ### Admin UI
 
 Your application also has an Admin UI, which lets you directly manipulate the data in your database:
 
-* <http://localhost:3000/admin>
+- <http://localhost:3000/admin>
 
 ### GraphQL API
 
 Both your application and the Admin UI are powered by a GraphQL API.
 Itoa provides a web interface for this API at this URL:
 
-* <http://localhost:3000/admin/graphiql>
+- <http://localhost:3000/admin/graphiql>
 
 ## Next steps
 

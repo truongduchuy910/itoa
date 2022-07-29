@@ -12,9 +12,9 @@ running the `itoa dev` or `itoa start` commands.
 In some circumstances, you may want to have more control over the server which
 handles the GraphQL API and Admin UI. Things such as:
 
-* Add additional routes
-* Setup additional server middleware (`compress`/`brotli`/etc)
-* Notify a 3rd party service when the API is ready
+- Add additional routes
+- Setup additional server middleware (`compress`/`brotli`/etc)
+- Notify a 3rd party service when the API is ready
 
 A **custom server** can replace the default and act as the entry point to your
 application which consumes your [schema definition](/docs/guides/schema.md). A custom
@@ -24,9 +24,9 @@ server must handle initialising a http server which correctly executes any given
 
 Apps available in Itoa include:
 
-* [Static App](/packages/app-static/README.md) for serving static files.
-* [Next.js App](/packages/app-next/README.md) for serving a Next.js App on the same server as the API
-* [Nuxt.js App](/packages/app-nuxt/README.md) for serving a Nuxt.js App on the same server as the API
+- [Static App](/packages/app-static/README.md) for serving static files.
+- [Next.js App](/packages/app-next/README.md) for serving a Next.js App on the same server as the API
+- [Nuxt.js App](/packages/app-nuxt/README.md) for serving a Nuxt.js App on the same server as the API
 
 ## You may not need a custom server
 

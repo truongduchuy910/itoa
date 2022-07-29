@@ -18,10 +18,10 @@ The traditional method for interfacing with applications on the web is a REST AP
 
 This structure makes REST predictable but also highlights some limitations. Since a request method is limited to a single `CRUD` operation, it encourages API design that has a single end-point for each entity in the system. For example, a simple website might have the following end-points:
 
-* <http://my-api.com/user>
-* <http://my-api.com/post>
-* <http://my-api.com/comment>
-* <http://my-api.com/page>
+- <http://my-api.com/user>
+- <http://my-api.com/post>
+- <http://my-api.com/comment>
+- <http://my-api.com/page>
 
 In large systems, this can lead to APIs with many dozen or even hundreds of end-points. This is a common criticism of REST.
 

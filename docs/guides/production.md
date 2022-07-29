@@ -38,8 +38,8 @@ openssl rand -hex 32
 
 Sessions are stored inside the Itoa app by default, but in production it's recommended to store them in an external server such as Redis instead. You can use [any of the stores that work with `express session`](https://github.com/expressjs/session#compatible-session-stores). The advantages of using an external server are that
 
-* You can restart your app for upgrades without breaking sessions
-* You can replicate your Itoa app for availability, while keeping sessions consistent
+- You can restart your app for upgrades without breaking sessions
+- You can replicate your Itoa app for availability, while keeping sessions consistent
 
 This option can be set using the [sessionStore](/packages/itoa/README.md#sessionstore) property in the `Itoa` constructor configuration object.
 
@@ -57,7 +57,7 @@ Add [query limits](/docs/api/create-list.md#querylimits) and [validation](/docs/
 
 ## Using reverse proxies
 
-It's recommended to run production Javascript servers behind a reverse proxy such as [Nginx](https://nginx.org/), [HAProxy](https://www.haproxy.org/), a CDN or a cloud-based application (layer 7) load balancer. Doing that can improve performance and protect against [Slowloris Dos attacks](https://en.wikipedia.org/wiki/Slowloris_\(computer_security\)). The express application variable [`trust proxy`](https://expressjs.com/en/guide/behind-proxies.html) must be set to support reverse proxying:
+It's recommended to run production Javascript servers behind a reverse proxy such as [Nginx](https://nginx.org/), [HAProxy](https://www.haproxy.org/), a CDN or a cloud-based application (layer 7) load balancer. Doing that can improve performance and protect against [Slowloris Dos attacks](<https://en.wikipedia.org/wiki/Slowloris_(computer_security)>). The express application variable [`trust proxy`](https://expressjs.com/en/guide/behind-proxies.html) must be set to support reverse proxying:
 
 ```javascript title=index.js
 module.exports = {

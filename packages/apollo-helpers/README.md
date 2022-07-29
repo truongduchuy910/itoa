@@ -219,12 +219,12 @@ We've created a new `Event` with data `{ id: "def456" }`, which Apollo will also
 }
 ```
 
-> Notice the `allEvents` and `Group:xyz789.events` queries were *not* updated with the new event; this is a caching problem.
+> Notice the `allEvents` and `Group:xyz789.events` queries were _not_ updated with the new event; this is a caching problem.
 
 To work around it, we have 2 options:
 
 1. Blow everything in the cache away after every mutation with `client.resetStore()` (the sledge hammer approach)
-2. Use Apollo's `writeQuery` method to update the cache after each mutation. This requires every place where we perform a `<Mutation>` to know about *all other possible queries that could be affected*! This leads to tightly coupled components and overly verbose code. Eg; The component rendering `allEvents` shouldn't need to know or care there is a component calling the query `allGroups` which could result in this cache problem.
+2. Use Apollo's `writeQuery` method to update the cache after each mutation. This requires every place where we perform a `<Mutation>` to know about _all other possible queries that could be affected_! This leads to tightly coupled components and overly verbose code. Eg; The component rendering `allEvents` shouldn't need to know or care there is a component calling the query `allGroups` which could result in this cache problem.
 
 This module introduces a 3rd way of solving the issue:
 
@@ -336,7 +336,7 @@ Now the cache is:
 
 Not only are `allEvents` & `Group:xyz789` out of date, but so is `_allEventsMeta` (it should be `{ count: 3 }`).
 
-If we were to use this module's `<Mutation>` component, *but decoupled from Itoa*, the cache at this point would be:
+If we were to use this module's `<Mutation>` component, _but decoupled from Itoa_, the cache at this point would be:
 
 ```json allowCopy=false showLanguage=false
 {
@@ -355,7 +355,7 @@ This example highlights the limits of other approaches (see below for possible w
 
 In swoops Itoa to the rescue! 🦅
 
-We *do* know the related type information within Itoa! It's a walled garden which we control, so can extract further information such as *`_allEventsMeta` is a query that relates to `Event`s*.
+We _do_ know the related type information within Itoa! It's a walled garden which we control, so can extract further information such as _`_allEventsMeta` is a query that relates to `Event`s_.
 
 So, using this module's `<Mutation>` component:
 

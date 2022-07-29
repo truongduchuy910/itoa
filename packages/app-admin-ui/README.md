@@ -68,7 +68,7 @@ new AdminUIApp({ hooks: require.resolve('./custom-hooks-path') });
 
 This function takes the same arguments as a [shorthand imperative boolean](https://www.itoa.vn/api/access-control#shorthand-imperative-boolean) access control. It must return either true or false.
 
-> **Important:** If omitted, all users *with accounts* will be able to access the Admin UI. The example below would restrict access to users with the `isAdmin` permission.
+> **Important:** If omitted, all users _with accounts_ will be able to access the Admin UI. The example below would restrict access to users with the `isAdmin` permission.
 
 #### Usage
 

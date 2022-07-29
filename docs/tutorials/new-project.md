@@ -60,7 +60,7 @@ module.exports = {
 };
 ```
 
-Although our app doesn't do much yet, it *is* able to start and connect to a
+Although our app doesn't do much yet, it _is_ able to start and connect to a
 database.
 
 <!-- FIXME:TL How exactly does this happen? How do we know? -->

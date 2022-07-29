@@ -105,8 +105,8 @@ the list `User` it would match the input type `UserWhereInput`.
 
 When resolving `StaticAccess`:
 
-* `true`: Allow access
-* `false`: Do not allow access
+- `true`: Allow access
+- `false`: Do not allow access
 
 Definition of `access` operations:
 
@@ -171,7 +171,7 @@ itoa.createList('User', {
 });
 ```
 
-> **Note:** Even when returning `false`, the queries/mutations/types *will* be
+> **Note:** Even when returning `false`, the queries/mutations/types _will_ be
 > included in the GraphQL Schema.
 
 ### Granular imperative Boolean
@@ -191,7 +191,7 @@ itoa.createList('User', {
 ```
 
 > **Note:** Even when returning `false`, the queries/mutations/types for that
-> operation *will* be included in the GraphQL Schema. For example, `create: () => false` will still include the `createXXXX` mutation in
+> operation _will_ be included in the GraphQL Schema. For example, `create: () => false` will still include the `createXXXX` mutation in
 > the GraphQL Schema, and so on.
 
 ### GraphQLWhere
@@ -227,7 +227,7 @@ itoa.createList('User', {
 
 #### Granular imperative `GraphQLWhere`
 
-Use when you need some more fine grained control over which items *and*
+Use when you need some more fine grained control over which items _and_
 actions anonymous/authenticated users can perform.
 
 ```javascript
@@ -261,7 +261,7 @@ A key on the field config, `access` can be specified either as a single control,
 covering all CRU operations, or as an object keyed by CRU operation names.
 
 > **Important:** Unlike List level access, it is not possible to specify a Declarative
-> *where* clause for Field level access.
+> _where_ clause for Field level access.
 
 There are 2 ways to define the values of `access`, in order of flexibility:
 
@@ -300,7 +300,7 @@ type FieldConfig = {
 ```
 
 > **Note:** Fields do not have `delete` or `auth` access controls - these controls exists on
-> the list level only (it's not possible to *"delete"* an existing field value -
+> the list level only (it's not possible to _"delete"_ an existing field value -
 > only to modify it, and authentication is list-wide).
 
 | Property                 | Description                                                                                                   |
@@ -320,8 +320,8 @@ type FieldConfig = {
 
 When defining `StaticAccess`:
 
-* `true`: Allow access
-* `false`: Do not allow access
+- `true`: Allow access
+- `false`: Do not allow access
 
 Definition of `access` operations:
 
@@ -396,7 +396,7 @@ itoa.createList('User', {
 });
 ```
 
-> **Note:** Even when returning `false`, the queries/mutations/types *will*
+> **Note:** Even when returning `false`, the queries/mutations/types _will_
 > include the field in the GraphQL Schema.
 
 ### Granular imperative Boolean
@@ -414,7 +414,7 @@ itoa.createList('User', {
 });
 ```
 
-> **Note:** Even when returning `false`, this field *will* be included in GraphQL
+> **Note:** Even when returning `false`, this field _will_ be included in GraphQL
 > queries/mutations/types exclusively used by that operation.
 > Eg, setting `update: () => false` in the example above will still include the
 > `name` field in the `UserUpdateInput` type.
@@ -466,7 +466,7 @@ itoa.extendGraphQLSchema({
 
 > Useful if default custom access controls are set to `false`.
 
-*NOTE:* When set to `false`, the custom queries/mutations/types will not be included in the GraphQL schema.
+_NOTE:_ When set to `false`, the custom queries/mutations/types will not be included in the GraphQL schema.
 
 ### Imperative boolean
 
@@ -486,4 +486,4 @@ itoa.extendGraphQLSchema({
 
 > Enables turning access on/off based on the currently authenticated user.
 
-*NOTE:* Even when returning `false`, the custom queries/mutations/types *will* be included in the GraphQL Schema.
+_NOTE:_ Even when returning `false`, the custom queries/mutations/types _will_ be included in the GraphQL Schema.

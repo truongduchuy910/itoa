@@ -10,11 +10,11 @@ Access control enforces who can do what with your GraphQL API.
 
 ## Introduction
 
-What a user *can* and *cannot* do in Itoa depends on two things: *authentication* and *access control*.
+What a user _can_ and _cannot_ do in Itoa depends on two things: _authentication_ and _access control_.
 
-This guide focuses on the GraphQL API *access control*, which refers to the specific actions an authenticated or anonymous user can take.
+This guide focuses on the GraphQL API _access control_, which refers to the specific actions an authenticated or anonymous user can take.
 
-*Authentication*, on the other hand, refers to a user identifying themselves in the Admin UI.
+_Authentication_, on the other hand, refers to a user identifying themselves in the Admin UI.
 You can learn about it in the [Authentication guide](/docs/guides/authentication.md).
 
 ## GraphQL access control
@@ -28,12 +28,12 @@ which lets you define rules of access control with fine precision - see [Access 
 
 Let's assume we want set the following access controls for a `User` list:
 
-1. Only admins can *read* deactivated user accounts.
-2. Only authenticated users can *read/update* their own email, not any other user's. Admins can *read/update* anyone's email.
+1. Only admins can _read_ deactivated user accounts.
+2. Only authenticated users can _read/update_ their own email, not any other user's. Admins can _read/update_ anyone's email.
 3. Only admins can see if a password is set. No-one can read their own or other
    user's passwords.
-   * *NOTE: It is **never** possible in Itoa to read a password via the
-     Admin UI or the API)*
+   - _NOTE: It is **never** possible in Itoa to read a password via the
+     Admin UI or the API)_
 4. Only authenticated users can update their own password. Admins can update
    anyone's password.
 
@@ -102,7 +102,7 @@ When logged in to the Admin UI as "Jess", will result in a list view like:
 | Jess    | jess@thinkmill.com.au |          | active |
 | Lauren  |                       |          | active |
 
-Note that Jess can only read *his own* email, and cannot read any passwords.
+Note that Jess can only read _his own_ email, and cannot read any passwords.
 
 ---
 

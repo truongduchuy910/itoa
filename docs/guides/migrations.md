@@ -28,7 +28,7 @@ itoa.createList('ExampleList', {
 
 Using the KnexAdapter if we create an `ExampleList` that contains an `Integer` field called `age` when we start Itoa for the first time it will generate a table with an `id` and `age` column:
 
-| table\_name  | column\_name | data\_type |
+| table_name  | column_name | data_type |
 | ----------- | ----------- | --------- |
 | ExampleList | id          | integer   |
 | ExampleList | age         | integer   |
@@ -45,7 +45,7 @@ itoa.createList('ExampleList', {
 
 If we restart Itoa after this change it will throw an error. The `data_type` of the `age` column is now a `text` value and it should contain a string representation of the age range. The table should change to something like the following:
 
-| table\_name  | column\_name | data\_type |
+| table_name  | column_name | data_type |
 | ----------- | ----------- | --------- |
 | ExampleList | id          | integer   |
 | ExampleList | age         | text      |

@@ -77,12 +77,12 @@ itoa.createList('Post', {
 
 ## Differences from `Relationship`
 
-* No `many: true`. This field is purely for a to-single relationship and cannot
+- No `many: true`. This field is purely for a to-single relationship and cannot
   be used to refer to more than one item.
-* Cannot specify a `defaultValue`. The entire purpose of this field is to
+- Cannot specify a `defaultValue`. The entire purpose of this field is to
   provide that method for you.
-* When setting `isRequired`, it will be checked during the "default value" phase
+- When setting `isRequired`, it will be checked during the "default value" phase
   of the mutation lifecycle. This means it may throw an error earlier than other
   fields
-* Default access control set to `{ create: false, read: true, update: false }`
-* Access control *does not* respect any Itoa-level `defaultAccess`
+- Default access control set to `{ create: false, read: true, update: false }`
+- Access control _does not_ respect any Itoa-level `defaultAccess`

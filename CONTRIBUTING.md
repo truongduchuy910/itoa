@@ -10,10 +10,10 @@ Itoa makes no assumptions about type of applications it powers. It achieves flex
 
 For this reason we might not add features to Itoa if they are prescriptive about:
 
-* Data structures
-* Workflows
-* Access controls
-* Front-end application UI
+- Data structures
+- Workflows
+- Access controls
+- Front-end application UI
 
 But we want your contributions! We recognise many types of applications share common features and prescriptive patterns can sometimes be helpful, even at the expense of flexibility.
 
@@ -35,12 +35,12 @@ This information is then collated when performing a release to update package ve
 
 #### What all contributors need to do
 
-* Make your changes (as per usual)
-* Before you make a Pull Request, run the `yarn changeset` command and answer the questions that are asked. It will want to know:
-  * which packages you want to publish
-  * what version you are releasing them at
-  * a message to summarise the changes (this message will be written to the changelog of bumped packages)
-* Before you accept the changeset, it will display all the data that will be written to the changeset. If this looks fine, agree, and a changeset will be generated in the `.changeset` directory.
+- Make your changes (as per usual)
+- Before you make a Pull Request, run the `yarn changeset` command and answer the questions that are asked. It will want to know:
+  - which packages you want to publish
+  - what version you are releasing them at
+  - a message to summarise the changes (this message will be written to the changelog of bumped packages)
+- Before you accept the changeset, it will display all the data that will be written to the changeset. If this looks fine, agree, and a changeset will be generated in the `.changeset` directory.
 
 After this, a new changeset will be added which is a markdown file with YAML front matter.
 
@@ -53,9 +53,9 @@ The message you typed can be found in the markdown file. If you want to expand o
 
 While not every changeset is going to need a huge amount of detail, a good idea of what should be in a changeset is:
 
-* WHAT the change is
-* WHY the change was made
-* HOW a consumer should update their code
+- WHAT the change is
+- WHY the change was made
+- HOW a consumer should update their code
 
 An example, if you generate a changeset that includes `adapter-mongoose` as a patch, and `itoa` as a minor, you can merge your PR, and the next time the `version-packages` command is run, these will both be updated.
 
@@ -94,8 +94,8 @@ appropriate `CHANGELOG.md` entries and `package.json` version bumps.
 
 Once ready for a release, merge the bot's PR into `main`.
 
-> *NOTE: For information on manually updating packages, see [Update Packages
-> (manual)](#update-packages-manual)*
+> _NOTE: For information on manually updating packages, see [Update Packages
+> (manual)](#update-packages-manual)_
 
 ##### Publish Packages
 
@@ -114,7 +114,7 @@ NOTE: There is no reason you should ever manually edit the version in the `packa
 ##### Update Packages (manual)
 
 If you wish to do a manual release (useful for back-porting fixes), follow these
-steps. Otherwise, skip on to the next section for *Publishing Packages*.
+steps. Otherwise, skip on to the next section for _Publishing Packages_.
 
 The first step is `yarn version-packages`. This will find all changesets that have been created since the last release, and update the version in package.json as specified in those changesets, flattening out multiple bumps to a single package into a single version update.
 
@@ -156,34 +156,34 @@ In addition, content added above the last released version will automatically be
 
 Occasionally a bug goes undetected for a few versions. When a fix is discovered,
 it may need to be applied to all affected versions (depending on the
-severity, security considerations, etc). This is called *backporting*.
+severity, security considerations, etc). This is called _backporting_.
 
 First, find out the oldest version which was affected. This can be done using
 `git blame`, browsing the `CHANGELOG.md`s, etc.
 
 Once we know which version introduced the bug, walk forward through the
-`CHANGELOG.md` noting all the *minor* and *major* releases made since.
+`CHANGELOG.md` noting all the _minor_ and _major_ releases made since.
 
 > Example: If a bug was introduced in `14.0.0`, but not discovered until after
-> `15.1.1` was released, the list of *minor* and *major* releases may look like:
+> `15.1.1` was released, the list of _minor_ and _major_ releases may look like:
 >
-> * `14.0.x`
-> * `14.1.x`
-> * `15.0.x`
-> * `15.1.x`
+> - `14.0.x`
+> - `14.1.x`
+> - `15.0.x`
+> - `15.1.x`
 
-We're going to do a backport and release for the HEAD of every *minor* and
-*major* release, ignoring any interim patch releases.
+We're going to do a backport and release for the HEAD of every _minor_ and
+_major_ release, ignoring any interim patch releases.
 
 > Example: These may be the releases we'd backport to:
 >
-> * ❌ `14.0.0`
-> * ✅ `14.0.1`
-> * ✅ `14.1.0`
-> * ❌ `15.0.0`
-> * ❌ `15.0.1`
-> * ✅ `15.0.2`
-> * ✅ `15.1.0`
+> - ❌ `14.0.0`
+> - ✅ `14.0.1`
+> - ✅ `14.1.0`
+> - ❌ `15.0.0`
+> - ❌ `15.0.1`
+> - ✅ `15.0.2`
+> - ✅ `15.1.0`
 
 Now, for each release we want to backport to, we follow this process:
 
@@ -219,7 +219,7 @@ Now, for each release we want to backport to, we follow this process:
    git commit -m "Backport fix"
    ```
 
-4. Do *NOT* open a PR
+4. Do _NOT_ open a PR
 
    This change is not going to be PR'd into main. Instead we'll later push
    the tag which contains the commits.
@@ -250,7 +250,7 @@ Now, for each release we want to backport to, we follow this process:
      <!-- this was the cd command but we don't have a command to replace the exact bolt part yet    cd `bolt ws $PACKAGE_NAME exec -- pwd | grep pwd | sed -e 's/.*pwd[ ]*//'` && \ w
    -->
 
-   *NOTE: When prompted for "New version", just hit Enter*
+   _NOTE: When prompted for "New version", just hit Enter_
 
 6. Confirm it was published
 
@@ -355,4 +355,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ```
+
 ```

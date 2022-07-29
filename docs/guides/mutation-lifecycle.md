@@ -9,27 +9,27 @@ order: 2
 
 ## Table of Contents
 
-* [Introduction](#introduction)
+- [Introduction](#introduction)
 
-* [Mutation phases](#mutation-phases)
+- [Mutation phases](#mutation-phases)
 
-  * [Access control phase](#access-control-phase)
+  - [Access control phase](#access-control-phase)
 
-    * [1. Check List Access (`create/update/delete/authenticate`)](#1-check-list-access-createupdatedeleteauthenticate)
-    * [2. Get Item(s) (`update/delete`)](#2-get-items-updatedelete)
-    * [3. Check Field Access (`create/update`)](#3-check-field-access-createupdate)
+    - [1. Check List Access (`create/update/delete/authenticate`)](#1-check-list-access-createupdatedeleteauthenticate)
+    - [2. Get Item(s) (`update/delete`)](#2-get-items-updatedelete)
+    - [3. Check Field Access (`create/update`)](#3-check-field-access-createupdate)
 
-  * [Operational Phase](#operational-phase)
+  - [Operational Phase](#operational-phase)
 
-    * [1. Resolve Defaults (`create`)](#1-resolve-defaults-create)
-    * [2. Resolve Relationship (`create/update`)](#2-resolve-relationship-createupdate)
-    * [3. Resolve Input (`create/update/authenticate`)](#3-resolve-input-createupdateauthenticate)
-    * [4. Validate Data (`create/update/delete/authenticate`)](#4-validate-data-createupdatedeleteauthenticate)
-    * [5. Before Operation (`create/update/delete/authenticate`)](#5-before-operation-createupdatedeleteauthenticate)
-    * [6. Database Operation (`create/update/delete/authenticate`)](#6-database-operation-createupdatedeleteauthenticate)
-    * [8. After Operation (`create/update/delete/authenticate`)](#8-after-operation-createupdatedeleteauthenticate)
+    - [1. Resolve Defaults (`create`)](#1-resolve-defaults-create)
+    - [2. Resolve Relationship (`create/update`)](#2-resolve-relationship-createupdate)
+    - [3. Resolve Input (`create/update/authenticate`)](#3-resolve-input-createupdateauthenticate)
+    - [4. Validate Data (`create/update/delete/authenticate`)](#4-validate-data-createupdatedeleteauthenticate)
+    - [5. Before Operation (`create/update/delete/authenticate`)](#5-before-operation-createupdatedeleteauthenticate)
+    - [6. Database Operation (`create/update/delete/authenticate`)](#6-database-operation-createupdatedeleteauthenticate)
+    - [8. After Operation (`create/update/delete/authenticate`)](#8-after-operation-createupdatedeleteauthenticate)
 
-* [Summary](#summary)
+- [Summary](#summary)
 
 ## Introduction
 
@@ -38,14 +38,14 @@ Each of these mutations can be applied to either a single item or many items at 
 
 For a `List` called `User` the GraphQL mutations would be:
 
-* Single item
-  * `createUser`
-  * `updateUser`
-  * `deleteUser`
-* Multiple items
-  * `createUsers`
-  * `updateUsers`
-  * `deleteUsers`
+- Single item
+  - `createUser`
+  - `updateUser`
+  - `deleteUser`
+- Multiple items
+  - `createUsers`
+  - `updateUsers`
+  - `deleteUsers`
 
 Each of these mutations is implemented within Itoa by a corresponding resolver, implemented as a method on the core `List` object.
 
@@ -64,7 +64,7 @@ This document details the lifecycle of each mutation, and how the different acce
 
 ## Mutation phases
 
-Each mutation goes through two key phases: the *Access Control Phase* and the *Operational Phase*.
+Each mutation goes through two key phases: the _Access Control Phase_ and the _Operational Phase_.
 During the Access Control Phase the developer defined access controls are evaluated, and the target items are retrieved from the database (`update` and `delete` only).
 
 During the Operational Phase the developer defined hooks are invoked, the mutation operation (create/update/delete) is performed in the database, and any nested mutations are performed.
@@ -127,7 +127,7 @@ The Operational Phase consists of the following distinct steps.
 
 The first step when creating a new item is to resolve any default values.
 
-Any fields which are not set on the provided item *and* have a configured default value will be set to the default value.
+Any fields which are not set on the provided item _and_ have a configured default value will be set to the default value.
 
 The default value of a field can be configured at `List` definition time with the config attribute `defaultValue`.
 

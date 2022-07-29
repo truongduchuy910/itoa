@@ -75,7 +75,7 @@ In our posts, we don't have a `name` field - the primary identifying field `titl
 
 Not super human friendly.
 
-We could rename title to name, but that's not what we want. What we *do* want is to make the label use the title for display. For this, we can add a `labelResolver` to our post field
+We could rename title to name, but that's not what we want. What we _do_ want is to make the label use the title for display. For this, we can add a `labelResolver` to our post field
 
 ```js
 const Post = {

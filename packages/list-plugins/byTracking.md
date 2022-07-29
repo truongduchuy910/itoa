@@ -44,7 +44,7 @@ By default access control on at tracking fields is read only:
 
 ## Granular control
 
-If you prefer, you can import *either* `createdBy` or `updatedBy` to apply a single tracking field:
+If you prefer, you can import _either_ `createdBy` or `updatedBy` to apply a single tracking field:
 
 ```javascript
 const { createdBy, updatedBy } = require('@itoa/list-plugins');

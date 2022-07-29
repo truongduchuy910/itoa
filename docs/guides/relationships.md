@@ -13,12 +13,12 @@ Throughout this guide we will use the example of a blog application which has `U
 
 ## One-sided vs two-sided
 
-A relationship in Itoa exists *between* two lists.
-In our blog, the concept of *authorship* (who wrote a post) can be represented as a relationship between the `User` and the `Post` lists.
+A relationship in Itoa exists _between_ two lists.
+In our blog, the concept of _authorship_ (who wrote a post) can be represented as a relationship between the `User` and the `Post` lists.
 
 The first question you need to consider is which list do you want to be able to access the relationship from in your graphQL API?
 In our blog we might want to be able to ask about a `user's posts`, a `post's author`, or possibly both.
-If you only need to access one side of the relationship then you want to configure a *one-sided* relationship. If you need both, then you want to configure a *two-sided* relationship.
+If you only need to access one side of the relationship then you want to configure a _one-sided_ relationship. If you need both, then you want to configure a _two-sided_ relationship.
 
 Let's assume that each post in our blog has a single author and look at how we would use the `ref` option to configure both a one-sided and two-sided relationship.
 
@@ -91,8 +91,8 @@ Query {
 
 ## Cardinality
 
-The second question we need to ask is what the *cardinality* of our relationship should be.
-The *cardinality* of a relationship is the number items which can exist on either side of the relationship.
+The second question we need to ask is what the _cardinality_ of our relationship should be.
+The _cardinality_ of a relationship is the number items which can exist on either side of the relationship.
 In our blog do we want each post to have exactly one author, or can it have multiple authors?
 Are users allowed to write more than one post or do we want to restrict them to exactly one post each for some reason?
 The answers to these questions will give us the cardinality of our relationship.
@@ -203,7 +203,7 @@ Note that we have used `many: false` in both the `authors` and `posts` fields.
 
 When configuring a relationship in Itoa there are two key questions you need to answer:
 
-* Do I want a one-sided or two-sided relationship?
-* What is the cardinality of my relationship?
+- Do I want a one-sided or two-sided relationship?
+- What is the cardinality of my relationship?
 
 Once you know the answers to these questions you can configure your relationship using the `ref` and `many` options.

@@ -79,7 +79,7 @@ We have now added a `posts` field to the `User` list, and changed the `ref` conf
 We now have two `Relationship` fields, but importantly, we still **only have one relationship**.
 The two fields simply represent different sides of the one relationship.
 
-This type of configuration is called a *two-sided* relationship, while the original configuration without `posts` was a *one-sided* relationship.
+This type of configuration is called a _two-sided_ relationship, while the original configuration without `posts` was a _one-sided_ relationship.
 
 We can now write the following query to find all the posts written by each user:
 
@@ -97,9 +97,9 @@ Query {
 
 There are some important things to remember when defining a two-sided relationship:
 
-* Even though there are two fields, there is only one relationship between the lists.
-* The `ref` config must be formatted as `<listName>.<fieldName>` and both sides must refer to each other.
-* Both fields are sharing the same data. If you change the author of a post, that post will no longer show up in the original author's `posts`.
+- Even though there are two fields, there is only one relationship between the lists.
+- The `ref` config must be formatted as `<listName>.<fieldName>` and both sides must refer to each other.
+- Both fields are sharing the same data. If you change the author of a post, that post will no longer show up in the original author's `posts`.
 
 ## Self-referential lists
 
@@ -129,11 +129,11 @@ itoa.createList('User', {
 });
 ```
 
-The only relationship configuration not currently supported is having a field reference *itself*, e.g. `friends: { type: Relationship, ref: 'User.friends', many: true }`.
+The only relationship configuration not currently supported is having a field reference _itself_, e.g. `friends: { type: Relationship, ref: 'User.friends', many: true }`.
 
 ## Cardinality
 
-The *cardinality* of a relationship is the number items which can exist on either side of the relationship.
+The _cardinality_ of a relationship is the number items which can exist on either side of the relationship.
 In general, each side can have either `one` or `many` related items.
 Since each relationship has two sides this means we can have `one-to-one`, `one-to-many` and `many-to-many` relationships.
 

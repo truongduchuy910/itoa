@@ -96,7 +96,7 @@ This can cause problems with casing.
 
 Hexadecial itself is case agnostic.
 The hex value `AF3D` is identical to the hex value `af3d`; they both encode the same value as `44861` in decimal and `1010111100111101` in binary.
-However, in JavaScript, Mongo and (depending on your configuration) some other DB platforms, the *String* `'AF3D'` does not equal the string `'af3d'`.
+However, in JavaScript, Mongo and (depending on your configuration) some other DB platforms, the _String_ `'AF3D'` does not equal the string `'af3d'`.
 
 For this field type, we mitigate this problem using the [`caseTo` config option](#config).
 This can be used to force the case of your values (to upper or lower case) whenever they're read, written or compared.

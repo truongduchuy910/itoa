@@ -74,7 +74,7 @@ app.post('/admin/signin', async (req, res) => {
 
 ### `identityField`
 
-The field `path` for values that *uniquely* identifies items.
+The field `path` for values that _uniquely_ identifies items.
 For human actors this is usually a field that contains usernames or email addresses.
 For automated access, the `id` may be appropriate.
 
@@ -84,8 +84,8 @@ The field `path` for secret values known only to the authenticating party.
 The type used by this field must expose a comparison function with the signature
 `compare(candidateValue, storedValue)` where:
 
-* `candidateValue` is the (plaintext) value supplied by the actor attempting to authenticate
-* `storedValue` is a value stored by the field on an item (usually a hash)
+- `candidateValue` is the (plaintext) value supplied by the actor attempting to authenticate
+- `storedValue` is a value stored by the field on an item (usually a hash)
 
 The build in `Password` field type fulfils this requirements.
 
@@ -98,21 +98,21 @@ Information about existing accounts can inadvertently leaked to malicious actors
 When `protectIdentities` is `false`,
 authentication attempts will return helpful messages with known keys:
 
-* `[passwordAuth:identity:notFound]`
-* `[passwordAuth:identity:multipleFound]`
-* `[passwordAuth:secret:mismatch]`
+- `[passwordAuth:identity:notFound]`
+- `[passwordAuth:identity:multipleFound]`
+- `[passwordAuth:secret:mismatch]`
 
 As a user, this can be useful to know and indicating these different condition in
 the UI increases usability.
 However, it also exposes information about existing accounts.
-A malicious actor can use this behaviour to *verify* account identities making further attacks easier.
+A malicious actor can use this behaviour to _verify_ account identities making further attacks easier.
 Since identity values are often email addresses or based on peoples names (eg. usernames),
 verifying account identities can also expose personal data outright.
 
 When `protectIdentities` is `true` these error messages and keys are suppressed.
 Responses to failed authentication attempts contain only a generic message and key:
 
-* `[passwordAuth:failure]`
+- `[passwordAuth:failure]`
 
 This aligns with the Open Web Application Security Project (OWASP)
 [authentication guidelines](https://www.owasp.org/index.php/Authentication_Cheat_Sheet#Authentication_Responses)

@@ -49,9 +49,9 @@ the field type.
 
 There are currently three views that can be provided:
 
-* `Field` - the form control rendered in the **Item Details** view
-* `Cell` - the content rendered in the List view
-* `Filter` - the filter control rendered in the filters dropdown in the List view
+- `Field` - the form control rendered in the **Item Details** view
+- `Cell` - the content rendered in the List view
+- `Filter` - the filter control rendered in the filters dropdown in the List view
 
 ```typescript
 type FilterProps<Value> = {

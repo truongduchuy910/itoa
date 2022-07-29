@@ -24,7 +24,7 @@ itoa.createList('Post', {
 
 ### Migration strategy
 
-* No changes are required for these relationships.
+- No changes are required for these relationships.
 
 ## Many-to-many (one-sided)
 
@@ -44,14 +44,14 @@ itoa.createList('Post', {
 
 #### PostgreSQL
 
-* Rename `Post_authors` to `Post_authors_many`.
-* Rename `Post_id` to `Post_left_id` and `User_id` to `User_right_id`.
+- Rename `Post_authors` to `Post_authors_many`.
+- Rename `Post_id` to `Post_left_id` and `User_id` to `User_right_id`.
 
 #### MongoDB
 
-* Create a collection `post_authors_manies` with fields `Post_left_id` and `User_right_id`.
-* Move the data from `posts.authors` into `post_authors_manies`.
-* Delete `posts.authors`.
+- Create a collection `post_authors_manies` with fields `Post_left_id` and `User_right_id`.
+- Move the data from `posts.authors` into `post_authors_manies`.
+- Delete `posts.authors`.
 
 ## One-to-many (two-sided)
 
@@ -76,11 +76,11 @@ itoa.createList('Post', {
 
 #### PostgreSQL
 
-* Drop the `User_posts` table.
+- Drop the `User_posts` table.
 
 #### MongoDB
 
-* Remove `users.posts`.
+- Remove `users.posts`.
 
 ## Many-to-many (two-sided)
 
@@ -105,16 +105,16 @@ itoa.createList('Post', {
 
 #### PostgreSQL
 
-* Drop the `Post_authors` table.
-* Rename `User_posts` to `User_posts_Post_authors`.
-* Rename `User_id` to `User_left_id` and `Post_id` to `Post_right_id`.
+- Drop the `Post_authors` table.
+- Rename `User_posts` to `User_posts_Post_authors`.
+- Rename `User_id` to `User_left_id` and `Post_id` to `Post_right_id`.
 
 #### MongoDB
 
-* Create a collection `user_posts_post_authors` with fields `User_left_id` and `Post_right_id`.
-* Move the data from `users.posts` into `user_posts_post_authors`.
-* Delete `users.posts`.
-* Delete `posts.authors`.
+- Create a collection `user_posts_post_authors` with fields `User_left_id` and `Post_right_id`.
+- Move the data from `users.posts` into `user_posts_post_authors`.
+- Delete `users.posts`.
+- Delete `posts.authors`.
 
 ## One-to-one (two-sided)
 
@@ -143,8 +143,8 @@ One to one relationships in the `before` state had a foreign key column on each 
 In the `after` state, only one of these is stored.
 Because of the symmetry of the one-to-one relationship, Itoa makes an arbitrary decision about which column to use.
 
-* Identify the foreign key column which is no longer required, and delete it.
-* In our example above we would delete the `Post.author` column.
+- Identify the foreign key column which is no longer required, and delete it.
+- In our example above we would delete the `Post.author` column.
 
 #### MongoDB
 
@@ -152,5 +152,5 @@ One to one relationships in the `before` state had a field in each collection.
 In the `after` state, only one of these is stored.
 Because of the symmetry of the one-to-one relationship, Itoa makes an arbitrary decision about which field to use.
 
-* Identify the field which is no longer required, and delete it.
-* In our example above we would delete the `post.author` field.
+- Identify the field which is no longer required, and delete it.
+- In our example above we would delete the `post.author` field.

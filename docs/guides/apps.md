@@ -64,8 +64,8 @@ http server you setup.
 
 Other interesting Itoa compatible Apps are:
 
-* [Static App](/packages/app-static/README.md) for serving static files.
-* [Next.js App](/packages/app-next/README.md) for serving a Next.js App on the same server as the API
+- [Static App](/packages/app-static/README.md) for serving static files.
+- [Next.js App](/packages/app-next/README.md) for serving a Next.js App on the same server as the API
 
 ## Custom apps
 

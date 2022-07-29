@@ -170,7 +170,7 @@ const fileAdapter = new S3Adapter({
 
 You can also use any S3 compatible object storage provider with this adapter. You must provide the config `s3Options.endpoint` to correctly point to provider's server. Other options may be required based on which provider you choose.
 
-* [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/)
+- [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/)
 
 ```js
 const s3Options = {
@@ -180,7 +180,7 @@ const s3Options = {
 };
 ```
 
-* [Minio](https://docs.minio.io/docs/how-to-use-aws-sdk-for-javascript-with-minio-server.html)
+- [Minio](https://docs.minio.io/docs/how-to-use-aws-sdk-for-javascript-with-minio-server.html)
 
 ```js
 const s3Options = {

@@ -20,17 +20,17 @@ If not, see the guide [Your first ItoaJS app in 5 minutes](https://www.itoa.vn/q
 
 MongoDB Atlas has a free tier that we can use as our database service. You need to create an account, but you can use the free tier.
 
-* Create [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/signup) account and add a free tier Cluster.
+- Create [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/signup) account and add a free tier Cluster.
 
 ### Allow Heroku to access our database
 
-* Make sure to enable access from any network by going to SECURITY/Network Access, press \[+Add ip address], \[Allow access from anywhere] and confirm. This should add a rule that allow traffic from 0.0.0.0/0 (all networks).
+- Make sure to enable access from any network by going to SECURITY/Network Access, press \[+Add ip address], \[Allow access from anywhere] and confirm. This should add a rule that allow traffic from 0.0.0.0/0 (all networks).
 
 ### Create a new user and get the database connection string
 
-* Go to SECURITY/Database access, press \[+Add new database user] and create a new user with read and write privileges.
+- Go to SECURITY/Database access, press \[+Add new database user] and create a new user with read and write privileges.
 
-* Take a note of the database connection string by selecting Clusters, press \[Connect], \[Connect your application], select Node.js and copy the connection string. It should look something like this `mongodb+srv://<username>:<password>@cluster0-szafh.azure.mongodb.net/test?retryWrites=true&w=majority`.
+- Take a note of the database connection string by selecting Clusters, press \[Connect], \[Connect your application], select Node.js and copy the connection string. It should look something like this `mongodb+srv://<username>:<password>@cluster0-szafh.azure.mongodb.net/test?retryWrites=true&w=majority`.
 
 ## Heroku
 
@@ -40,20 +40,20 @@ Also Heroku has a free option. To use that we need to start to create a new acco
 
 Heroku CLI is used to push the app to Heroku.
 
-* Download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
+- Download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 
 ### Create a new Heroku app
 
-* Create an account on [Heroku](https://heroku.com).
-* A new app can then be [created from the dashboard](https://dashboard.heroku.com/new-app).
+- Create an account on [Heroku](https://heroku.com).
+- A new app can then be [created from the dashboard](https://dashboard.heroku.com/new-app).
 
 ### Setup your database connection
 
 ItoaJS automatically fetches the database connection string from an environment variable. And as Heroku apps also can handle environment variables we use that to provide our database connection string to the ItoaJS app.
 
-* Go to your Heroku app in the dashboard, select Settings and press \[Reveal config vars].
+- Go to your Heroku app in the dashboard, select Settings and press \[Reveal config vars].
 
-* Create a new environment variable called `MONGO_URI` set it to the database connection string we got from MongoDB Atlas, e.g. `mongodb+srv://<username>:<password>@cluster0-szafh.azure.mongodb.net/test?retryWrites=true&w=majority`.
+- Create a new environment variable called `MONGO_URI` set it to the database connection string we got from MongoDB Atlas, e.g. `mongodb+srv://<username>:<password>@cluster0-szafh.azure.mongodb.net/test?retryWrites=true&w=majority`.
 
 ### Push the ItoaJS app to Heroku
 

@@ -76,8 +76,8 @@ Higher values are slower but, since they take longer to generate, more secure ag
 The default value of 10 will allow the generation of a several hashes per second, per core, on most machines.
 
 Note the `workFactor` supplied is applied by the bcrypt algorithm as an exponent of 2.
-As such, a work factor of 11 will cause passwords to take *twice* as long to hash and validate as a work factor of 10.
-A work factor of 12 will cause passwords to take *four times* as long as 10. Etc.
+As such, a work factor of 11 will cause passwords to take _twice_ as long to hash and validate as a work factor of 10.
+A work factor of 12 will cause passwords to take _four times_ as long as 10. Etc.
 
 ### `bcrypt`
 
@@ -111,7 +111,7 @@ See the [Authentication docs](/docs/guides/authentication.md) for details.
 ### Output fields
 
 In normal usage, hash values should not be externally accessible.
-As such `Password` fields do *not* add a `String` output field.
+As such `Password` fields do _not_ add a `String` output field.
 
 | Field name       | Type      | Description                    |
 | ---------------- | --------- | ------------------------------ |

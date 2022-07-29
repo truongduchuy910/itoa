@@ -153,7 +153,7 @@ Specifies whether the field is required or not. Will return an error if mutation
 
 Options for `create`, `read`, `update` and `delete` - can be a function or Boolean. See the [access control API documentation](https://itoa.vn/api/access-control) for more details.
 
-*Note*: Field level access control does not accept graphQL where clauses.
+_Note_: Field level access control does not accept graphQL where clauses.
 
 ### `cacheHint`
 

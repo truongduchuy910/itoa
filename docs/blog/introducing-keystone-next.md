@@ -22,13 +22,13 @@ Itoa 5 remains production-ready in active maintenance mode and now lives at [ito
 
 ### What does maintenance mode entail?
 
-* You can generally expect Itoa 5 to be feature-frozen as we work on the new version.
-* Bugs, minor changes and security features will continue to be addressed and updated versions of the Itoa 5 packages will continue to be released regularly.
-* The core team is not expecting to spend time working on new features or large changes.
-* If you have a larger change you want to submit as a PR to Itoa 5, feel free to [open an issue](https://github.com/itoa-vn/itoaissues/new) to discuss it with us.
-* We are not closing the door to community-contributed features through the maintenance period, but depending on the scope of the change and the work involved we may suggest maintaining your own fork.
-* The duration of this active maintenance mode will depend on community adoption of the new version of Itoa, and how long it takes us to reach feature parity and stability with Itoa Next.
-* We expect this active maintenance mode to last for 6 to 12 months.
+- You can generally expect Itoa 5 to be feature-frozen as we work on the new version.
+- Bugs, minor changes and security features will continue to be addressed and updated versions of the Itoa 5 packages will continue to be released regularly.
+- The core team is not expecting to spend time working on new features or large changes.
+- If you have a larger change you want to submit as a PR to Itoa 5, feel free to [open an issue](https://github.com/itoa-vn/itoaissues/new) to discuss it with us.
+- We are not closing the door to community-contributed features through the maintenance period, but depending on the scope of the change and the work involved we may suggest maintaining your own fork.
+- The duration of this active maintenance mode will depend on community adoption of the new version of Itoa, and how long it takes us to reach feature parity and stability with Itoa Next.
+- We expect this active maintenance mode to last for 6 to 12 months.
 
 ### What about open PRs and Issues?
 
