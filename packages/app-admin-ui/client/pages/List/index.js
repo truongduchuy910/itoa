@@ -53,7 +53,7 @@ export function ListLayout(props) {
 
   const Render = ({ children }) => children();
   return (
-    <main>
+    <main style={{ maxWidth: '100vw' }}>
       <Container isFullWidth>
         <HeaderInset>
           <FlexGroup align="center" justify="space-between">

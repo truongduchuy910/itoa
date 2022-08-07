@@ -26,7 +26,7 @@ export const ItemTitle = memo(function ItemTitle({ titleText }) {
   const { itemHeaderActions } = useUIHooks();
   return (
     <Container>
-      <PageTitle>{titleText}</PageTitle>
+      <PageTitle css={{ fontSize: 24 }}>{titleText}</PageTitle>
       <ListDescription text={list.adminDoc} />
       <FlexGroup align="center" justify="space-between" css={{ marginBottom: '0.9rem' }}>
         <div>

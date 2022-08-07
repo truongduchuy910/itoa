@@ -85,7 +85,7 @@ const Homepage = () => {
   // list component so we don't block rendering the lists immediately
   // to the user.
   return (
-    <main>
+    <main style={{ maxWidth: '100vw' }}>
       <DocTitle title="Home" />
       <Container>
         <HeaderInset>

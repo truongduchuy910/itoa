@@ -391,8 +391,8 @@ const ItemPage = () => {
         loading || !data
           ? {}
           : data[list.gqlNames.itemQueryName]
-          ? data[list.gqlNames.itemQueryName]
-          : {}
+            ? data[list.gqlNames.itemQueryName]
+            : {}
       ),
   ]);
 
@@ -429,7 +429,7 @@ const ItemPage = () => {
 
   return (
     <ItemProvider item={item}>
-      <main>
+      <main style={{ maxWidth: '100vw' }}>
         <DocTitle title={`${item._label_} — ${list.singular}`} />
         <Container id="toast-boundary">
           <ItemDetails
