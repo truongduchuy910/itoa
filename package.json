@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/itoa-vn/itoa.git"
   },
-  "homepage": "https://github.com/itoa-vn/itoa",
+  "homepage": "https://itoa.vn",
   "scripts": {
     "dev": "yarn demo file dev",
     "demo": "yarn --cwd ./examples",

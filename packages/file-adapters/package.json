@@ -4,7 +4,7 @@
   "version": "8.0.9",
   "main": "index.js",
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/file-adapters",
-  "homepage": "https://github.com/itoa-vn/itoa",
+  "homepage": "https://itoa.vn",
   "author": "The Itoa Development Team",
   "license": "MIT",
   "engines": {

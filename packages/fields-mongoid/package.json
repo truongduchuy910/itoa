@@ -7,7 +7,7 @@
   "main": "dist/fields-mongoid.cjs.js",
   "module": "dist/fields-mongoid.esm.js",
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/fields-mongoid",
-  "homepage": "https://github.com/itoa-vn/itoa",
+  "homepage": "https://itoa.vn",
   "engines": {
     "node": ">=10.0.0"
   },

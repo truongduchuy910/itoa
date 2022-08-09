@@ -1,7 +1,7 @@
 {
   "name": "@itoa/fields",
   "description": "ItoaJS Field Types including Text, Password, DateTime, Integer, and more.",
-  "homepage": "https://github.com/itoa-vn/itoa",
+  "homepage": "https://itoa.vn",
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/fields",
   "version": "24.3.1",
   "main": "dist/fields.cjs.js",

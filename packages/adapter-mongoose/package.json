@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/itoa-vn/itoa/issues"
   },
-  "homepage": "https://github.com/itoa-vn/itoa/tree/main#readme",
+  "homepage": "https://itoa.vn",
   "directories": {
     "lib": "lib",
     "test": "tests"

@@ -7,6 +7,6 @@
       "seller": "yarn --cwd seller"
     },
     "repository": "https://github.com/itoajs/itoa-5.git",
-    "homepage": "https://github.com/itoajs/itoa-5",
+    "homepage": "https://itoa.vn",
     "license": "MIT"
   }
