@@ -1,7 +1,7 @@
 {
   "name": "@itoa/app-admin-ui",
   "description": "ItoaJS Admin UI App.",
-  "version": "11.1.0",
+  "version": "11.1.1",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
@@ -38,8 +38,8 @@
     "@babel/core": "^7.16.0",
     "@babel/runtime": "^7.14.6",
     "@emotion/core": "^10.1.1",
-    "@itoa/field-views-loader": "^7.0.7",
-    "@itoa/fields": "^24.2.9",
+    "@itoa/field-views-loader": "^7.0.8",
+    "@itoa/fields": "^24.3.1",
     "@itoa/session": "^10.0.7",
     "@itoa/utils": "^8.0.7",
     "@primer/octicons-react": "^11.3.0",

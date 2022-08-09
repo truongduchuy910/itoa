@@ -1,14 +1,14 @@
 {
   "name": "@itoa/auth-password",
   "description": "Provides a basic password authentication strategy.",
-  "version": "7.0.8",
+  "version": "7.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/fields": "^24.2.9",
+    "@itoa/fields": "^24.3.1",
     "@itoa/session": "^10.0.7"
   },
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/auth-password"

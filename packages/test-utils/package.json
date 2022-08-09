@@ -10,9 +10,9 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/adapter-mongoose": "*",
-    "@itoa/app-graphql": "*",
-    "@itoa/itoa": "*",
+    "@itoa/adapter-mongoose": "^12.0.9",
+    "@itoa/app-graphql": "^7.0.8",
+    "@itoa/itoa": "^2.1.0",
     "@types/keystonejs__adapter-mongoose": "*",
     "@types/keystonejs__keystone": "*",
     "express": "^4.17.1",

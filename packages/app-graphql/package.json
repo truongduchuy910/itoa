@@ -1,14 +1,14 @@
 {
   "name": "@itoa/app-graphql",
   "description": "ItoaJS GraphQL App.",
-  "version": "7.0.7",
+  "version": "7.0.8",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/app-graphql-playground": "^6.0.7",
+    "@itoa/app-graphql-playground": "^6.0.8",
     "@itoa/session": "^10.0.7",
     "@itoa/utils": "^8.0.7",
     "graphql": "^15.5.0",

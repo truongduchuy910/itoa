@@ -1,6 +1,6 @@
 {
   "name": "@itoa/field-views-loader",
-  "version": "7.0.7",
+  "version": "7.0.8",
   "description": "A webpack loader used to load all the field views used in an app",
   "main": "index.js",
   "author": "The Itoa Development Team",

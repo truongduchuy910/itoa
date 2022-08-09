@@ -1,15 +1,15 @@
 {
   "name": "@itoa/list-plugins",
   "description": "List level plugins which can update list config during list initialization including adding additional fields",
-  "version": "10.0.8",
+  "version": "10.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/fields": "^24.2.9",
-    "@itoa/fields-authed-relationship": "^2.0.7"
+    "@itoa/fields": "^24.3.1",
+    "@itoa/fields-authed-relationship": "^2.0.9"
   },
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/list-plugins"
 }

@@ -35,10 +35,6 @@
     "version-packages": "changeset version && node .github/write-release-count.js",
     "build": "preconstruct build",
     "prepare": "manypkg check && preconstruct dev",
-    "contributing-guide": "is-ci && exit 0 || chalk -t \"{bold 📝 Contributing to ItoaJS?}\" && link \"🔗 Read the full Contributing Guide\" \"https://github.com/itoa-vn/itoa/blob/main/CONTRIBUTING.md\"",
-    "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate",
-    "heroku-postbuild": "yarn build && yarn workspace @itoa/demo-project-blog build",
     "npm-tag": "manypkg npm-tag",
     "update": "manypkg upgrade",
     "no-cypress-install": "cross-env CYPRESS_INSTALL_BINARY=0 yarn"
@@ -187,7 +183,6 @@
     "collectCoverageFrom": [
       "packages/**/*.js",
       "!packages/**/dist/**",
-      "!packages/apollo-helpers/**",
       "!packages/app-admin-ui/client/**",
       "!packages/arch/**",
       "!packages/create-itoa-5-app/templates/**",

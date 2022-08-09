@@ -1,7 +1,7 @@
 {
   "name": "@itoa/itoa",
   "description": "The main @itoa class & CLI. This is where the magic happens.",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@apollo/subgraph": "^0.3.1",
-    "@itoa/access-control": "^8.0.7",
-    "@itoa/app-version": "^3.0.8",
+    "@itoa/access-control": "^8.0.8",
+    "@itoa/app-version": "^3.0.9",
     "@itoa/session": "^10.0.7",
     "@itoa/utils": "^8.0.7",
     "apollo-errors": "^1.9.0",
@@ -46,7 +46,7 @@
     "terminal-link": "^2.1.1"
   },
   "devDependencies": {
-    "@itoa/fields": "^24.2.9",
+    "@itoa/fields": "^24.3.1",
     "@itoa/test-utils": "*",
     "p-is-promise": "^3.0.0",
     "tmp": "^0.2.1"

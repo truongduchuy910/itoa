@@ -1,7 +1,7 @@
 {
   "name": "@itoa/access-control",
   "description": "ItoaJS Access Control parsing and validating utilities.",
-  "version": "8.0.7",
+  "version": "8.0.8",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "main": "dist/access-control.cjs.js",

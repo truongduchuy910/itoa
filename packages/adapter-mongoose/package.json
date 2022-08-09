@@ -1,15 +1,15 @@
 {
   "name": "@itoa/adapter-mongoose",
   "description": "ItoaJS Mongoose Database adapter.",
-  "version": "12.0.8",
+  "version": "12.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@itoa/fields-mongoid": "^10.0.8",
-    "@itoa/itoa": "^2.0.9",
+    "@itoa/fields-mongoid": "^10.0.9",
+    "@itoa/itoa": "^2.1.0",
     "@itoa/utils": "^8.0.7",
     "cuid": "^2.1.8",
     "mongoose": "^5.12.13",

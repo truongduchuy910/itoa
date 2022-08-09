@@ -1,7 +1,7 @@
 {
   "name": "@itoa/fields-authed-relationship",
   "description": "ItoaJS AuthedRelationship Field Type",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "main": "dist/fields-authed-relationship.cjs.js",
@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@itoa/fields": "^24.2.9"
+    "@itoa/fields": "^24.3.1"
   },
   "devDependencies": {
-    "@itoa/auth-password": "*",
-    "@itoa/server-side-graphql-client": "*",
+    "@itoa/auth-password": "^7.0.9",
+    "@itoa/server-side-graphql-client": "^3.0.8",
     "@itoa/test-utils": "*"
   },
   "module": "dist/fields-authed-relationship.esm.js"

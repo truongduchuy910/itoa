@@ -11,10 +11,10 @@
   "repository": "https://github.com/itoa-vn/itoa/tree/main/tests/api-tests",
   "homepage": "https://github.com/itoa-vn/itoa",
   "devDependencies": {
-    "@itoa/adapter-mongoose": "*",
-    "@itoa/app-graphql": "*",
-    "@itoa/itoa": "*",
-    "@itoa/server-side-graphql-client": "*",
+    "@itoa/adapter-mongoose": "^12.0.9",
+    "@itoa/app-graphql": "^7.0.8",
+    "@itoa/itoa": "^2.1.0",
+    "@itoa/server-side-graphql-client": "^3.0.8",
     "@itoa/session": "*",
     "cookie-signature": "^1.1.0",
     "cuid": "^2.1.8",
@@ -24,10 +24,10 @@
     "testcheck": "^1.0.0-rc.2"
   },
   "dependencies": {
-    "@itoa/auth-password": "*",
-    "@itoa/fields": "*",
-    "@itoa/fields-authed-relationship": "*",
-    "@itoa/list-plugins": "*",
+    "@itoa/auth-password": "^7.0.9",
+    "@itoa/fields": "^24.3.1",
+    "@itoa/fields-authed-relationship": "^2.0.9",
+    "@itoa/list-plugins": "^10.0.9",
     "@itoa/test-utils": "*",
     "@itoa/utils": "*",
     "express": "^4.17.1"

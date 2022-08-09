@@ -1,7 +1,7 @@
 {
   "name": "@itoa/app-graphql-playground",
   "description": "ItoaJS GraphQL Playground App.",
-  "version": "6.0.7",
+  "version": "6.0.8",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "engines": {

@@ -1,7 +1,7 @@
 {
   "name": "@itoa/app-version",
   "description": "ItoaJS App Version Plugin",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "author": "The ItoaJS Development Team",
   "license": "MIT",
   "main": "dist/app-version.cjs.js",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@itoa/access-control": "^8.0.7",
+    "@itoa/access-control": "^8.0.8",
     "express": "^4.17.1"
   },
   "repository": "https://github.com/itoa-vn/itoa/tree/main/packages/app-version"
