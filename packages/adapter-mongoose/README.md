@@ -6,11 +6,7 @@ title: Mongoose adapter
 
 # Mongoose database adapter
 
-> This is the last active development release of this package as **Itoa 5** is now in a 6 to 12 month active maintenance phase. For more information please read our [Itoa 5 and beyond](https://github.com/itoa-vn/itoaissues/21) post.
-
-[![View changelog](https://img.shields.io/badge/changelogs.xyz-Explore%20Changelog-brightgreen)](https://changelogs.xyz/@itoa/adapter-mongoose)
-
-## Usage
+## Hướng dẫn
 
 ```javascript
 const { MongooseAdapter } = require('@itoa/adapter-mongoose');
@@ -20,15 +16,15 @@ const itoa = new Itoa({
 });
 ```
 
-## Config
+## Cấu hình
 
-### `mongoUri` (required)
+### `mongoUri` (bắt buộc)
 
-This is used as the `uri` parameter for `mongoose.connect()`.
+Tham số này được sử dụng trong `mongoose.connect()`.
 
-**_Default:_** Environment variable (see below) or `'mongodb://localhost/<DATABASE_NAME>'`
+**_Default:_** Biến môi trường mặc định được sử dụng xem bên dưới hoặc `'mongodb://localhost/<DATABASE_NAME>'`
 
-If not specified, ItoaJS will look for one of the following environment variables:
+Nếu không có cấu hình riêng, Itoa.js sẽ tìm kiếm sử dụng các biến môi trường sau:
 
 - `CONNECT_TO`
 - `DATABASE_URL`
@@ -39,9 +35,9 @@ If not specified, ItoaJS will look for one of the following environment variable
 - `MONGOLAB_URI`
 - `MONGOLAB_URL`
 
-### Mongoose options (optional)
+### Mongoose options (tùy chọn)
 
-Additional Mongoose config options are passed directly through to `mongoose.connect()`.
+Tham số này cũng được sử dụng trong `mongoose.connect()`.
 
 **_Default:_**
 
@@ -53,4 +49,4 @@ Additional Mongoose config options are passed directly through to `mongoose.conn
 }
 ```
 
-See the [Mongoose docs](https://mongoosejs.com/docs/api.html#mongoose_Mongoose-connect) for a detailed list of options.
+Xem thêm tài liệu [Mongoose docs](https://mongoosejs.com/docs/api.html#mongoose_Mongoose-connect) để biết thêm thông tin chi tiết.

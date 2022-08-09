@@ -1,5 +1,5 @@
 {
-  "name": "@itoa/mono-repo",
+  "name": "@itoa/core",
   "description": "ItoaJS monorepo for all the @itoa / @arch-ui (and more) packages. Powered by Yarn.",
   "private": true,
   "version": "1.0.0",
@@ -209,5 +209,6 @@
     "doc": "docs",
     "example": "examples",
     "test": "tests"
-  }
+  },
+  "devDependencies": {}
 }
