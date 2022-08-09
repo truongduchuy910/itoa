@@ -6,13 +6,9 @@ title: Admin UI app
 
 # Admin UI app
 
-> This is the last active development release of this package as **Itoa 5** is now in a 6 to 12 month active maintenance phase. For more information please read our [Itoa 5 and beyond](https://github.com/itoa-vn/itoaissues/21) post.
+Ứng dụng Itoa.js cung cấp giao diện quản lý nội dung.
 
-[![View changelog](https://img.shields.io/badge/changelogs.xyz-Explore%20Changelog-brightgreen)](https://changelogs.xyz/@itoa/app-admin-ui)
-
-A ItoaJS app which provides an Admin UI for content management.
-
-## Usage
+## Hướng dẫn
 
 ```js
 const { Itoa } = require('@itoa/itoa');
@@ -35,19 +31,19 @@ module.exports = {
 };
 ```
 
-## Config
+## Cấu hình
 
-| Option               | Type       | Default       | Description                                                                |
+| Tùy chọn             | Loại       | Mặc định      | Mô tả                                                                      |
 | -------------------- | ---------- | ------------- | -------------------------------------------------------------------------- |
-| `name`               | `String`   | `undefined`   | The name of the project.                                                   |
-| `adminPath`          | `String`   | `/admin`      | The path of the Admin UI.                                                  |
-| `apiPath`            | `String`   | `/admin/api`  | The path of the API provided to the Admin UI.                              |
-| `graphiqlPath`       | `String`   | `/admin/api`  | The path of the GraphQL Playground, an in-browser GraphQL IDE.             |
-| `authStrategy`       | `Object`   | `null`        | See [Authentication Guides](https://itoa.vn/guides/authentication)         |
-| `hooks`              | `String`   | `./admin-ui/` | Path to customization hooks. See below for more information.               |
-| `enableDefaultRoute` | `Bool`     | `false`       | If enabled, the path of the Admin UI app will be set to `/`.               |
+| `name`               | `String`   | `undefined`   | Tên của dự án                                                              |
+| `adminPath`          | `String`   | `/admin`      | Đường dẫn đến trang quản trị                                               |
+| `apiPath`            | `String`   | `/admin/api`  | Đường dẫn đến API cung cấp cho giao diện quản trị.                         |
+| `graphiqlPath`       | `String`   | `/admin/api`  | Đường dẫn đến trang tài liệu và kiểm thử API.                              |
+| `authStrategy`       | `Object`   | `null`        | Tài liệu đang được hoàn thiện, xem cách dùng trong dự án mẫu.              |
+| `hooks`              | `String`   | `./admin-ui/` | Đường dẫn đến hooks tùy biến. Xem thêm bên dưới.                           |
+| `enableDefaultRoute` | `Bool`     | `false`       | Nếu được mở, đường dẫn đến giao diện quản trị sẽ là `/`.                   |
 | `schemaName`         | `String`   | `public`      |                                                                            |
-| `isAccessAllowed`    | `Function` | `true`        | Controls which users have access to the Admin UI.                          |
+| `isAccessAllowed`    | `Function` | `true`        | Kiểm soát người dùng vào trang quản trị.                                   |
 | `adminMeta`          | `Object`   | `{}`          | Provides additional `adminMeta`. Useful for Hooks and other customizations |
 | `defaultPageSize`    | `Integer`  | 50            | The default number of list items to show at once.                          |
 | `maximumPageSize`    | `Integer`  | 1000          | The maximum number of list items to show at once.                          |
