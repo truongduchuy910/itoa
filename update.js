@@ -20,10 +20,12 @@ function reads(dir = "", name = "", root = "", exts = [".md"]) {
         const isDirectory = stats.isDirectory();
         const isFile = stats.isFile()
         if (isDirectory) {
-            directories.push(reads(child, file, root, exts));
+            const node = reads(child, file, root, exts)
+            if (node)
+                directories.push(node);
         } else if (isFile) {
             const result = path.parse(current);
-            if (exts.includes(result.ext)) {
+            if (exts.includes(result.ext) && !file.includes('CHANGELOG.md')) {
                 files.push({
                     path: `${root}/${dir}/${file}`,
                     dir: `/${dir.replace(/-/g, "/").replace(/_/g, "*").replace(/:/g, "+")}`,
@@ -32,11 +34,12 @@ function reads(dir = "", name = "", root = "", exts = [".md"]) {
             }
         }
     }
-    return { name, files, directories };
+    if (files.length || directories.length)
+        return { name, files, directories };
 }
 
 
 const guide = reads('./docs', 'guide')
 const reference = reads('./packages', 'reference')
 const data = JSON.stringify({ directories: [guide, reference] });
-fs.writeFileSync('./homepage/tree.json', data)
+fs.writeFileSync('./homepage/src/data.json', data)
