@@ -1,0 +1,1747 @@
+{
+  "directories": [
+    {
+      "name": "guide",
+      "files": [],
+      "directories": [
+        {
+          "name": "api",
+          "files": [
+            {
+              "path": "/docs\\api/access-control.md",
+              "dir": "/docs\\api",
+              "file": "access-control"
+            },
+            {
+              "path": "/docs\\api/authentication.md",
+              "dir": "/docs\\api",
+              "file": "authentication"
+            },
+            { "path": "/docs\\api/create-list.md", "dir": "/docs\\api", "file": "create-list" },
+            { "path": "/docs\\api/hooks.md", "dir": "/docs\\api", "file": "hooks" },
+            { "path": "/docs\\api/validation.md", "dir": "/docs\\api", "file": "validation" }
+          ],
+          "directories": []
+        },
+        {
+          "name": "blog",
+          "files": [
+            {
+              "path": "/docs\\blog/better-ux-with-custom-labels.md",
+              "dir": "/docs\\blog",
+              "file": "better-ux-with-custom-labels"
+            },
+            { "path": "/docs\\blog/field-types.md", "dir": "/docs\\blog", "file": "field-types" },
+            {
+              "path": "/docs\\blog/introducing-keystone-next.md",
+              "dir": "/docs\\blog",
+              "file": "introducing-keystone-next"
+            },
+            {
+              "path": "/docs\\blog/introduction-to-graphql.md",
+              "dir": "/docs\\blog",
+              "file": "introduction-to-graphql"
+            },
+            {
+              "path": "/docs\\blog/new-release-cornice.md",
+              "dir": "/docs\\blog",
+              "file": "new-release-cornice"
+            },
+            {
+              "path": "/docs\\blog/prisma-adapter.md",
+              "dir": "/docs\\blog",
+              "file": "prisma-adapter"
+            },
+            {
+              "path": "/docs\\blog/roadmap-update.md",
+              "dir": "/docs\\blog",
+              "file": "roadmap-update"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "discussions",
+          "files": [
+            {
+              "path": "/docs\\discussions/database-schema.md",
+              "dir": "/docs\\discussions",
+              "file": "database-schema"
+            },
+            {
+              "path": "/docs\\discussions/new-data-schema.md",
+              "dir": "/docs\\discussions",
+              "file": "new-data-schema"
+            },
+            {
+              "path": "/docs\\discussions/prisma.md",
+              "dir": "/docs\\discussions",
+              "file": "prisma"
+            },
+            {
+              "path": "/docs\\discussions/relationships.md",
+              "dir": "/docs\\discussions",
+              "file": "relationships"
+            },
+            {
+              "path": "/docs\\discussions/server-side-graphql.md",
+              "dir": "/docs\\discussions",
+              "file": "server-side-graphql"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "guides",
+          "files": [
+            {
+              "path": "/docs\\guides/access-control.md",
+              "dir": "/docs\\guides",
+              "file": "access-control"
+            },
+            {
+              "path": "/docs\\guides/admin-config.md",
+              "dir": "/docs\\guides",
+              "file": "admin-config"
+            },
+            { "path": "/docs\\guides/apps.md", "dir": "/docs\\guides", "file": "apps" },
+            {
+              "path": "/docs\\guides/authentication.md",
+              "dir": "/docs\\guides",
+              "file": "authentication"
+            },
+            {
+              "path": "/docs\\guides/cache-hints.md",
+              "dir": "/docs\\guides",
+              "file": "cache-hints"
+            },
+            {
+              "path": "/docs\\guides/custom-field-types.md",
+              "dir": "/docs\\guides",
+              "file": "custom-field-types"
+            },
+            {
+              "path": "/docs\\guides/custom-schema.md",
+              "dir": "/docs\\guides",
+              "file": "custom-schema"
+            },
+            {
+              "path": "/docs\\guides/custom-server.md",
+              "dir": "/docs\\guides",
+              "file": "custom-server"
+            },
+            { "path": "/docs\\guides/deployment.md", "dir": "/docs\\guides", "file": "deployment" },
+            {
+              "path": "/docs\\guides/graphql-philosophy.md",
+              "dir": "/docs\\guides",
+              "file": "graphql-philosophy"
+            },
+            { "path": "/docs\\guides/heroku.md", "dir": "/docs\\guides", "file": "heroku" },
+            { "path": "/docs\\guides/hooks.md", "dir": "/docs\\guides", "file": "hooks" },
+            {
+              "path": "/docs\\guides/intro-to-graphql.md",
+              "dir": "/docs\\guides",
+              "file": "intro-to-graphql"
+            },
+            { "path": "/docs\\guides/migrations.md", "dir": "/docs\\guides", "file": "migrations" },
+            {
+              "path": "/docs\\guides/mutation-lifecycle.md",
+              "dir": "/docs\\guides",
+              "file": "mutation-lifecycle"
+            },
+            {
+              "path": "/docs\\guides/new-schema-cheatsheet.md",
+              "dir": "/docs\\guides",
+              "file": "new-schema-cheatsheet"
+            },
+            { "path": "/docs\\guides/prisma.md", "dir": "/docs\\guides", "file": "prisma" },
+            { "path": "/docs\\guides/production.md", "dir": "/docs\\guides", "file": "production" },
+            {
+              "path": "/docs\\guides/relationship-migration.md",
+              "dir": "/docs\\guides",
+              "file": "relationship-migration"
+            },
+            {
+              "path": "/docs\\guides/relationships.md",
+              "dir": "/docs\\guides",
+              "file": "relationships"
+            },
+            { "path": "/docs\\guides/road-map.md", "dir": "/docs\\guides", "file": "road-map" },
+            { "path": "/docs\\guides/schema.md", "dir": "/docs\\guides", "file": "schema" },
+            { "path": "/docs\\guides/validation.md", "dir": "/docs\\guides", "file": "validation" }
+          ],
+          "directories": []
+        },
+        {
+          "name": "quick-start",
+          "files": [
+            {
+              "path": "/docs\\quick-start/adapters.md",
+              "dir": "/docs\\quick/start",
+              "file": "adapters"
+            },
+            {
+              "path": "/docs\\quick-start/README.md",
+              "dir": "/docs\\quick/start",
+              "file": "README"
+            }
+          ],
+          "directories": [{ "name": "img", "files": [], "directories": [] }]
+        },
+        {
+          "name": "tutorials",
+          "files": [
+            {
+              "path": "/docs\\tutorials/add-lists.md",
+              "dir": "/docs\\tutorials",
+              "file": "add-lists"
+            },
+            {
+              "path": "/docs\\tutorials/custom-fields.md",
+              "dir": "/docs\\tutorials",
+              "file": "custom-fields"
+            },
+            {
+              "path": "/docs\\tutorials/initial-data.md",
+              "dir": "/docs\\tutorials",
+              "file": "initial-data"
+            },
+            {
+              "path": "/docs\\tutorials/new-project.md",
+              "dir": "/docs\\tutorials",
+              "file": "new-project"
+            },
+            {
+              "path": "/docs\\tutorials/relationships.md",
+              "dir": "/docs\\tutorials",
+              "file": "relationships"
+            }
+          ],
+          "directories": []
+        }
+      ]
+    },
+    {
+      "name": "reference",
+      "files": [],
+      "directories": [
+        {
+          "name": "access-control",
+          "files": [
+            {
+              "path": "/packages\\access-control/CHANGELOG.md",
+              "dir": "/packages\\access/control",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\access-control/README.md",
+              "dir": "/packages\\access/control",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "dist",
+              "files": [],
+              "directories": [
+                {
+                  "name": "declarations",
+                  "files": [],
+                  "directories": [{ "name": "src", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            { "name": "src", "files": [], "directories": [] },
+            { "name": "tests", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "adapter-mongoose",
+          "files": [
+            {
+              "path": "/packages\\adapter-mongoose/CHANGELOG.md",
+              "dir": "/packages\\adapter/mongoose",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\adapter-mongoose/README.md",
+              "dir": "/packages\\adapter/mongoose",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "lib", "files": [], "directories": [] },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [{ "name": ".bin", "files": [], "directories": [] }]
+            },
+            { "name": "tests", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "app-admin-ui",
+          "files": [
+            {
+              "path": "/packages\\app-admin-ui/CHANGELOG.md",
+              "dir": "/packages\\app/admin/ui",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-admin-ui/README.md",
+              "dir": "/packages\\app/admin/ui",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "client",
+              "files": [],
+              "directories": [
+                { "name": "assets", "files": [], "directories": [] },
+                { "name": "classes", "files": [], "directories": [] },
+                {
+                  "name": "components",
+                  "files": [],
+                  "directories": [{ "name": "ItoaLogo", "files": [], "directories": [] }]
+                },
+                { "name": "hooks", "files": [], "directories": [] },
+                {
+                  "name": "pages",
+                  "files": [],
+                  "directories": [
+                    { "name": "Home", "files": [], "directories": [] },
+                    { "name": "Item", "files": [], "directories": [] },
+                    {
+                      "name": "List",
+                      "files": [],
+                      "directories": [{ "name": "Filters", "files": [], "directories": [] }]
+                    }
+                  ]
+                },
+                { "name": "providers", "files": [], "directories": [] }
+              ]
+            },
+            { "name": "components", "files": [], "directories": [] },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                { "name": ".bin", "files": [], "directories": [] },
+                {
+                  "name": "@types",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "react",
+                      "files": [
+                        {
+                          "path": "/packages\\app-admin-ui\\node_modules\\@types\\react/README.md",
+                          "dir": "/packages\\app/admin/ui\\node*modules\\@types\\react",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": []
+                    }
+                  ]
+                },
+                {
+                  "name": "csstype",
+                  "files": [
+                    {
+                      "path": "/packages\\app-admin-ui\\node_modules\\csstype/README.md",
+                      "dir": "/packages\\app/admin/ui\\node*modules\\csstype",
+                      "file": "README"
+                    }
+                  ],
+                  "directories": []
+                }
+              ]
+            },
+            { "name": "server", "files": [], "directories": [] },
+            {
+              "name": "tests",
+              "files": [],
+              "directories": [{ "name": "server", "files": [], "directories": [] }]
+            }
+          ]
+        },
+        {
+          "name": "app-graphql",
+          "files": [
+            {
+              "path": "/packages\\app-graphql/CHANGELOG.md",
+              "dir": "/packages\\app/graphql",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-graphql/README.md",
+              "dir": "/packages\\app/graphql",
+              "file": "README"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "app-graphql-playground",
+          "files": [
+            {
+              "path": "/packages\\app-graphql-playground/CHANGELOG.md",
+              "dir": "/packages\\app/graphql/playground",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-graphql-playground/README.md",
+              "dir": "/packages\\app/graphql/playground",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "lib", "files": [], "directories": [] },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [{ "name": "@apollographql", "files": [], "directories": [] }]
+            }
+          ]
+        },
+        {
+          "name": "app-schema-router",
+          "files": [
+            {
+              "path": "/packages\\app-schema-router/CHANGELOG.md",
+              "dir": "/packages\\app/schema/router",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-schema-router/README.md",
+              "dir": "/packages\\app/schema/router",
+              "file": "README"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "app-static",
+          "files": [
+            {
+              "path": "/packages\\app-static/CHANGELOG.md",
+              "dir": "/packages\\app/static",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-static/README.md",
+              "dir": "/packages\\app/static",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                {
+                  "name": "fs-extra",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "lib",
+                      "files": [],
+                      "directories": [
+                        { "name": "copy", "files": [], "directories": [] },
+                        { "name": "empty", "files": [], "directories": [] },
+                        { "name": "ensure", "files": [], "directories": [] },
+                        { "name": "fs", "files": [], "directories": [] },
+                        { "name": "json", "files": [], "directories": [] },
+                        { "name": "mkdirs", "files": [], "directories": [] },
+                        { "name": "move", "files": [], "directories": [] },
+                        { "name": "output-file", "files": [], "directories": [] },
+                        { "name": "path-exists", "files": [], "directories": [] },
+                        { "name": "remove", "files": [], "directories": [] },
+                        { "name": "util", "files": [], "directories": [] }
+                      ]
+                    }
+                  ]
+                },
+                { "name": "jsonfile", "files": [], "directories": [] },
+                { "name": "universalify", "files": [], "directories": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "app-version",
+          "files": [
+            {
+              "path": "/packages\\app-version/CHANGELOG.md",
+              "dir": "/packages\\app/version",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\app-version/README.md",
+              "dir": "/packages\\app/version",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "dist",
+              "files": [],
+              "directories": [
+                {
+                  "name": "declarations",
+                  "files": [],
+                  "directories": [{ "name": "src", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            { "name": "src", "files": [], "directories": [] },
+            { "name": "tests", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "auth-password",
+          "files": [
+            {
+              "path": "/packages\\auth-password/CHANGELOG.md",
+              "dir": "/packages\\auth/password",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\auth-password/README.md",
+              "dir": "/packages\\auth/password",
+              "file": "README"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "field-views-loader",
+          "files": [
+            {
+              "path": "/packages\\field-views-loader/CHANGELOG.md",
+              "dir": "/packages\\field/views/loader",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\field-views-loader/README.md",
+              "dir": "/packages\\field/views/loader",
+              "file": "README"
+            }
+          ],
+          "directories": []
+        },
+        {
+          "name": "fields",
+          "files": [
+            {
+              "path": "/packages\\fields/CHANGELOG.md",
+              "dir": "/packages\\fields",
+              "file": "CHANGELOG"
+            },
+            { "path": "/packages\\fields/README.md", "dir": "/packages\\fields", "file": "README" }
+          ],
+          "directories": [
+            {
+              "name": "components",
+              "files": [],
+              "directories": [
+                {
+                  "name": "Gallery",
+                  "files": [],
+                  "directories": [{ "name": "Delete", "files": [], "directories": [] }]
+                },
+                { "name": "Logo", "files": [], "directories": [] }
+              ]
+            },
+            {
+              "name": "Controller",
+              "files": [],
+              "directories": [{ "name": "dist", "files": [], "directories": [] }]
+            },
+            { "name": "dist", "files": [], "directories": [] },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                { "name": ".bin", "files": [], "directories": [] },
+                {
+                  "name": "mime",
+                  "files": [
+                    {
+                      "path": "/packages\\fields\\node_modules\\mime/CHANGELOG.md",
+                      "dir": "/packages\\fields\\node*modules\\mime",
+                      "file": "CHANGELOG"
+                    },
+                    {
+                      "path": "/packages\\fields\\node_modules\\mime/README.md",
+                      "dir": "/packages\\fields\\node*modules\\mime",
+                      "file": "README"
+                    }
+                  ],
+                  "directories": [{ "name": "types", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            {
+              "name": "src",
+              "files": [],
+              "directories": [
+                {
+                  "name": "types",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "CalendarDay",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\CalendarDay/README.md",
+                          "dir": "/packages\\fields\\src\\types\\CalendarDay",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Checkbox",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Checkbox/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Checkbox",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Currency",
+                      "files": [],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "DateTime",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\DateTime/README.md",
+                          "dir": "/packages\\fields\\src\\types\\DateTime",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "DateTimeUtc",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\DateTimeUtc/README.md",
+                          "dir": "/packages\\fields\\src\\types\\DateTimeUtc",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": []
+                    },
+                    {
+                      "name": "Decimal",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Decimal/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Decimal",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "File",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\File/README.md",
+                          "dir": "/packages\\fields\\src\\types\\File",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [
+                        { "name": "test-files", "files": [], "directories": [] },
+                        { "name": "views", "files": [], "directories": [] }
+                      ]
+                    },
+                    {
+                      "name": "Float",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Float/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Float",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Images",
+                      "files": [],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Integer",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Integer/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Integer",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Password",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Password/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Password",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Relationship",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Relationship/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Relationship",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [
+                        { "name": "tests", "files": [], "directories": [] },
+                        { "name": "views", "files": [], "directories": [] }
+                      ]
+                    },
+                    {
+                      "name": "Select",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Select/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Select",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Slug",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Slug/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Slug",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": []
+                    },
+                    {
+                      "name": "Text",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Text/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Text",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Translate",
+                      "files": [],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Url",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Url/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Url",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Uuid",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Uuid/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Uuid",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    },
+                    {
+                      "name": "Virtual",
+                      "files": [
+                        {
+                          "path": "/packages\\fields\\src\\types\\Virtual/README.md",
+                          "dir": "/packages\\fields\\src\\types\\Virtual",
+                          "file": "README"
+                        }
+                      ],
+                      "directories": [{ "name": "views", "files": [], "directories": [] }]
+                    }
+                  ]
+                },
+                {
+                  "name": "views",
+                  "files": [],
+                  "directories": [
+                    { "name": "Controller", "files": [], "directories": [] },
+                    { "name": "Field", "files": [], "directories": [] },
+                    { "name": "Filter", "files": [], "directories": [] }
+                  ]
+                }
+              ]
+            },
+            { "name": "tests", "files": [], "directories": [] },
+            {
+              "name": "types",
+              "files": [],
+              "directories": [
+                {
+                  "name": "CalendarDay",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Checkbox",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Currency",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "DateTime",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Decimal",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Editor",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        { "name": "Controller", "files": [], "directories": [] },
+                        { "name": "Field", "files": [], "directories": [] },
+                        { "name": "Filter", "files": [], "directories": [] }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "File",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Float",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Images",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Integer",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Password",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Relationship",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Select",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Text",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Translate",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Url",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Uuid",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Virtual",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "views",
+                      "files": [],
+                      "directories": [
+                        {
+                          "name": "Cell",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Controller",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Field",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        },
+                        {
+                          "name": "Filter",
+                          "files": [],
+                          "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fields-authed-relationship",
+          "files": [
+            {
+              "path": "/packages\\fields-authed-relationship/CHANGELOG.md",
+              "dir": "/packages\\fields/authed/relationship",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\fields-authed-relationship/README.md",
+              "dir": "/packages\\fields/authed/relationship",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "dist", "files": [], "directories": [] },
+            { "name": "src", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "fields-color",
+          "files": [
+            {
+              "path": "/packages\\fields-color/CHANGELOG.md",
+              "dir": "/packages\\fields/color",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\fields-color/README.md",
+              "dir": "/packages\\fields/color",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "dist", "files": [], "directories": [] },
+            {
+              "name": "src",
+              "files": [],
+              "directories": [{ "name": "views", "files": [], "directories": [] }]
+            },
+            {
+              "name": "views",
+              "files": [],
+              "directories": [
+                {
+                  "name": "Cell",
+                  "files": [],
+                  "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                },
+                {
+                  "name": "Field",
+                  "files": [],
+                  "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fields-mongoid",
+          "files": [
+            {
+              "path": "/packages\\fields-mongoid/CHANGELOG.md",
+              "dir": "/packages\\fields/mongoid",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\fields-mongoid/README.md",
+              "dir": "/packages\\fields/mongoid",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "dist", "files": [], "directories": [] },
+            {
+              "name": "src",
+              "files": [],
+              "directories": [{ "name": "views", "files": [], "directories": [] }]
+            },
+            {
+              "name": "views",
+              "files": [],
+              "directories": [
+                {
+                  "name": "Controller",
+                  "files": [],
+                  "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                },
+                {
+                  "name": "Filter",
+                  "files": [],
+                  "directories": [{ "name": "dist", "files": [], "directories": [] }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "file-adapters",
+          "files": [
+            {
+              "path": "/packages\\file-adapters/CHANGELOG.md",
+              "dir": "/packages\\file/adapters",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\file-adapters/README.md",
+              "dir": "/packages\\file/adapters",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            { "name": "lib", "files": [], "directories": [] },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [{ "name": ".bin", "files": [], "directories": [] }]
+            }
+          ]
+        },
+        {
+          "name": "itoa",
+          "files": [
+            {
+              "path": "/packages\\itoa/CHANGELOG.md",
+              "dir": "/packages\\itoa",
+              "file": "CHANGELOG"
+            },
+            { "path": "/packages\\itoa/README.md", "dir": "/packages\\itoa", "file": "README" }
+          ],
+          "directories": [
+            {
+              "name": "bin",
+              "files": [],
+              "directories": [{ "name": "commands", "files": [], "directories": [] }]
+            },
+            {
+              "name": "lib",
+              "files": [],
+              "directories": [
+                {
+                  "name": "adapters",
+                  "files": [
+                    {
+                      "path": "/packages\\itoa\\lib\\adapters/README.md",
+                      "dir": "/packages\\itoa\\lib\\adapters",
+                      "file": "README"
+                    }
+                  ],
+                  "directories": []
+                },
+                { "name": "Itoa", "files": [], "directories": [] },
+                { "name": "ListTypes", "files": [], "directories": [] },
+                { "name": "providers", "files": [], "directories": [] }
+              ]
+            },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                { "name": ".bin", "files": [], "directories": [] },
+                {
+                  "name": "fs-extra",
+                  "files": [],
+                  "directories": [
+                    {
+                      "name": "lib",
+                      "files": [],
+                      "directories": [
+                        { "name": "copy", "files": [], "directories": [] },
+                        { "name": "empty", "files": [], "directories": [] },
+                        { "name": "ensure", "files": [], "directories": [] },
+                        { "name": "fs", "files": [], "directories": [] },
+                        { "name": "json", "files": [], "directories": [] },
+                        { "name": "mkdirs", "files": [], "directories": [] },
+                        { "name": "move", "files": [], "directories": [] },
+                        { "name": "output-file", "files": [], "directories": [] },
+                        { "name": "path-exists", "files": [], "directories": [] },
+                        { "name": "remove", "files": [], "directories": [] },
+                        { "name": "util", "files": [], "directories": [] }
+                      ]
+                    }
+                  ]
+                },
+                { "name": "jsonfile", "files": [], "directories": [] },
+                { "name": "universalify", "files": [], "directories": [] }
+              ]
+            },
+            {
+              "name": "tests",
+              "files": [],
+              "directories": [{ "name": "bin", "files": [], "directories": [] }]
+            }
+          ]
+        },
+        {
+          "name": "list-plugins",
+          "files": [
+            {
+              "path": "/packages\\list-plugins/atTracking.md",
+              "dir": "/packages\\list/plugins",
+              "file": "atTracking"
+            },
+            {
+              "path": "/packages\\list-plugins/byTracking.md",
+              "dir": "/packages\\list/plugins",
+              "file": "byTracking"
+            },
+            {
+              "path": "/packages\\list-plugins/CHANGELOG.md",
+              "dir": "/packages\\list/plugins",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\list-plugins/logging.md",
+              "dir": "/packages\\list/plugins",
+              "file": "logging"
+            },
+            {
+              "path": "/packages\\list-plugins/README.md",
+              "dir": "/packages\\list/plugins",
+              "file": "README"
+            },
+            {
+              "path": "/packages\\list-plugins/singleton.md",
+              "dir": "/packages\\list/plugins",
+              "file": "singleton"
+            }
+          ],
+          "directories": [
+            {
+              "name": "lib",
+              "files": [],
+              "directories": [
+                { "name": "limiting", "files": [], "directories": [] },
+                { "name": "tracking", "files": [], "directories": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "server-side-graphql-client",
+          "files": [
+            {
+              "path": "/packages\\server-side-graphql-client/CHANGELOG.md",
+              "dir": "/packages\\server/side/graphql/client",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\server-side-graphql-client/README.md",
+              "dir": "/packages\\server/side/graphql/client",
+              "file": "README"
+            }
+          ],
+          "directories": [{ "name": "lib", "files": [], "directories": [] }]
+        },
+        {
+          "name": "session",
+          "files": [
+            {
+              "path": "/packages\\session/CHANGELOG.md",
+              "dir": "/packages\\session",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\session/README.md",
+              "dir": "/packages\\session",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "dist",
+              "files": [],
+              "directories": [
+                {
+                  "name": "declarations",
+                  "files": [],
+                  "directories": [{ "name": "src", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                {
+                  "name": "cookie",
+                  "files": [
+                    {
+                      "path": "/packages\\session\\node_modules\\cookie/HISTORY.md",
+                      "dir": "/packages\\session\\node*modules\\cookie",
+                      "file": "HISTORY"
+                    },
+                    {
+                      "path": "/packages\\session\\node_modules\\cookie/README.md",
+                      "dir": "/packages\\session\\node*modules\\cookie",
+                      "file": "README"
+                    }
+                  ],
+                  "directories": []
+                },
+                {
+                  "name": "cookie-signature",
+                  "files": [
+                    {
+                      "path": "/packages\\session\\node_modules\\cookie-signature/History.md",
+                      "dir": "/packages\\session\\node*modules\\cookie/signature",
+                      "file": "History"
+                    },
+                    {
+                      "path": "/packages\\session\\node_modules\\cookie-signature/Readme.md",
+                      "dir": "/packages\\session\\node*modules\\cookie/signature",
+                      "file": "Readme"
+                    }
+                  ],
+                  "directories": []
+                }
+              ]
+            },
+            { "name": "src", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "test-utils",
+          "files": [
+            {
+              "path": "/packages\\test-utils/CHANGELOG.md",
+              "dir": "/packages\\test/utils",
+              "file": "CHANGELOG"
+            },
+            {
+              "path": "/packages\\test-utils/README.md",
+              "dir": "/packages\\test/utils",
+              "file": "README"
+            }
+          ],
+          "directories": [
+            {
+              "name": "dist",
+              "files": [],
+              "directories": [
+                {
+                  "name": "declarations",
+                  "files": [],
+                  "directories": [{ "name": "src", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [{ "name": ".bin", "files": [], "directories": [] }]
+            },
+            { "name": "src", "files": [], "directories": [] }
+          ]
+        },
+        {
+          "name": "utils",
+          "files": [
+            {
+              "path": "/packages\\utils/CHANGELOG.md",
+              "dir": "/packages\\utils",
+              "file": "CHANGELOG"
+            },
+            { "path": "/packages\\utils/README.md", "dir": "/packages\\utils", "file": "README" }
+          ],
+          "directories": [
+            {
+              "name": "dist",
+              "files": [],
+              "directories": [
+                {
+                  "name": "declarations",
+                  "files": [],
+                  "directories": [{ "name": "src", "files": [], "directories": [] }]
+                }
+              ]
+            },
+            {
+              "name": "node_modules",
+              "files": [],
+              "directories": [
+                { "name": ".bin", "files": [], "directories": [] },
+                {
+                  "name": "semver",
+                  "files": [
+                    {
+                      "path": "/packages\\utils\\node_modules\\semver/README.md",
+                      "dir": "/packages\\utils\\node*modules\\semver",
+                      "file": "README"
+                    }
+                  ],
+                  "directories": [
+                    { "name": "bin", "files": [], "directories": [] },
+                    { "name": "classes", "files": [], "directories": [] },
+                    { "name": "functions", "files": [], "directories": [] },
+                    { "name": "internal", "files": [], "directories": [] },
+                    { "name": "ranges", "files": [], "directories": [] }
+                  ]
+                }
+              ]
+            },
+            { "name": "src", "files": [], "directories": [] },
+            { "name": "tests", "files": [], "directories": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}
