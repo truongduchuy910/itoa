@@ -58,8 +58,9 @@
     "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "@uiw/react-md-editor": "^3.17.0",
     "all-contributors-cli": "^6.20.0",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.8",
     "babel-plugin-emotion": "^10.2.2",
     "chalk": "^4.1.2",
     "chalk-cli": "^5.0.0",
@@ -209,6 +210,5 @@
     "doc": "docs",
     "example": "examples",
     "test": "tests"
-  },
-  "devDependencies": {}
+  }
 }
